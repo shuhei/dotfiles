@@ -39,6 +39,7 @@ let g:quickrun_config = {}
 " Build vimproc with 'make -f make_mingw.mak' after installing it.
 Bundle 'https://github.com/Shougo/vimproc.git'
 Bundle 'https://github.com/Shougo/vimshell.git'
+Bundle 'sudo.vim'
 
 filetype on
 filetype plugin indent on
