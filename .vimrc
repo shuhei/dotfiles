@@ -64,6 +64,9 @@ set number
 
 set wildmenu
 
+" Unlimited yank buffer
+set viminfo='100,h
+
 " Color scheme
 colorscheme blackboard
 " colorscheme evening
