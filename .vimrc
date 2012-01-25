@@ -35,10 +35,6 @@ Bundle 'https://github.com/thinca/vim-quickrun.git'
 let g:quickrun_config = {}
 Bundle 'https://github.com/Shougo/vimproc.git'
 Bundle 'https://github.com/Shougo/vimshell.git'
-"Bundle 'https://github.com/Shougo/neocomplcache.git'
-"let g:neocomplcache_enable_at_startup = 1
-"inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
-"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 filetype on
 filetype plugin indent on
@@ -72,14 +68,6 @@ autocmd FileType cs setlocal noexpandtab
 
 " Do not stop cursor on line head or end
 set whichwrap=b,s,h,l,<,>,[,]
-
-" Omni complete
-"autocmd FileType ruby set omnifunc=rubycomplete#Complete
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType html,markdown set omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-"autocmd FileType xml set omnifunc=csscomplete#CompleteTags
 
 " RSpec
 let g:quickrun_config['ruby.rspec'] = {'command': 'rspec -c'}
