@@ -1,0 +1,16 @@
+[user]
+	name = Shuhei Kagawa
+	email = shuhei.kagawa@gmail.com
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+  s  = status
+  ci = commit
+  co = checkout
+  b  = branch
+  l  = log
+  a  = add
+  pl = pull
+  ps = push
