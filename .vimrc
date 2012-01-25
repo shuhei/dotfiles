@@ -28,11 +28,15 @@ Bundle 'surround.vim'
 Bundle 'Markdown'
 Bundle 'HTML5-Syntax-File'
 
+" Theme
+Bundle 'blackboard.vim'
+
 " Utility
 Bundle 'project.tar.gz'
 Bundle 'taglist.vim'
 Bundle 'https://github.com/thinca/vim-quickrun.git'
 let g:quickrun_config = {}
+" Build vimproc with 'make -f make_mingw.mak' after installing it.
 Bundle 'https://github.com/Shougo/vimproc.git'
 Bundle 'https://github.com/Shougo/vimshell.git'
 
