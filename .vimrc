@@ -34,7 +34,7 @@ function! s:javascript_filetype_settings()
   autocmd CursorMoved  <buffer> call jslint#message()
 endfunction
 autocmd FileType javascript call s:javascript_filetype_settings()
-Bundle 'rails.vim'
+Bundle 'tpope/vim-rails'
 
 " Theme
 Bundle 'blackboard.vim'
