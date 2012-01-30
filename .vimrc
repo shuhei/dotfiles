@@ -24,9 +24,11 @@ Bundle 'gmarik/vundle'
 " Text editing
 Bundle 'surround.vim'
 
-" Syntax highlight
+" Syntax
 Bundle 'Markdown'
 Bundle 'HTML5-Syntax-File'
+Bundle 'JavaScript-syntax'
+Bundle 'pangloss/vim-javascript'
 
 " Theme
 Bundle 'blackboard.vim'
