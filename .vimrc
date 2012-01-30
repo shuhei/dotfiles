@@ -24,9 +24,16 @@ Bundle 'gmarik/vundle'
 " Text editing
 Bundle 'surround.vim'
 
-" Syntax highlight
+" Syntax highlight and check
 Bundle 'Markdown'
 Bundle 'HTML5-Syntax-File'
+Bundle 'basyura/jslint.vim'
+function! s:javascript_filetype_settings()
+  autocmd BufLeave     <buffer> call jslint#clear()
+  autocmd BufWritePost <buffer> call jslint#check()
+  autocmd CursorMoved  <buffer> call jslint#message()
+endfunction
+autocmd FileType javascript call s:javascript_filetype_settings()
 
 " Theme
 Bundle 'blackboard.vim'
