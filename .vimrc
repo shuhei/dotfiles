@@ -48,6 +48,10 @@ let g:quickrun_config = {}
 Bundle 'https://github.com/Shougo/vimproc.git'
 Bundle 'https://github.com/Shougo/vimshell.git'
 Bundle 'sudo.vim'
+Bundle 'scrooloose/nerdtree'
+"autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 filetype on
 filetype plugin indent on
