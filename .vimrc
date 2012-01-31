@@ -55,6 +55,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 Bundle 'mattn/gist-vim'
 let g:github_user = 'shuhei'
 let g:github_token = '$GITHUB_TOKEN'
+let g:gist_clip_command = 'pbcopy'
 
 filetype on
 filetype plugin indent on
