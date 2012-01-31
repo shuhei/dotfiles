@@ -14,5 +14,3 @@
   a  = add
   pl = pull
   ps = push
-[github]
-	user = shuhei

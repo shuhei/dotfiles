@@ -53,6 +53,8 @@ Bundle 'scrooloose/nerdtree'
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 Bundle 'mattn/gist-vim'
+let g:github_user = 'shuhei'
+let g:github_token = '$GITHUB_TOKEN'
 
 filetype on
 filetype plugin indent on
