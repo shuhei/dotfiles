@@ -11,6 +11,6 @@
   co = checkout
   b  = branch
   l  = log
-  a  = add
+  a  = add -p
   pl = pull
   ps = push
