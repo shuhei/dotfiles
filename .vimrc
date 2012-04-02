@@ -35,6 +35,7 @@ function! s:javascript_filetype_settings()
 endfunction
 autocmd FileType javascript call s:javascript_filetype_settings()
 Bundle 'tpope/vim-rails'
+Bundle 'ZenCoding.vim'
 
 " Theme
 Bundle 'blackboard.vim'
