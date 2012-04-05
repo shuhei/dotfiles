@@ -69,6 +69,7 @@ Bundle 'mattn/gist-vim'
 let g:github_user = 'shuhei'
 let g:github_token = $GITHUB_TOKEN
 let g:gist_clip_command = 'pbcopy'
+Bundle 'motemen/git-vim'
 
 filetype on
 filetype plugin indent on
