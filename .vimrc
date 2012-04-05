@@ -36,6 +36,18 @@ endfunction
 autocmd FileType javascript call s:javascript_filetype_settings()
 Bundle 'tpope/vim-rails'
 Bundle 'ZenCoding.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
+Bundle 'AtsushiM/sass-compile.vim'
+
+" Octopress
+Bundle 'glidenote/octoeditor.vim'
+let g:octopress_path = '~/work/octopress'
+map <Leader>on :OctopressNew<CR>
+map <Leader>ol :OctopressList<CR>
+map <Leader>og :OctopressGrep<CR>
+nmap ,og :OctopressGenerate<CR>
+nmap ,od :OctopressDeploy<CR>
 
 " Theme
 Bundle 'blackboard.vim'
