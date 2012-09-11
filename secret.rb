@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Commit filter not to commit your Github API token.
+
 input = STDIN.read
 filename = ARGV.first
 secrets = {
