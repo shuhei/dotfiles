@@ -1,15 +1,31 @@
+# Dotfiles
+
 My personal dotfiles.
 
-Make sure to create symlinks.
+## Installation
+
+Clone this repository to your home directory and create symlinks.
 
     cd ~
+    git clone git@github.com:shuhei/dotfiles.git
     ln -s dotfiles/.foo .foo
 
-Load vim bundles as git submodules.
+## Vim
 
+Vim bundles are added to this respository as git submodules. Make sure to check them out.
+
+    cd ~/dotfiles
     git submodule init
     git submodule update
 
-Also, set the following filter not to commit your secret keys.
+If you want add more vim bundles, add them as git submodules and commit.
+
+    cd ~/dotfiles
+    git submodule add git@github.com:foo/bar.git .vim/bundle/bar
+    git commit -m "Add bar."
+
+## Omit sensitive information
+
+Set the following filter not to commit your secret keys.
 
     git config filter.secret.clean './secret.rb %f'
