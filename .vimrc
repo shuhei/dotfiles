@@ -1,116 +1,28 @@
-" Vundle https://github.com/gmarik/vundle
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 set nocompatible
-" filetype needs to be on before it's set off.
-" See https://github.com/gmarik/vundle/wiki for more detail.
-filetype on
-filetype off
-
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-
-" Vundle itself
-Bundle 'gmarik/vundle'
-
-" Text editing
-Bundle 'surround.vim'
-
-" Syntax highlight and check
-Bundle 'Markdown'
-Bundle 'HTML5-Syntax-File'
-Bundle 'basyura/jslint.vim'
-function! s:javascript_filetype_settings()
-  autocmd BufLeave     <buffer> call jslint#clear()
-  autocmd BufWritePost <buffer> call jslint#check()
-  autocmd CursorMoved  <buffer> call jslint#message()
-endfunction
-autocmd FileType javascript call s:javascript_filetype_settings()
-Bundle 'tpope/vim-rails'
-Bundle 'ZenCoding.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-haml'
-Bundle 'AtsushiM/sass-compile.vim'
-
-" Octopress
-Bundle 'glidenote/octoeditor.vim'
-let g:octopress_path = '~/work/octopress'
-map <Leader>on :OctopressNew<CR>
-map <Leader>ol :OctopressList<CR>
-map <Leader>og :OctopressGrep<CR>
-nmap ,og :OctopressGenerate<CR>
-nmap ,od :OctopressDeploy<CR>
-
-" Theme
-Bundle 'blackboard.vim'
-
-" Utility
-Bundle 'project.tar.gz'
-Bundle 'taglist.vim'
-Bundle 'https://github.com/thinca/vim-quickrun.git'
-let g:quickrun_config = {}
-" Build vimproc with 'make -f make_mingw.mak' after installing it.
-Bundle 'https://github.com/Shougo/vimproc.git'
-Bundle 'https://github.com/Shougo/vimshell.git'
-Bundle 'sudo.vim'
-Bundle 'mattn/gist-vim'
-let g:github_user = 'shuhei'
-let g:github_token = $GITHUB_TOKEN
-let g:gist_clip_command = 'pbcopy'
-Bundle 'motemen/git-vim'
-
-filetype on
-filetype plugin indent on
 
 set termencoding=utf-8
 set encoding=utf-8
 
 set fileencodings=iso-2022-jp,utf-8,euc-jp,ucs-2le,ucs-2,cp932
 
-set backspace=indent,eol,start
-set incsearch
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set smarttab
-set autoindent
-syntax on
-set background=dark
 
+set background=dark
 set number
 
-set wildmenu
-
-" Unlimited yank buffer
-set viminfo='100,h
-
-" Color scheme
-colorscheme blackboard
-" colorscheme evening
-
-" Keep tabs in C#
-autocmd FileType cs setlocal noexpandtab
+if has('persistent_undo')
+  set noundofile
+endif
 
 " Do not stop cursor on line head or end
 set whichwrap=b,s,h,l,<,>,[,]
-
-" RSpec
-let g:quickrun_config['ruby.rspec'] = {'command': 'rspec -c'}
-
-" Vim Shell shortcuts
-nnoremap <silent> ,is :VimShell<CR>
-nnoremap <silent> ,irb :VimShellInteractive irb<CR>
-vmap <silent> ,ss :VimShellSendString<CR>
-nnoremap <silent> ,ss :VimShellSendString<CR>
 
 " Auto recognition of character encodings
 if &encoding !=# 'utf-8'
