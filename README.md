@@ -18,7 +18,7 @@ Vim bundles are added to this respository as git submodules. Make sure to check 
     git submodule init
     git submodule update
 
-If you want add more vim bundles, add them as git submodules and commit.
+If you want add to more vim bundles, add them as git submodules and commit.
 
     cd ~/dotfiles
     git submodule add git@github.com:foo/bar.git .vim/bundle/bar
