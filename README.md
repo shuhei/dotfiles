@@ -18,14 +18,9 @@ Vim bundles are added to this respository as git submodules. Make sure to check 
     git submodule init
     git submodule update
 
-If you want add to more vim bundles, add them as git submodules and commit.
+If you want to add more vim plugins, add them as git submodules and commit.
 
     cd ~/dotfiles
-    git submodule add git@github.com:foo/bar.git .vim/bundle/bar
-    git commit -m "Add bar."
+    git submodule add https://github.com/foo/vim-bar .vim/bundle/vim-bar
+    git commit -m "Add vim bar plugin."
 
-## Omit sensitive information
-
-Set the following filter not to commit your secret keys.
-
-    git config filter.secret.clean './secret.rb %f'
