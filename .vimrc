@@ -14,8 +14,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-set background=dark
 set number
+
+colorscheme monokai
 
 if has('persistent_undo')
   set noundofile

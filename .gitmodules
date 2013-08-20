@@ -25,3 +25,9 @@
 [submodule ".vim/bundle/vim-gemfile"]
 	path = .vim/bundle/vim-gemfile
 	url = https://github.com/tobiassvn/vim-gemfile
+[submodule ".vim/bundle/colorschemes"]
+	path = .vim/bundle/colorschemes
+	url = https://github.com/flazz/vim-colorschemes
+[submodule ".vim/bundle/vim-csapprox"]
+	path = .vim/bundle/vim-csapprox
+	url = https://github.com/eudisd/vim-csapprox
