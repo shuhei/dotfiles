@@ -3,4 +3,5 @@
 *.swp
 *.sublime-project
 *.sublime-workspace
+.vim/.netrwhist
 
