@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/vim-csapprox"]
 	path = .vim/bundle/vim-csapprox
 	url = https://github.com/eudisd/vim-csapprox
+[submodule ".vim/bundle/vim-ruby"]
+	path = .vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
