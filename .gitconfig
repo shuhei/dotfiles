@@ -1,10 +1,10 @@
-[user]
-	name = Shuhei Kagawa
-	email = shuhei.kagawa@gmail.com
+[include]
+  path = ~/.gitconfig.local
 [color]
-	ui = auto
+  ui = auto
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore.global
+  editor = /usr/bin/vim
 [alias]
   s  = status
   ci = commit
@@ -14,3 +14,5 @@
   a  = add -p
   pl = pull
   ps = push
+  d  = diff
+  dc = diff --cached

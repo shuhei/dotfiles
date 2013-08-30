@@ -10,6 +10,8 @@ Clone this repository to your home directory and create symlinks.
     git clone git@github.com:shuhei/dotfiles.git
     ln -s dotfiles/.foo .foo
 
+Keep environement-specific git configs such as user name and email in `~/.gitconfig.local`.
+
 ## Vim
 
 Vim bundles are added to this respository as git submodules. Make sure to check them out.
