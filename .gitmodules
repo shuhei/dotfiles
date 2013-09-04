@@ -31,6 +31,12 @@
 [submodule ".vim/bundle/vim-csapprox"]
 	path = .vim/bundle/vim-csapprox
 	url = https://github.com/eudisd/vim-csapprox
+[submodule ".vim/bundle/vim-json"]
+	path = .vim/bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+[submodule ".vim/bundle/hspec.vim"]
+	path = .vim/bundle/hspec.vim
+	url = https://github.com/hspec/hspec.vim.git
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
