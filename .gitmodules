@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vim-golang"]
 	path = .vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule ".vim/bundle/vim-zenroom"]
+	path = .vim/bundle/vim-zenroom
+	url = https://github.com/amix/vim-zenroom.git
