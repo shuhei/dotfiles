@@ -1,36 +1,33 @@
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
-	url = git@github.com:tpope/vim-markdown.git
+	url = https://github.com/tpope/vim-markdown.git
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
-	url = git@github.com:groenewege/vim-less.git
+	url = https://github.com/groenewege/vim-less.git
 [submodule ".vim/bundle/vim-haml"]
 	path = .vim/bundle/vim-haml
-	url = git@github.com:tpope/vim-haml.git
+	url = https://github.com/tpope/vim-haml.git
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/vim-trailing-whitespace"]
 	path = .vim/bundle/vim-trailing-whitespace
-	url = git@github.com:bronson/vim-trailing-whitespace.git
+	url = https://github.com/bronson/vim-trailing-whitespace.git
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
-[submodule ".vim/bundle/vim-gemfile"]
-	path = .vim/bundle/vim-gemfile
-	url = https://github.com/tobiassvn/vim-gemfile
+	url = https://github.com/bling/vim-airline.git
 [submodule ".vim/bundle/colorschemes"]
 	path = .vim/bundle/colorschemes
-	url = https://github.com/flazz/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
 [submodule ".vim/bundle/vim-csapprox"]
 	path = .vim/bundle/vim-csapprox
-	url = https://github.com/eudisd/vim-csapprox
+	url = https://github.com/eudisd/vim-csapprox.git
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
