@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/vim-zenroom"]
 	path = .vim/bundle/vim-zenroom
 	url = https://github.com/amix/vim-zenroom.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
