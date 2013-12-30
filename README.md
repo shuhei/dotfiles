@@ -26,3 +26,11 @@ If you want to add more vim plugins, add them as git submodules and commit.
     git submodule add https://github.com/foo/vim-bar .vim/bundle/vim-bar
     git commit -m "Add vim bar plugin."
 
+To update vim plugins, pull in their own directories.
+
+    cd ~/dotfiles/.vim/bundle/vim-bar
+    git pull origin master
+    cd ~/dotfiles
+    git add .vim/bundle/vim-bar
+    git commit -m "Update vim-bar."
+
