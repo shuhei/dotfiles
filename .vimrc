@@ -16,7 +16,7 @@ set expandtab
 
 set number
 
-colorscheme monokai
+colorscheme vividchalk
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
