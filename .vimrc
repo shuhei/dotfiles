@@ -16,7 +16,12 @@ set expandtab
 
 set number
 
+let mapleader = ","
+
 colorscheme vividchalk
+
+" nerdcommenter
+let NERDSpaceDelims = 1
 
 " switch.vim
 autocmd FileType ruby let b:switch_custom_definitions =
