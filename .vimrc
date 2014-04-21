@@ -18,6 +18,14 @@ set number
 
 colorscheme vividchalk
 
+" switch.vim
+autocmd FileType ruby let b:switch_custom_definitions =
+  \ [
+  \   ['to', 'not_to']
+  \ ]
+
+nnoremap - :Switch<cr>
+
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 

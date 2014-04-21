@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/vim-endwise"]
 	path = .vim/bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/bundle/switch.vim"]
+	path = .vim/bundle/switch.vim
+	url = https://github.com/AndrewRadev/switch.vim.git
