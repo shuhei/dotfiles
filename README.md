@@ -14,6 +14,15 @@ ln -s dotfiles/.foo .foo
 
 Keep environement-specific git configs such as user name and email in `~/.gitconfig.local`.
 
+## KeyRemap4MacBook
+
+To add private configuration items, symlink the `private.xml` to the Application Support directory.
+
+```
+cd ~
+ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/
+```
+
 ## Vim
 
 Vim bundles are added to this respository as git submodules. Make sure to check them out.
