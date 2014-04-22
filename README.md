@@ -12,7 +12,7 @@ git clone git@github.com:shuhei/dotfiles.git
 ln -s dotfiles/.foo .foo
 ```
 
-Keep environement-specific git configs such as user name and email in `~/.gitconfig.local`.
+Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
 
 ## Vim
 
@@ -32,7 +32,7 @@ git submodule add https://github.com/foo/vim-bar .vim/bundle/vim-bar
 git commit -m "Add vim bar plugin."
 ```
 
-To update vim plugins, pull in their own directories.
+To update vim plugins, pull in their own directories and commit.
 
 ```
 cd ~/dotfiles/.vim/bundle/vim-bar
