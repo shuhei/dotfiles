@@ -64,3 +64,6 @@
 [submodule ".vim/bundle/newdayone.vim"]
 	path = .vim/bundle/newdayone.vim
 	url = https://github.com/glidenote/newdayone.vim.git
+[submodule "vim/bundle/vim-eco"]
+	path = vim/bundle/vim-eco
+	url = https://github.com/AndrewRadev/vim-eco.git
