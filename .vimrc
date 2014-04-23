@@ -18,7 +18,7 @@ set number
 
 let mapleader = ","
 
-colorscheme vividchalk
+colorscheme badwolf
 
 " nerdcommenter
 let NERDSpaceDelims = 1
