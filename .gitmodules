@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/newdayone.vim"]
+	path = .vim/bundle/newdayone.vim
+	url = https://github.com/glidenote/newdayone.vim.git
