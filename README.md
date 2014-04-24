@@ -44,10 +44,9 @@ git commit -m "Add vim bar plugin."
 To update vim plugins, pull in their own directories and commit.
 
 ```
-cd ~/dotfiles/.vim/bundle/vim-bar
-git pull origin master
 cd ~/dotfiles
-git add .vim/bundle/vim-bar
-git commit -m "Update vim-bar."
+git submodule foreach git pull origin master
+git add -p
+git commit -m "Update vim plugins."
 ```
 
