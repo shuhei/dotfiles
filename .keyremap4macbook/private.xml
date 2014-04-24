@@ -2,7 +2,7 @@
 <root>
   <!-- http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/ -->
   <item>
-    <name>EDC to IME off (to English) + ESC + ESC</name>
+    <name>ESC to IME off (to English) + ESC + ESC</name>
     <identifier>private.vim.ime_off_ESC</identifier>
     <only>TERMINAL, VI</only>
     <inputsource_only>JAPANESE</inputsource_only>
