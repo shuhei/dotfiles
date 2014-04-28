@@ -18,6 +18,9 @@ set number
 
 let mapleader = ","
 
+" Use clipboard
+set clipboard+=unnamed
+
 " colorscheme random
 colorscheme asu1dark
 
