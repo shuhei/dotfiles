@@ -42,6 +42,9 @@ if has('persistent_undo')
   set noundofile
 endif
 
+" goyo.vim
+nnoremap <Leader><Space> :Goyo<CR>
+
 " Do not stop cursor on line head or end
 set whichwrap=b,s,h,l,<,>,[,]
 

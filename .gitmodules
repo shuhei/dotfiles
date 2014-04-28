@@ -64,3 +64,9 @@
 [submodule ".vim/bundle/vim-eco"]
 	path = .vim/bundle/vim-eco
 	url = https://github.com/AndrewRadev/vim-eco.git
+[submodule ".vim/bundle/vim-zenroom2"]
+	path = .vim/bundle/vim-zenroom2
+	url = https://github.com/amix/vim-zenroom2.git
+[submodule ".vim/bundle/goyo.vim"]
+	path = .vim/bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
