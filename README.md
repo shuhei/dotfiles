@@ -25,6 +25,18 @@ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/Ke
 
 ## Vim
 
+### Version
+
+Use the latest version with lua enabled that is required by neocomplete plugin.
+
+On Mac:
+
+```
+brew install vim --with-lua
+```
+
+### Bundles
+
 Vim bundles are added to this respository as git submodules. Make sure to check them out.
 
 ```
