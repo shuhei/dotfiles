@@ -33,6 +33,13 @@ git submodule init
 git submodule update
 ```
 
+Build vimproc.
+
+```
+cd ~/dotfiles/.vim/bundle/vimproc
+make
+```
+
 If you want to add more vim plugins, add them as git submodules and commit.
 
 ```
