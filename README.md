@@ -69,3 +69,11 @@ git add -p
 git commit -m "Update vim plugins."
 ```
 
+To remove a vim plugin:
+
+```
+cd ~/dotfiles
+./bin/remove_vim_plugin vim-foo
+git add -p
+git commot -m "Remove vim-foo."
+```
