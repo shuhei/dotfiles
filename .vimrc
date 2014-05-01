@@ -1,5 +1,47 @@
-syntax on
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'AndrewRadev/switch.vim'
+Plugin 'AndrewRadev/vim-eco'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'amix/vim-zenroom2'
+Plugin 'bling/vim-airline'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'elzr/vim-json'
+Plugin 'eudisd/vim-csapprox'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'groenewege/vim-less'
+Plugin 'hspec/hspec.vim'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'junegunn/goyo.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+
+call vundle#end()
 filetype plugin indent on
+
+syntax on
 
 set nocompatible
 
@@ -19,47 +61,6 @@ let mapleader = ","
 
 " Use clipboard
 set clipboard+=unnamed
-
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
-Bundle 'gmarik/Vundle.vim'
-Bundle 'AndrewRadev/switch.vim'
-Bundle 'AndrewRadev/vim-eco'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'Shougo/neosnippet.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'Shougo/vimshell.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'amix/vim-zenroom2'
-Bundle 'bling/vim-airline'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'elzr/vim-json'
-Bundle 'eudisd/vim-csapprox'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'groenewege/vim-less'
-Bundle 'hspec/hspec.vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'junegunn/goyo.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-
-filetype on
 
 " colorscheme random
 colorscheme asu1dark
