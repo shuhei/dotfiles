@@ -4,7 +4,7 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore.global
-  editor = /usr/bin/vim
+  editor = vim
 [alias]
   s  = status
   ci = commit
