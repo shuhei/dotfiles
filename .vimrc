@@ -59,6 +59,10 @@ set number
 
 let mapleader = ","
 
+" Cursor
+autocmd InsertLeave * set cul
+autocmd InsertEnter * set nocul
+
 " Use clipboard
 set clipboard+=unnamed
 
