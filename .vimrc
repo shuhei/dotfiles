@@ -23,10 +23,10 @@ set clipboard+=unnamed
 " Vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'AndrewRadev/vim-eco'
 Bundle 'Shougo/neocomplete.vim'

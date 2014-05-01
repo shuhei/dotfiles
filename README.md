@@ -41,7 +41,7 @@ Vim plugins are managed with [Vundle](https://github.com/gmarik/Vundle.vim). Ins
 
 ```
 cd ~/dotfiles
-git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/vundle
+git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
 ```
 
 And in vim, `:BundleInstall`.
