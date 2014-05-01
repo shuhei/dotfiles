@@ -1,4 +1,3 @@
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -20,6 +19,47 @@ let mapleader = ","
 
 " Use clipboard
 set clipboard+=unnamed
+
+" Vundler
+set nocompatible
+filetype off
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-sensible'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-haml'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails'
+Bundle 'bronson/vim-trailing-whitespece'
+Bundle 'bling/vim-airline'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'eudisd/vim-csapprox'
+Bundle 'elzr/vim-json'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-surround'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'AndrewRadev/vim-eco'
+Bundle 'amix/vim-zenroom2'
+Bundle 'junegunn/goyo.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Shougo/vimshell.vim'
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/neosnippet.vim'
+Bundle 'Shougo/neosnippet-snippets'
+Bundle 'AndrewRadev/switch.vim'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'hspec/hspec.vim'
+
+filetype on
 
 " colorscheme random
 colorscheme asu1dark
