@@ -82,6 +82,22 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
+" http://kazuph.hateblo.jp/entry/2013/01/19/193745
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
+imap <C-f> <Plug>(neosnippet_expand_or_jump)
+smap <C-f> <Plug>(neosnippet_expand_or_jump)
+
+imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+" neosnippet
+let g:neosnippet#snippets_directory = "~/.vim/snippets/"
+
 " nerdcommenter
 let NERDSpaceDelims = 1
 
