@@ -11,8 +11,10 @@ Plugin 'AndrewRadev/vim-eco'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
+Plugin 'Shougo/vimfiler.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'amix/vim-zenroom2'
 Plugin 'bling/vim-airline'
@@ -29,7 +31,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-haml'
@@ -68,6 +69,9 @@ set clipboard+=unnamed
 
 " colorscheme random
 colorscheme asu1dark
+
+" vimfiler
+let g:vimfiler_as_default_explorer = 1
 
 " neocomplete
 " Disable AutoComplPop.
