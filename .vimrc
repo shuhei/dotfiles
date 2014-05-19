@@ -117,7 +117,7 @@ let NERDSpaceDelims = 1
 let g:sysntastic_mode_map =
   \ {
   \   'mode': 'passive',
-  \   'active_filetypes': ['ruby']
+  \   'active_filetypes': ['ruby', 'coffee']
   \ }
 let g:syntastic_ruby_checkers = ['rubocop']
 
