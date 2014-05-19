@@ -45,3 +45,10 @@ git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
 ```
 
 And in vim, `:BundleInstall`.
+
+### Syntax Check
+
+Syntactic plugin is employed to perform syntax check. Make sure to prepare proper executables.
+
+- rubocop for ruby
+- coffeelint for coffee
