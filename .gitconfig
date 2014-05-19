@@ -17,3 +17,5 @@
   d  = diff
   dc = diff --cached
   g  = grep -n
+[github]
+	user = shuhei
