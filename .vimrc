@@ -31,6 +31,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-haml'
@@ -108,6 +109,15 @@ let g:neosnippet#snippets_directory = "~/.vim/snippets/"
 
 " nerdcommenter
 let NERDSpaceDelims = 1
+
+" syntastic
+" http://qiita.com/yuku_t/items/0ac33cea18e10f14e185
+let g:sysntastic_mode_map =
+  \ {
+  \   'mode': 'passive',
+  \   'active_filetypes': ['ruby']
+  \ }
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " switch.vim
 autocmd FileType ruby let b:switch_custom_definitions =
