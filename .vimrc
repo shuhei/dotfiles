@@ -1,4 +1,7 @@
+"===============================
 " Vundle
+"===============================
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -47,6 +50,10 @@ Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
 filetype plugin indent on
 
+"===============================
+" General Config
+"===============================
+
 syntax on
 
 set nocompatible
@@ -74,6 +81,18 @@ set clipboard+=unnamed
 
 " colorscheme random
 colorscheme asu1dark
+
+" Spell checking
+" http://robots.thoughtbot.com/vim-spell-checking
+" Use `zg` to add words to the dictionary.
+set spelllang=en_us,cjk
+set complete+=kspell
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+
+"===============================
+" Plugin Config
+"===============================
 
 " vimfiler
 let g:vimfiler_as_default_explorer = 1
