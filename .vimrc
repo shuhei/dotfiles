@@ -96,6 +96,7 @@ autocmd FileType gitcommit setlocal spell
 
 " vimfiler
 let g:vimfiler_as_default_explorer = 1
+nnoremap <Leader>f :VimFilerExplorer<CR>
 
 " neocomplete
 " Disable AutoComplPop.
