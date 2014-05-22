@@ -108,3 +108,25 @@ nnoremap <Leader>gd :Gdiff<CR>
 " vim-airline
 "===============================
 let g:airline#extensions#tabline#enabled = 1
+
+"===============================
+" vim-quickrun
+"===============================
+" http://d.hatena.ne.jp/osyo-manga/20130311/1363012363
+" http://shirusu-ni-tarazu.hatenablog.jp/entry/2012/04/17/090805
+let g:quickrun_config =
+  \ {
+  \   '_': {
+  \      'runner': 'vimproc',
+  \      'runner/vimproc/updatetime': 60
+  \   },
+  \   'ruby.rspec': {
+  \      'command': './bin/rspec'
+  \   }
+  \ }
+nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
+
+augroup RSpec
+  autocmd!
+  autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
+augroup END
