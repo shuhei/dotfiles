@@ -1,3 +1,21 @@
+snippet describe
+abbr describe '' do; end
+  describe '${1:#:description}' do
+    ${2:#:specs}
+  end
+
+snippet context
+abbr context '' do; end
+  context '${1:#:context}' do
+    ${2:#:specs}
+  end
+
+snippet it
+abbr it '' do; end
+  it '${1:#:spec}' do
+    ${2:#:assertions}
+  end
+
 snippet expect
 abbr expect().to
   expect(${1:#:target}).to ${2:#:matcher}
