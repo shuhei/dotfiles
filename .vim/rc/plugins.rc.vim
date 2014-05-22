@@ -103,3 +103,8 @@ nnoremap <Leader>gr :Gremove<CR>
 nnoremap <Leader>gg :Ggrep<CR>
 nnoremap <Leader>gbr :Gbrowse<CR>
 nnoremap <Leader>gd :Gdiff<CR>
+
+"===============================
+" vim-airline
+"===============================
+let g:airline#extensions#tabline#enabled = 1

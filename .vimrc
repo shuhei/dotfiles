@@ -61,4 +61,3 @@ autocmd FileType gitcommit setlocal spell
 " Load rc files.
 "===============================
 call s:source_rc('plugins.rc.vim')
-call s:source_rc('tabline.rc.vim')
