@@ -77,7 +77,7 @@ nnoremap - :Switch<cr>
 "===============================
 " vim-markdown
 "===============================
-let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_disabled = 1
 
 if has('persistent_undo')
   set noundofile
@@ -87,3 +87,19 @@ endif
 " goyo.vim
 "===============================
 nnoremap <Leader><Space> :Goyo<CR>
+
+"===============================
+" vim-fugitive
+"===============================
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>ge :Gedit<CR>
+nnoremap <Leader>ges :Gsplit<CR>
+nnoremap <Leader>gev :Gvsplit<CR>
+nnoremap <Leader>get :Gtabedit<CR>
+nnoremap <Leader>gm :Gmove<CR>
+nnoremap <Leader>gr :Gremove<CR>
+nnoremap <Leader>gg :Ggrep<CR>
+nnoremap <Leader>gbr :Gbrowse<CR>
+nnoremap <Leader>gd :Gdiff<CR>
