@@ -1,4 +1,12 @@
 "===============================
+" Utils
+"===============================
+
+function! s:source_rc(path)
+  execute 'source' fnameescape(expand('~/.vim/rc/' . a:path))
+endfunction
+
+"===============================
 " Vundle
 "===============================
 
@@ -6,47 +14,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'AndrewRadev/switch.vim'
-Plugin 'AndrewRadev/vim-eco'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'amix/vim-zenroom2'
-Plugin 'bling/vim-airline'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'elzr/vim-json'
-Plugin 'eudisd/vim-csapprox'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'groenewege/vim-less'
-Plugin 'hspec/hspec.vim'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'junegunn/goyo.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tky/open-redmine'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tyru/open-browser.vim'
-Plugin 'vim-ruby/vim-ruby'
-
+call s:source_rc('bundle.rc.vim')
 call vundle#end()
 filetype plugin indent on
 
@@ -56,11 +24,8 @@ filetype plugin indent on
 
 syntax on
 
-set nocompatible
-
 set termencoding=utf-8
 set encoding=utf-8
-
 set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp,ucs-2le,ucs-2,cp932
 
 set tabstop=2
@@ -96,6 +61,7 @@ autocmd FileType gitcommit setlocal spell
 
 " vimfiler
 let g:vimfiler_as_default_explorer = 1
+nnoremap <Leader>f :VimFilerExplorer<CR>
 
 " neocomplete
 " Disable AutoComplPop.
