@@ -21,18 +21,23 @@ filetype plugin indent on
 "===============================
 syntax on
 
+set number
+
+let mapleader = ","
+
+" Use `colorscheme random` to look for new theme.
+colorscheme asu1dark
+
+" Encoding
 set termencoding=utf-8
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp,ucs-2le,ucs-2,cp932
 
+" Indentation
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-
-set number
-
-let mapleader = ","
 
 " Cursor
 autocmd InsertLeave * set cul
@@ -43,9 +48,6 @@ set whichwrap=b,s,h,l,<,>,[,]
 
 " Use clipboard
 set clipboard+=unnamed
-
-" colorscheme random
-colorscheme asu1dark
 
 "===============================
 " Spell check
