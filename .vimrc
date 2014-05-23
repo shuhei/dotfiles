@@ -60,6 +60,16 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
 
 "===============================
+" Mappings
+"===============================
+" Widen, narrow, heighten and shorten window.
+" http://vim.wikia.com/wiki/Resize_splits_more_quickly
+nnoremap <Leader>> :exe "vertical resize " . (winwidth(0) * 5 / 4)<CR>
+nnoremap <Leader>< :exe "vertical resize " . (winwidth(0) * 4 / 5)<CR>
+nnoremap <Leader>+ :exe "resize " . (winheight(0) * 5 / 4)<CR>
+nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
+
+"===============================
 " Load rc files.
 "===============================
 call s:source_rc('plugins.rc.vim')
