@@ -49,6 +49,11 @@ set whichwrap=b,s,h,l,<,>,[,]
 " Use clipboard
 set clipboard+=unnamed
 
+" Search
+set ignorecase
+set smartcase
+set hlsearch
+
 "===============================
 " Spell check
 "===============================
