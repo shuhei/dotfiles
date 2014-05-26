@@ -123,6 +123,9 @@ let g:quickrun_config =
   \   },
   \   'ruby.rspec': {
   \      'command': './bin/rspec'
+  \   },
+  \   'cucumber': {
+  \      'command': './bin/rspec'
   \   }
   \ }
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
@@ -130,5 +133,4 @@ nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() 
 augroup RSpec
   autocmd!
   autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
-  autocmd BufWinEnter,BufNewFile *.feature set filetype=ruby.rspec
 augroup END
