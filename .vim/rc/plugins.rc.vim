@@ -139,3 +139,25 @@ augroup END
 " Align.vim
 "===============================
 let g:Align_xstrlen = 3
+
+"===============================
+" unite.vim
+"===============================
+" http://blog.monochromegane.com/blog/2013/09/18/ag-and-unite/
+let g:unite_enable_start_insert = 1
+let g:unite_enable_ignore_case = 1
+let g:unite_enable_smart_case = 1
+
+" grep
+nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+" grep word under the cursor
+nnoremap <silent> ,gc :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+" grep again
+nnoremap <silent> ,gr :<C-u>UniteResume search-buffer<CR>
+
+" Use ag for unite grep
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+  let g:unite_source_greo_recursive_opt = ''
+endif
