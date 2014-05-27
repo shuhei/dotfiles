@@ -74,6 +74,9 @@ nnoremap <Leader>< :exe "vertical resize " . (winwidth(0) * 4 / 5)<CR>
 nnoremap <Leader>+ :exe "resize " . (winheight(0) * 5 / 4)<CR>
 nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 
+" New tab
+nnoremap <Leader>t :tabnew<CR>
+
 "===============================
 " Load rc files.
 "===============================
