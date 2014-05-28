@@ -40,7 +40,7 @@ hi NonText      gui=NONE     guifg=#ff9999 guibg=#444444
 hi Function     gui=NONE     guifg=#aabbff guibg=#110022
 hi Statement    gui=BOLD     guifg=Yellow  guibg=#110022
 hi Special      gui=NONE     guifg=Cyan    guibg=#110022
-hi Constant     gui=NONE     guifg=#ff9900 guibg=#110022
+hi Constant     gui=NONE     guifg=#ffaa11 guibg=#110022
 hi Comment      gui=NONE     guifg=#d7af5f guibg=#110022
 hi Preproc      gui=NONE     guifg=Yellow  guibg=#110022
 hi Type         gui=NONE     guifg=#ff5577 guibg=#110022
