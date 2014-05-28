@@ -23,3 +23,17 @@ abbr expect().to
 snippet expectnot
 abbr expect().not_to
   expect(${1:#:target}).not_to ${2:#:matcher}
+
+snippet allow
+abbr allow().to receive()
+  allow(${1:#:target}).to receive(:${2:#:method})
+
+snippet let
+abbr let() {}
+  let(:${1:#:name}) { ${2:#:content} }
+
+snippet letdo
+abbr let() do; end
+  let(:${1:#:name}) do
+    ${2:#:content}
+  end
