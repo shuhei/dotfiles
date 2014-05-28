@@ -149,11 +149,11 @@ let g:unite_enable_ignore_case = 1
 let g:unite_enable_smart_case = 1
 
 " grep
-nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 " grep word under the cursor
-nnoremap <silent> ,gc :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+nnoremap <silent> ,ugc :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
 " grep again
-nnoremap <silent> ,gr :<C-u>UniteResume search-buffer<CR>
+nnoremap <silent> ,ugr :<C-u>UniteResume search-buffer<CR>
 
 " Use ag for unite grep
 if executable('ag')
