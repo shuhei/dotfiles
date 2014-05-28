@@ -52,3 +52,11 @@ Syntactic plugin is employed to perform syntax check. Make sure to prepare prope
 
 - rubocop for ruby
 - coffeelint for coffee
+
+### Color Scheme
+
+Tweak colors checking the `highlight` groups currently active with the following command:
+
+```
+:so $VIMRUNTIME/syntax/hitest.vim
+```
