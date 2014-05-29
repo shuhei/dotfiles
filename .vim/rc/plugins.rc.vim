@@ -144,16 +144,21 @@ let g:Align_xstrlen = 3
 " unite.vim
 "===============================
 " http://blog.monochromegane.com/blog/2013/09/18/ag-and-unite/
-let g:unite_enable_start_insert = 1
+" let g:unite_enable_start_insert = 1
 let g:unite_enable_ignore_case = 1
 let g:unite_enable_smart_case = 1
 
+nnoremap [unite] <Nop>
+nmap <Leader>u [unite]
+
+" file
+nnoremap <silent> [unite]f :<C-u>Unite file -buffer-name=files<CR>
 " grep
-nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> [unite]g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 " grep word under the cursor
-nnoremap <silent> ,ugc :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+nnoremap <silent> [unite]gc :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
 " grep again
-nnoremap <silent> ,ugr :<C-u>UniteResume search-buffer<CR>
+nnoremap <silent> [unite]gr :<C-u>UniteResume search-buffer<CR>
 
 " Use ag for unite grep
 if executable('ag')
