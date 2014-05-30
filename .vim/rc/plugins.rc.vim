@@ -105,6 +105,11 @@ nnoremap <Leader>gbr :Gbrowse<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 
 "===============================
+" gitv
+"===============================
+nnoremap <Leader>gv :Gitv<CR>
+
+"===============================
 " vim-airline
 "===============================
 let g:airline#extensions#tabline#enabled = 1
