@@ -6,15 +6,17 @@ function! s:source_rc(path)
 endfunction
 
 "===============================
-" Vundle
+" NeoBundle
 "===============================
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+if has('vim_starting')
+  set nocompatible
+  set rtp+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#begin(expand('~/.vim/bundle'))
 call s:source_rc('bundle.rc.vim')
-call vundle#end()
+call neobundle#end()
 filetype plugin indent on
+NeoBundleCheck
 
 "===============================
 " General Config

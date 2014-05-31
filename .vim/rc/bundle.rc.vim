@@ -1,45 +1,58 @@
-Plugin 'gmarik/Vundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-Plugin 'AndrewRadev/switch.vim'
-Plugin 'AndrewRadev/vim-eco'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'amix/vim-zenroom2'
-Plugin 'bling/vim-airline'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'elzr/vim-json'
-Plugin 'eudisd/vim-csapprox'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'gregsexton/gitv'
-Plugin 'groenewege/vim-less'
-Plugin 'hspec/hspec.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'junegunn/goyo.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
-Plugin 'moll/vim-node'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tky/open-redmine'
-Plugin 'thinca/vim-quickrun'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tyru/open-browser.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/Align'
+NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'AndrewRadev/vim-eco'
+NeoBundleLazy 'Shougo/neocomplete.vim', {
+  \ 'depends': 'Shougo/context_filetype.vim',
+  \ 'insert': 1
+  \ }
+NeoBundle 'Shougo/neosnippet.vim', {
+  \ 'depends': ['Shougo/neosnippet-snippets', 'Shougo/context_filetype.vim']
+  \ }
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc.vim', {
+  \ 'build': {
+  \   'windows': 'make -f make_ming32.mak',
+  \   'cygwin': 'make -f make_cygwin.mak',
+  \   'mac': 'make -f make_mac.mak',
+  \   'unix': 'make -f make_unix.mak'
+  \   }
+  \ }
+NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Shougo/vimfiler.vim', {
+  \ 'depends': 'Shougo/unite.vim'
+  \ }
+NeoBundle 'airblade/vim-gitgutter'
+" NeoBundle 'amix/vim-zenroom2'
+NeoBundle 'beefsack/vim-zenroom2', { 'rev': 'function-name-fix' }
+NeoBundle 'bling/vim-airline'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundleLazy 'elzr/vim-json', { 'filetypes': 'javascript' }
+NeoBundle 'eudisd/vim-csapprox'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'gregsexton/gitv'
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'hspec/hspec.vim'
+NeoBundleLazy 'jelera/vim-javascript-syntax', { 'filetypes': 'javascript' }
+NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'junegunn/goyo.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
+NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
+NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tky/open-redmine'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundleLazy 'tpope/vim-haml', { 'filetypes': 'haml' }
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundleLazy 'vim-ruby/vim-ruby', { 'filetypes': 'ruby' }
+NeoBundle 'vim-scripts/Align'
