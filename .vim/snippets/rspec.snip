@@ -6,34 +6,34 @@ abbr describe '' do; end
 
 snippet context
 abbr context '' do; end
-  context '${1:#:context}' do
+  context '${1:context}' do
     ${2:#:specs}
   end
 
 snippet it
 abbr it '' do; end
-  it '${1:#:spec}' do
+  it '${1:spec}' do
     ${2:#:assertions}
   end
 
 snippet expect
 abbr expect().to
-  expect(${1:#:target}).to ${2:#:matcher}
+  expect(${1:target}).to ${2:#:matcher}
 
 snippet expectnot
 abbr expect().not_to
-  expect(${1:#:target}).not_to ${2:#:matcher}
+  expect(${1:target}).not_to ${2:#:matcher}
 
 snippet allow
 abbr allow().to receive()
-  allow(${1:#:target}).to receive(:${2:#:method})
+  allow(${1:target}).to receive(:${2:#:method})
 
 snippet let
 abbr let() {}
-  let(:${1:#:name}) { ${2:#:content} }
+  let(:${1:name}) { ${2:#:content} }
 
 snippet letdo
 abbr let() do; end
-  let(:${1:#:name}) do
+  let(:${1:name}) do
     ${2:#:content}
   end
