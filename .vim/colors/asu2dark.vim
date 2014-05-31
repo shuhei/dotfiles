@@ -41,7 +41,7 @@ hi Function     gui=NONE     guifg=#ccbbff guibg=#110022
 hi Statement    gui=BOLD     guifg=#ffff55 guibg=#110022
 hi Special      gui=NONE     guifg=#44d7ff guibg=#110022
 hi Constant     gui=NONE     guifg=#ffaa11 guibg=#110022
-hi Comment      gui=NONE     guifg=#d7af5f guibg=#110022
+hi Comment      gui=NONE     guifg=#ccff99 guibg=#110022
 hi Preproc      gui=NONE     guifg=#ffff55 guibg=#110022
 hi Type         gui=NONE     guifg=#ff5577 guibg=#110022
 hi Identifier   gui=NONE     guifg=#44d7ff guibg=#110022
