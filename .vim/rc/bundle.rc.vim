@@ -41,6 +41,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
+NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
