@@ -37,20 +37,21 @@ brew install vim --with-lua
 
 ### Plugins
 
-Vim plugins are managed with [Vundle](https://github.com/gmarik/Vundle.vim). Install it first:
+Vim plugins are managed with [neobundle.vim](https://github.com/Shougo/neobundle.vim). Install it first:
 
 ```shell
 cd ~/dotfiles
-git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
+git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
 ```
 
-And in vim, `:BundleInstall`.
+And you will be asked to install bundles when you launch vim. Installing bundles on start-up makes CSApprox throw some errors. Just ignore them and launch vim again.
 
 ### Syntax Check
 
 Syntactic plugin is employed to perform syntax check. Make sure to prepare proper executables.
 
 - rubocop for ruby
+- jshint for javascript
 - coffeelint for coffee
 
 ### Color Scheme
