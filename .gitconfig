@@ -5,6 +5,7 @@
 [core]
   excludesfile = ~/.gitignore.global
   editor = vim
+  quotepath = false
 [alias]
   s  = status
   ci = commit
