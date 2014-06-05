@@ -29,7 +29,6 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundleLazy 'elzr/vim-json', { 'filetypes': 'javascript' }
-NeoBundle 'eudisd/vim-csapprox'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'groenewege/vim-less'
