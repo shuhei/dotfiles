@@ -32,7 +32,7 @@ Use the latest version with lua enabled that is required by neocomplete plugin.
 On Mac:
 
 ```shell
-brew install vim --with-lua
+brew install macvim --with-lua --override-system-vim
 ```
 
 ### Plugins
