@@ -1,5 +1,9 @@
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+if &t_Co < 256
+  NeoBundle 'godlygeek/csapprox'
+endif
+
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'AndrewRadev/vim-eco'
 NeoBundleLazy 'Shougo/neocomplete.vim', {

@@ -14,6 +14,10 @@ ln -s dotfiles/.foo .foo
 
 Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
 
+## iTerm 2
+
+Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
+
 ## Bash
 
 Source `.bash_profile` from the `.bash_profile` in the home directory.
@@ -35,7 +39,7 @@ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/Ke
 
 ### Version
 
-Use the latest version with lua enabled that is required by neocomplete plugin.
+Use the latest version of MacVim with lua enabled that is required by neocomplete plugin.
 
 On Mac:
 
