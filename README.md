@@ -9,7 +9,6 @@ Clone this repository to your home directory and create symlinks.
 ```shell
 cd ~
 git clone git@github.com:shuhei/dotfiles.git
-ln -s dotfiles/.foo .foo
 ```
 
 Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
@@ -20,10 +19,19 @@ Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulati
 
 ## Bash
 
-Source `.bash_profile` from the `.bash_profile` in the home directory.
+At the bottom of `~/.bash_profile`:
 
-```.bash_profile
+```shell
 source ~/dotfiles/.bash_profile
+```
+
+## Git
+
+At the top of `~/.gitconfig`:
+
+```
+[include]
+  path = ~/dotfiles/.gitconfig
 ```
 
 ## KeyRemap4MacBook
@@ -31,11 +39,15 @@ source ~/dotfiles/.bash_profile
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
 
 ```shell
-cd ~
-ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/
-```
+cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/ ```
 
 ## Vim
+
+```shell
+cd ~
+ln -s dotfiles/.vimrc .vimrc
+ln -s dotfiles/.vim .vim
+```
 
 ### Version
 
@@ -69,3 +81,10 @@ Syntactic plugin is employed to perform syntax check. Make sure to prepare prope
 - rubocop for ruby
 - jshint for javascript
 - coffeelint for coffee
+
+### tmux
+
+```shell
+cd ~
+ln dotfiles/.tmux.conf .tmux.conf
+```
