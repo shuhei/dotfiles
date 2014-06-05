@@ -35,6 +35,12 @@ On Mac:
 brew install macvim --with-lua --override-system-vim
 ```
 
+To maximize MacVim's window horizontally as well as vertically:
+
+```shell
+defaults write org.vim.MacVim MMZoomBoth 1
+```
+
 ### Plugins
 
 Vim plugins are managed with [neobundle.vim](https://github.com/Shougo/neobundle.vim). Install it first:
