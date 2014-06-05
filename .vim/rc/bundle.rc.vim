@@ -42,7 +42,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
-NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
+NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tky/open-redmine'
