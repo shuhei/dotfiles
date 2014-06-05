@@ -14,6 +14,14 @@ ln -s dotfiles/.foo .foo
 
 Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
 
+## Bash
+
+Source `.bash_profile` from the `.bash_profile` in the home directory.
+
+```.bash_profile
+source ~/dotfiles/.bash_profile
+```
+
 ## KeyRemap4MacBook
 
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
@@ -49,8 +57,6 @@ Vim plugins are managed with [neobundle.vim](https://github.com/Shougo/neobundle
 cd ~/dotfiles
 git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
 ```
-
-And you will be asked to install bundles when you launch vim. Installing bundles on start-up makes CSApprox throw some errors. Just ignore them and launch vim again.
 
 ### Syntax Check
 
