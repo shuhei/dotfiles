@@ -1,6 +1,6 @@
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-if &t_Co < 256
+if !has('gui_running')
   NeoBundle 'godlygeek/csapprox'
 endif
 

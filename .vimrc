@@ -28,7 +28,7 @@ set number
 let mapleader = ","
 
 " Use `colorscheme random` to look for new theme.
-colorscheme cobalt
+colorscheme monokai
 
 " Encoding
 set termencoding=utf-8
