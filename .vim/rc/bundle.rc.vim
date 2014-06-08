@@ -37,7 +37,6 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'hspec/hspec.vim'
-NeoBundleLazy 'jelera/vim-javascript-syntax', { 'filetypes': 'javascript' }
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -45,6 +44,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
+NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
