@@ -11,8 +11,6 @@ cd ~
 git clone git@github.com:shuhei/dotfiles.git
 ```
 
-Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
-
 ## iTerm 2
 
 Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
