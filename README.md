@@ -39,14 +39,16 @@ At the top of `~/.gitconfig`:
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
 
 ```shell
-cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/ ```
+cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/
+```
 
 ## Vim
 
 ```shell
 cd ~
-ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.vim .vim
+ln -s dotfiles/.vimrc .vimrc
+ln -s dotfiles/.gvimrc .gvimrc
 ```
 
 ### Version
