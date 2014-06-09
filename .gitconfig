@@ -1,9 +1,7 @@
-[include]
-  path = ~/.gitconfig.local
 [color]
   ui = auto
 [core]
-  excludesfile = ~/.gitignore.global
+  excludesfile = ~/dotfiles/.gitignore.global
   editor = vim
   quotepath = false
 [alias]
