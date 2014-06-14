@@ -11,8 +11,6 @@ cd ~
 git clone git@github.com:shuhei/dotfiles.git
 ```
 
-Keep environment-specific git configs such as user name and email in `~/.gitconfig.local`.
-
 ## iTerm 2
 
 Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
@@ -39,14 +37,16 @@ At the top of `~/.gitconfig`:
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
 
 ```shell
-cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/ ```
+cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/
+```
 
 ## Vim
 
 ```shell
 cd ~
-ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.vim .vim
+ln -s dotfiles/.vimrc .vimrc
+ln -s dotfiles/.gvimrc .gvimrc
 ```
 
 ### Version

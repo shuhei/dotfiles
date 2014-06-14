@@ -171,3 +171,8 @@ if executable('ag')
   let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
   let g:unite_source_greo_recursive_opt = ''
 endif
+
+"===============================
+" vim-indent-guides
+"===============================
+let g:indent_guides_enable_on_vim_startup = 1

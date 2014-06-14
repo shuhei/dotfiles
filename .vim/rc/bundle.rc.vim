@@ -43,12 +43,14 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
 NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
+NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tky/open-redmine'
+NeoBundle 'tky/vim-skinny'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
