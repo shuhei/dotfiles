@@ -26,7 +26,6 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/vimfiler.vim', {
   \ 'depends': 'Shougo/unite.vim'
   \ }
-NeoBundle 'airblade/vim-gitgutter'
 " NeoBundle 'amix/vim-zenroom2'
 NeoBundle 'beefsack/vim-zenroom2', { 'rev': 'function-name-fix' }
 NeoBundle 'bling/vim-airline'
@@ -42,6 +41,7 @@ NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
+NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
