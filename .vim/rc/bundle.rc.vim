@@ -42,6 +42,12 @@ NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
+NeoBundleLazy 'marijnh/tern_for_vim', {
+  \ 'filetypes': 'javascript',
+  \ 'build': {
+  \   'others': 'npm install'
+  \   }
+  \ }
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'othree/html5.vim'

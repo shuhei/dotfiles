@@ -176,3 +176,15 @@ endif
 " vim-indent-guides
 "===============================
 let g:indent_guides_enable_on_vim_startup = 1
+
+"===============================
+" tern_for_vim
+"===============================
+nnoremap [tern] <Nop>
+nmap <Leader>j [tern]
+
+nnoremap <silent> [tern]d :TernDef<CR>
+nnoremap <silent> [tern]c :TernDoc<CR>
+nnoremap <silent> [tern]t :TernType<CR>
+nnoremap <silent> [tern]f :TernRefs<CR>
+nnoremap <silent> [tern]r :TernRename<CR>
