@@ -64,6 +64,9 @@ let g:sysntastic_mode_map =
   \ }
 let g:syntastic_ruby_checkers = ['rubocop']
 
+let g:syntastic_javascript_jscs_args = '--preset=google'
+let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+
 "===============================
 " switch.vim
 "===============================
