@@ -31,6 +31,7 @@ NeoBundle 'beefsack/vim-zenroom2', { 'rev': 'function-name-fix' }
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'digitaltoad/vim-jade'
 NeoBundleLazy 'elzr/vim-json', { 'filetypes': 'javascript' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gregsexton/gitv'
