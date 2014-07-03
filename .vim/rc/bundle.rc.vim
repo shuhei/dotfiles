@@ -66,6 +66,7 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundleLazy 'vim-ruby/vim-ruby', { 'filetypes': 'ruby' }
 NeoBundle 'vim-scripts/Align'
