@@ -56,6 +56,9 @@ set ignorecase
 set smartcase
 set hlsearch
 
+" Exclude underscore from keyword so that you can use `cw` nicely.
+set iskeyword-=_
+
 "===============================
 " Spell check
 "===============================
