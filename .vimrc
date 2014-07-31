@@ -80,6 +80,18 @@ nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 nnoremap <Leader>t :tabnew<CR>
 
 "===============================
+" Custom command
+"===============================
+let g:journal_dir = '$HOME/notes'
+" TODO: Add config for file name format.
+" TODO: Show notes in VimFiler.
+function JournalToday()
+  let l:today = strftime("%Y%m%d")
+  let l:note_path = g:journal_dir . '/' . l:today . '.md'
+  execute 'edit' l:note_path
+endfunction
+
+"===============================
 " Load rc files.
 "===============================
 call s:source_rc('plugins.rc.vim')
