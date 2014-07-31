@@ -56,6 +56,7 @@ NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'skammer/vim-css-color'
 NeoBundle 'tky/open-redmine'
 NeoBundle 'tky/vim-skinny'
 NeoBundle 'thinca/vim-quickrun'
