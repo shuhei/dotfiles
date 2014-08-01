@@ -83,16 +83,21 @@ nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 nnoremap <Leader>t :tabnew<CR>
 
 "===============================
-" Custom command
+" Journal
 "===============================
-let g:journal_dir = '$HOME/notes'
+" TODO: Extract as a Vim plugin.
 " TODO: Add config for file name format.
-" TODO: Show notes in VimFiler.
-function JournalToday()
+let g:journal_dir = '$HOME/notes'
+
+function g:journal_today_path()
   let l:today = strftime("%Y%m%d")
-  let l:note_path = g:journal_dir . '/' . l:today . '.md'
-  execute 'edit' l:note_path
+  return g:journal_dir . '/' . l:today . '.md'
 endfunction
+
+command! JournalEditToday execute 'edit' g:journal_today_path()
+command! JournalWriteToday execute 'write' g:journal_today_path()
+command! JournalSaveToday execute 'save' g:journal_today_path()
+command! JournalCd execute 'cd' g:journal_dir
 
 "===============================
 " Load rc files.
