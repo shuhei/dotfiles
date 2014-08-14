@@ -191,3 +191,8 @@ nnoremap <silent> [tern]c :TernDoc<CR>
 nnoremap <silent> [tern]t :TernType<CR>
 nnoremap <silent> [tern]f :TernRefs<CR>
 nnoremap <silent> [tern]r :TernRename<CR>
+
+"===============================
+" jours
+"===============================
+let g:jours_dir = '~/notes'
