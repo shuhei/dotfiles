@@ -73,3 +73,4 @@ NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundleLazy 'vim-ruby/vim-ruby', { 'filetypes': 'ruby' }
 NeoBundle 'vim-scripts/Align'
+NeoBundle 'vim-scripts/java.vim'
