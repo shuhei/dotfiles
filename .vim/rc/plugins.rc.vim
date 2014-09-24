@@ -196,3 +196,8 @@ nnoremap <silent> [tern]r :TernRename<CR>
 " jours
 "===============================
 let g:jours_dir = '~/notes'
+
+"===============================
+" previm
+"===============================
+let g:previm_open_cmd = 'open -a "Google Chrome"'
