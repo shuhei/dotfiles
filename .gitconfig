@@ -18,3 +18,5 @@
   g  = grep -n
 [github]
 	user = shuhei
+[diff "openxml"]
+  textconv = ~/dotfiles/bin/unopenxml
