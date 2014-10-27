@@ -203,3 +203,8 @@ let g:jours_dir = '~/notes'
 " previm
 "===============================
 let g:previm_open_cmd = 'open -a "Google Chrome"'
+
+"===============================
+" javascript-libraries-syntax
+"===============================
+let g:used_javascript_libs = 'underscore,angularjs,jasmine'
