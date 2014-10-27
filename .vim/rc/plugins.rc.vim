@@ -67,6 +67,8 @@ let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_jscs_args = '--preset=google'
 let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 
+let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
+
 "===============================
 " switch.vim
 "===============================
