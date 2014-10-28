@@ -26,8 +26,7 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/vimfiler.vim', {
   \ 'depends': 'Shougo/unite.vim'
   \ }
-" NeoBundle 'amix/vim-zenroom2'
-NeoBundle 'beefsack/vim-zenroom2', { 'rev': 'function-name-fix' }
+NeoBundle 'amix/vim-zenroom2'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'derekwyatt/vim-scala'
@@ -42,17 +41,11 @@ NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-line'
-NeoBundle 'kannokanno/previm'
+NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
-NeoBundleLazy 'marijnh/tern_for_vim', {
-  \ 'filetypes': 'javascript',
-  \ 'build': {
-  \   'others': 'npm install'
-  \   }
-  \ }
 NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
