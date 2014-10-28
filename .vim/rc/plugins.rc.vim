@@ -208,3 +208,11 @@ let g:previm_open_cmd = 'open -a "Google Chrome"'
 " javascript-libraries-syntax
 "===============================
 let g:used_javascript_libs = 'underscore,angularjs,jasmine'
+
+"===============================
+" ctrlp
+"===============================
+let g:ctrlp_custom_ignore =
+  \ {
+  \  'dir': '\v[\/](coverage|node_modules)$'
+  \ }
