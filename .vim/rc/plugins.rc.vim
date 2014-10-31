@@ -59,10 +59,10 @@ let NERDSpaceDelims = 1
 " http://qiita.com/yuku_t/items/0ac33cea18e10f14e185
 let g:sysntastic_mode_map =
   \ {
-  \   'mode': 'passive',
-  \   'active_filetypes': ['ruby', 'coffee']
+  \   'mode': 'active',
   \ }
-let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 let g:syntastic_javascript_jscs_args = '--preset=google'
 let g:syntastic_javascript_checkers = ['jscs', 'jshint']
