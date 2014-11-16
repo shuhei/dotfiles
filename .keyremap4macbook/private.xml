@@ -1,36 +1,26 @@
 <?xml version="1.0"?>
 <root>
-  <appdef>
-    <appname>MACVIM</appname>
-    <equal>org.vim.MacVim</equal>
-  </appdef>
-
-  <!-- http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/ -->
+  <!-- http://m.designbits.jp/13091710/ -->
   <item>
     <name>ESC to IME off (to English) + ESC + ESC</name>
     <identifier>private.vim.ime_off_ESC</identifier>
-    <only>TERMINAL, VI, MACVIM</only>
+    <only>TERMINAL, VI</only>
     <inputsource_only>JAPANESE</inputsource_only>
     <autogen>
-      __KeyToKey__ KeyCode::ESCAPE, ModifierFlag::NONE,
-      KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
-      KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE,
-      KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
-      KeyCode::ESCAPE, KeyCode::ESCAPE
+      __KeyToKey__ KeyCode::ESCAPE,
+      KeyCode::ESCAPE,
+      KeyCode::JIS_EISUU
     </autogen>
   </item>
   <item>
     <name>Control+[ to IME off (to English) + ESC + ESC</name>
     <identifier>private.vim.ime_off_ctrl_bracket</identifier>
-    <only>TERMINAL, VI, MACVIM</only>
+    <only>TERMINAL, VI</only>
     <inputsource_only>JAPANESE</inputsource_only>
     <autogen>
-      __KeyToKey__ KeyCode::BRACKET_LEFT,
-      MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
-      KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
-      KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE,
-      KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
-      KeyCode::ESCAPE, KeyCode::ESCAPE
+      __KeyToKey__ KeyCode::BRACKET_LEFT, VK_CONTROL,
+      KeyCode::BRACKET_LEFT, VK_CONTROL,
+      KeyCode::JIS_EISUU
     </autogen>
   </item>
 </root>
