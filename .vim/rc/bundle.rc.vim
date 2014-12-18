@@ -5,13 +5,9 @@ if !has('gui_running')
 endif
 
 NeoBundle 'AndrewRadev/switch.vim'
-NeoBundle 'AndrewRadev/vim-eco'
 NeoBundleLazy 'Shougo/neocomplete.vim', {
   \ 'depends': 'Shougo/context_filetype.vim',
   \ 'insert': 1
-  \ }
-NeoBundle 'Shougo/neosnippet.vim', {
-  \ 'depends': ['Shougo/neosnippet-snippets', 'Shougo/context_filetype.vim']
   \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim', {
@@ -45,7 +41,6 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'mattn/gist-vim', { 'depends': 'mattn/webapi-vim' }
 NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -56,8 +51,6 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'shuhei/vim-jours'
-NeoBundle 'tky/open-redmine'
-NeoBundle 'tky/vim-skinny'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
@@ -70,4 +63,4 @@ NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundleLazy 'vim-ruby/vim-ruby', { 'filetypes': 'ruby' }
 NeoBundle 'vim-scripts/Align'
-NeoBundle 'vim-scripts/java.vim'
+NeoBundleLazy 'vim-scripts/java.vim', { 'filetypes': 'java' }
