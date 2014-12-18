@@ -214,5 +214,5 @@ let g:used_javascript_libs = 'underscore,angularjs,jasmine'
 "===============================
 let g:ctrlp_custom_ignore =
   \ {
-  \  'dir': '\v[\/](coverage|node_modules)$'
+  \  'dir': '\v[\/](coverage|node_modules|bower_components)$'
   \ }
