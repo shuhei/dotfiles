@@ -26,27 +26,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "===============================
 " neosnippet
 "===============================
-" http://kazuph.hateblo.jp/entry/2013/01/19/193745
 " <TAB>: completion.
-inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
-
-" Plugin key mappings.
-imap <C-f> <Plug>(neosnippet_expand_or_jump)
-smap <C-f> <Plug>(neosnippet_expand_or_jump)
-xmap <C-f> <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-" imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-" smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>" : "\<TAB>"
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
-let g:neosnippet#snippets_directory = "~/.vim/snippets/"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "===============================
 " nerdcommenter
