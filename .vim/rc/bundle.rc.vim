@@ -35,6 +35,7 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'hspec/hspec.vim'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'junegunn/goyo.vim'
+NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'kana/vim-textobj-user'
@@ -62,5 +63,4 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundleLazy 'vim-ruby/vim-ruby', { 'filetypes': 'ruby' }
-NeoBundle 'vim-scripts/Align'
 NeoBundleLazy 'vim-scripts/java.vim', { 'filetypes': 'java' }
