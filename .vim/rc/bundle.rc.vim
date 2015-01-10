@@ -52,6 +52,7 @@ NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'shuhei/asu2dark.vim'
 NeoBundle 'shuhei/vim-jours'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-endwise'
