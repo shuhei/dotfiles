@@ -43,6 +43,8 @@ let g:sysntastic_mode_map =
   \   'mode': 'active',
   \ }
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_check_on_wq = 0
+
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 let g:syntastic_javascript_jscs_args = '--preset=google'
