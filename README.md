@@ -32,6 +32,18 @@ At the top of `~/.gitconfig`:
   path = ~/dotfiles/.gitconfig
 ```
 
+To see diffs of MS Office files in text, install tika and add `.gitattributes` to your project.
+
+```shell
+brew install tika
+```
+
+```.gitattributes
+*.pptx diff=office
+*.docx diff=office
+*.xlsx diff=office
+```
+
 ## KeyRemap4MacBook
 
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
@@ -82,7 +94,7 @@ Syntactic plugin is employed to perform syntax check. Make sure to prepare prope
 - jshint for javascript
 - coffeelint for coffee
 
-### tmux
+## tmux
 
 ```shell
 cd ~
