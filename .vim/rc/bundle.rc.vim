@@ -24,7 +24,7 @@ NeoBundle 'Shougo/vimfiler.vim', {
   \ }
 NeoBundle 'amix/vim-zenroom2'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundleLazy 'elzr/vim-json', { 'filetypes': 'javascript' }
