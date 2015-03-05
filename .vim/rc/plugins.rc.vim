@@ -187,7 +187,7 @@ let g:ctrlp_custom_ignore =
   \ {
   \  'dir': '\v[\/](coverage|node_modules|bower_components)$'
   \ }
-nnoremap <silent> <C-[> :CtrlPClearAllCaches<CR>
+nnoremap <C-o> :CtrlPClearAllCaches<CR>
 
 "===============================
 " vim-easy-align
