@@ -60,6 +60,11 @@ set hlsearch
 set iskeyword-=.
 
 "===============================
+" File types
+"===============================
+autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+
+"===============================
 " Spell check
 "===============================
 " http://robots.thoughtbot.com/vim-spell-checking
