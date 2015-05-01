@@ -91,7 +91,7 @@ git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
 Syntactic plugin is employed to perform syntax check. Make sure to prepare proper executables.
 
 - rubocop for ruby
-- jshint for javascript
+- eslint and jscs for javascript
 - coffeelint for coffee
 
 ## tmux
