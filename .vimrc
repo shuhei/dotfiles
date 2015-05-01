@@ -59,6 +59,10 @@ set hlsearch
 " Exclude some symbols from keyword so that you can use `cw` nicely.
 set iskeyword-=.
 
+" To fix slow syntax highlighting on ruby files, use the older regexp engine.
+" http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
+set re=1
+
 "===============================
 " File types
 "===============================
