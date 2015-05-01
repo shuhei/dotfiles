@@ -27,7 +27,6 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'digitaltoad/vim-jade'
-NeoBundleLazy 'elzr/vim-json', { 'filetypes': 'javascript' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'gregsexton/gitv'
@@ -48,7 +47,7 @@ NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'othree/javascript-libraries-syntax.vim', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
-NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
+NeoBundleLazy 'othree/yajs.vim', { 'filetypes': 'javascript' }
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
