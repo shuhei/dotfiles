@@ -25,30 +25,30 @@ NeoBundle 'Shougo/vimfiler.vim', {
 NeoBundle 'amix/vim-zenroom2'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'digitaltoad/vim-jade'
+NeoBundleLazy 'derekwyatt/vim-scala', { 'filetypes': 'scala' }
+NeoBundleLazy 'digitaltoad/vim-jade', { 'filetypes': 'jade' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'groenewege/vim-less'
-NeoBundle 'heavenshell/vim-jsdoc'
-NeoBundle 'hspec/hspec.vim'
-NeoBundle 'jnwhiteh/vim-golang'
+NeoBundleLazy 'heavenshell/vim-jsdoc', { 'filetypes': 'javascript' }
+NeoBundleLazy 'hspec/hspec.vim', { 'filetypes': 'haskell' }
+NeoBundleLazy 'jnwhiteh/vim-golang', { 'filetypes': 'go' }
 NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kchmck/vim-coffee-script'
+NeoBundleLazy 'kchmck/vim-coffee-script', { 'filetypes': 'coffee' }
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'leafgarland/typescript-vim'
+NeoBundleLazy 'leafgarland/typescript-vim', { 'filetypes': 'typescript' }
 NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'othree/javascript-libraries-syntax.vim', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'othree/yajs.vim', { 'filetypes': 'javascript' }
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'shuhei/asu2dark.vim'
