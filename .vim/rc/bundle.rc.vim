@@ -32,6 +32,7 @@ NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'groenewege/vim-less'
 NeoBundleLazy 'heavenshell/vim-jsdoc', { 'filetypes': 'javascript' }
+NeoBundle 'haya14busa/incsearch.vim'
 NeoBundleLazy 'hspec/hspec.vim', { 'filetypes': 'haskell' }
 NeoBundleLazy 'jnwhiteh/vim-golang', { 'filetypes': 'go' }
 NeoBundle 'junegunn/goyo.vim'
@@ -42,6 +43,7 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundleLazy 'kchmck/vim-coffee-script', { 'filetypes': 'coffee' }
 NeoBundle 'kien/ctrlp.vim'
 NeoBundleLazy 'leafgarland/typescript-vim', { 'filetypes': 'typescript' }
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'mhinz/vim-signify'
 NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'

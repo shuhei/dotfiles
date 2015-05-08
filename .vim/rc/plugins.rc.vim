@@ -201,3 +201,10 @@ nmap ga <Plug>(EasyAlign)
 " vim-jsdoc
 "===============================
 nnoremap <Leader>d :JsDoc<CR>
+
+"===============================
+" incsearch.vim
+"===============================
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
