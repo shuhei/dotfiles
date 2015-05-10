@@ -49,7 +49,7 @@ NeoBundleLazy 'moll/vim-node', { 'filetypes': 'javascript' }
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'othree/javascript-libraries-syntax.vim', { 'filetypes': 'javascript' }
 NeoBundle 'othree/html5.vim'
-NeoBundleLazy 'othree/yajs.vim', { 'filetypes': 'javascript' }
+NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
