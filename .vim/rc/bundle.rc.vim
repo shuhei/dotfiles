@@ -30,7 +30,7 @@ NeoBundleLazy 'digitaltoad/vim-jade', { 'filetypes': 'jade' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'gregsexton/gitv'
-NeoBundle 'groenewege/vim-less'
+NeoBundleLazy 'groenewege/vim-less', { 'filetypes': 'less' }
 NeoBundleLazy 'heavenshell/vim-jsdoc', { 'filetypes': 'javascript' }
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundleLazy 'hspec/hspec.vim', { 'filetypes': 'haskell' }
