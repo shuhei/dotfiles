@@ -34,7 +34,7 @@ NeoBundleLazy 'groenewege/vim-less', { 'filetypes': 'less' }
 NeoBundleLazy 'heavenshell/vim-jsdoc', { 'filetypes': 'javascript' }
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundleLazy 'hspec/hspec.vim', { 'filetypes': 'haskell' }
-NeoBundleLazy 'jnwhiteh/vim-golang', { 'filetypes': 'go' }
+NeoBundleLazy 'fatih/vim-go', { 'filetypes': 'go' }
 NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kana/vim-textobj-user'
