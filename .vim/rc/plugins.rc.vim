@@ -208,3 +208,8 @@ nnoremap <Leader>d :JsDoc<CR>
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+"===============================
+" vim-better-whitespace
+"===============================
+let g:better_whitespace_filetypes_blacklist = ['vimfiler']
