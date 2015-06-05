@@ -27,6 +27,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundleLazy 'derekwyatt/vim-scala', { 'filetypes': 'scala' }
 NeoBundleLazy 'digitaltoad/vim-jade', { 'filetypes': 'jade' }
+NeoBundleLazy 'fatih/vim-go', { 'filetypes': 'go' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'gregsexton/gitv'
@@ -34,7 +35,7 @@ NeoBundleLazy 'groenewege/vim-less', { 'filetypes': 'less' }
 NeoBundleLazy 'heavenshell/vim-jsdoc', { 'filetypes': 'javascript' }
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundleLazy 'hspec/hspec.vim', { 'filetypes': 'haskell' }
-NeoBundleLazy 'fatih/vim-go', { 'filetypes': 'go' }
+NeoBundle 'idanarye/vim-merginal'
 NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kana/vim-textobj-user'
