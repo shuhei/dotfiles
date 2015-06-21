@@ -29,7 +29,7 @@ let mapleader = ","
 
 " Use `colorscheme random` to look for new theme.
 " colorscheme asu2dark
-colorscheme bluechia
+colorscheme phd
 
 " Encoding
 set termencoding=utf-8
