@@ -94,6 +94,10 @@ Syntactic plugin is employed to perform syntax check. Make sure to prepare prope
 - eslint and jscs for javascript
 - coffeelint for coffee
 
+### Font
+
+Install [patched Monaco font](https://gist.github.com/baopham/1838072) for vim-airline. Set it as Non-ASCII Font of iTerm2.
+
 ## tmux
 
 ```shell
