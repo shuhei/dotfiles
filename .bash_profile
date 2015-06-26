@@ -6,16 +6,13 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Colorful prompt
 if [ "$(uname)" == "Darwin" ]; then
-  emojis[0]="🍺"
-  emojis[1]="🍜"
-  emojis[2]="🍣"
-  emojis[3]="🌴"
-  emojis[4]="🎪"
-  rand=$[ $RANDOM % 5 ]
+  emojis=("🍺" "🍜" "🍣" "🌲" "🎪" "🌞" "🌛" "🍷" "⭐️" "⚡️" "🌸")
+  size=${#emojis[@]}
+  rand=$[ $RANDOM % size ]
   emoji=${emojis[$rand]}
-  export PS1="\[\e[0;33m\]\W\[\e[m\] ${emoji}  "
+  export PS1="[\[\e[0;33m\]\w\[\e[m\]] ${emoji}  "
 else
-  export PS1="\[\e[0;37m\]\W\[\e[0;33m\] $ \[\e[m\]"
+  export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;36m\] $ \[\e[m\]"
 fi
 
 # Colorful grep
