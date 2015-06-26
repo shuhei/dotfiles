@@ -13,7 +13,7 @@ if [ "$(uname)" == "Darwin" ]; then
   emojis[4]="🎪"
   rand=$[ $RANDOM % 5 ]
   emoji=${emojis[$rand]}
-  export PS1="\[\e[0;37m\]\W\[\e[m\] ${emoji}  "
+  export PS1="\[\e[0;33m\]\W\[\e[m\] ${emoji}  "
 else
   export PS1="\[\e[0;37m\]\W\[\e[0;33m\] $ \[\e[m\]"
 fi
