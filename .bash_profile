@@ -5,13 +5,16 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Colorful prompt
-if [ "$(uname)" == "Darwin" ]; then
-  emojis=("🍺" "🍜" "🍣" "🌲" "🎪" "🌞" "🌛" "🍷" "⭐️" "⚡️" "🌸")
-  size=${#emojis[@]}
-  rand=$[ $RANDOM % size ]
-  emoji=${emojis[$rand]}
+prompt_command() {
+  local EMOJIS=("🍺" "🍜" "🍣" "🌲" "🎪" "🌞" "🌛" "🍷" "⭐️" "⚡️" "🌸")
+  local SIZE=${#EMOJIS[@]}
+  local RAND=$[ $RANDOM % $SIZE ]
+  local EMOJI=${EMOJIS[$RAND]}
   export GIT_PS1_SHOWDIRTYSTATE=1
-  export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;37m\]$(__git_ps1)\[\e[m\] ${emoji}  "
+  export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;37m\]$(__git_ps1)\[\e[m\] ${EMOJI}  "
+}
+if [ "$(uname)" == "Darwin" ]; then
+  export PROMPT_COMMAND=prompt_command
 else
   export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;36m\] $ \[\e[m\]"
 fi
