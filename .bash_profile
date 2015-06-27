@@ -11,9 +11,10 @@ gray="\[\e[0;37m\]"
 reset="\[\e[m\]"
 
 if [ "$(uname)" == 'Darwin' ]; then
-  emojis=('🍺' '🍜' '🍣' '🎪' '🍷' '⚡️' '🍻' '🌵' '🍋' '🍟' '🐷')
+  emojis=('🍺' '🍥' '🍜' '🍕' '🍀' '🍣' '🎪' '🍷' '⚡️' '🍻' '🌵' '🍋' '🍟' '🐷')
   rand="$[ ${RANDOM} % ${#emojis[@]} ]"
-  separator="${emojis[${rand}]} "
+  emoji="${emojis[${rand}]}"
+  separator="${emoji} "
 else
   separator="\$"
 fi
