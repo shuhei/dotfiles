@@ -15,6 +15,8 @@ git clone git@github.com:shuhei/dotfiles.git
 
 Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
 
+'Pastel (Dark Background)' preset is my favorite.
+
 ## Bash
 
 At the bottom of `~/.bash_profile`:
