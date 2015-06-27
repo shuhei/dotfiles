@@ -2,22 +2,27 @@
 
 # Colorful ls
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS='GxFxCxDxBxegedabagaced'
 
 # Colorful prompt
-prompt_command() {
-  local EMOJIS=("🍺" "🍜" "🍣" "🌲" "🎪" "🌞" "🌛" "🍷" "⭐️" "⚡️" "🌸")
-  local SIZE=${#EMOJIS[@]}
-  local RAND=$[ $RANDOM % $SIZE ]
-  local EMOJI=${EMOJIS[$RAND]}
-  export GIT_PS1_SHOWDIRTYSTATE=1
-  export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;37m\]$(__git_ps1)\[\e[m\] ${EMOJI}  "
-}
-if [ "$(uname)" == "Darwin" ]; then
-  export PROMPT_COMMAND=prompt_command
+yellow="\[\e[0;33m\]"
+cyan="\[\e[0;36m\]"
+gray="\[\e[0;37m\]"
+reset="\[\e[m\]"
+
+if [ "$(uname)" == 'Darwin' ]; then
+  emojis=('🍺' '🍜' '🍣' '🌲' '🎪' '🌞' '🌛' '🍷' '⭐️' '⚡️' '🍻' '🌵' '🍋' '🍟' '🐷')
+  rand="$[ ${RANDOM} % ${#emojis[@]} ]"
+  separator="${emojis[${rand}]} "
 else
-  export PS1="[\[\e[0;33m\]\w\[\e[m\]]\[\e[0;36m\] $ \[\e[m\]"
+  separator="\$"
 fi
+
+prompt_command() {
+  export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${separator} "
+}
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PROMPT_COMMAND=prompt_command
 
 # Colorful grep
 export GREP_OPTIONS='--color=auto'
@@ -38,7 +43,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 
 # Todo
-alias todo="grep -rn --color TODO ./*"
+alias todo='grep -rn --color TODO ./*'
 
 # Find process
 alias proc='ps ax | grep'
