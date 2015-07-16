@@ -1,6 +1,8 @@
-*.swp
-*.swo
+*.swl
+*.swm
 *.swn
+*.swo
+*.swp
 .DS_Store
 .DS_Store?
 ._*
