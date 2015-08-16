@@ -5,6 +5,7 @@ export CLICOLOR=1
 export LSCOLORS='GxFxCxDxBxegedabagaced'
 
 # Colorful prompt
+light_green="\[\e[1;32m\]"
 yellow="\[\e[0;33m\]"
 cyan="\[\e[0;36m\]"
 gray="\[\e[0;37m\]"
@@ -18,6 +19,7 @@ if [ "$(uname)" == 'Darwin' ]; then
 else
   separator="\$"
 fi
+separator="${light_green}λ${reset}"
 
 prompt_command() {
   export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${separator} "
