@@ -46,12 +46,13 @@ brew install tika
 *.xlsx diff=office
 ```
 
-## KeyRemap4MacBook
+## Karabiner
 
 To add private configuration items, symlink the `private.xml` to the Application Support directory.
 
 ```shell
-cd ~ ln -s ~/dotfiles/.keyremap4macbook/private.xml ~/Library/Application\ Support/KeyRemap4MacBook/
+cd ~
+ln -s ~/dotfiles/.karabiner/private.xml ~/Library/Application\ Support/Karabiner/
 ```
 
 ## Vim
