@@ -88,9 +88,12 @@ nnoremap <Leader>gev :Gvsplit<CR>
 nnoremap <Leader>get :Gtabedit<CR>
 nnoremap <Leader>gm :Gmove<CR>
 nnoremap <Leader>gr :Gremove<CR>
-nnoremap <Leader>gg :Ggrep<CR>
 nnoremap <Leader>gbr :Gbrowse<CR>
 nnoremap <Leader>gd :Gdiff<CR>
+
+" http://stackoverflow.com/questions/21931116/getting-git-grep-to-work-effectively-in-vim
+command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+nnoremap <Leader>gg :Ggr <cword><CR>
 
 "===============================
 " gitv
