@@ -4,6 +4,8 @@
   excludesfile = ~/dotfiles/.gitignore_global
   editor = vim
   quotepath = false
+[push]
+	default = simple
 [alias]
   s  = status
   ci = commit
