@@ -52,6 +52,7 @@ NeoBundle 'othree/javascript-libraries-syntax.vim', { 'filetypes': 'javascript' 
 NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'pangloss/vim-javascript', { 'filetypes': 'javascript' }
 NeoBundleLazy 'plasticboy/vim-markdown', { 'filetypes': 'markdown' }
+NeoBundle 'reedes/vim-pencil'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'shuhei/asu2dark.vim'

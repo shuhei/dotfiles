@@ -76,7 +76,7 @@ autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 " Use `zg` to add words to the dictionary.
 set spelllang=en_us,cjk
 set complete+=kspell
-autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 
 "===============================

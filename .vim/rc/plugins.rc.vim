@@ -222,3 +222,12 @@ let g:better_whitespace_filetypes_blacklist = ['vimfiler']
 " vim-better-whitespace
 "===============================
 nnoremap <Leader>m :Merginal<CR>
+
+"===============================
+" vim-pencil
+"===============================
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
