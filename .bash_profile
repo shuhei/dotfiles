@@ -50,3 +50,6 @@ alias todo='grep -rn --color TODO ./*'
 
 # Find process
 alias proc='ps ax | grep'
+
+# ------- Path -------
+export PATH=$HOME/dotfiles/bin:$PATH
