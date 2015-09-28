@@ -226,8 +226,10 @@ nnoremap <Leader>m :Merginal<CR>
 "===============================
 " vim-pencil
 "===============================
+let g:pencil#wrapModeDefault = 'soft'
+
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
 augroup END
