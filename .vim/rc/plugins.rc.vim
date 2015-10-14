@@ -187,10 +187,8 @@ let g:used_javascript_libs = 'underscore,angularjs,jasmine'
 "===============================
 " ctrlp
 "===============================
-let g:ctrlp_custom_ignore =
-  \ {
-  \  'dir': '\v[\/](coverage|node_modules|bower_components)$'
-  \ }
+" https://github.com/kien/ctrlp.vim/issues/58
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 nnoremap <C-o> :CtrlPClearAllCaches<CR>
 
 "===============================
