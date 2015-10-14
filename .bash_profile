@@ -6,23 +6,22 @@ export LSCOLORS='GxFxCxDxBxegedabagaced'
 
 # Colorful prompt
 light_green="\[\e[1;32m\]"
+light_red="\[\e[1;31m\]"
 yellow="\[\e[0;33m\]"
+light_yellow="\[\e[1;33m\]"
 cyan="\[\e[0;36m\]"
 gray="\[\e[0;37m\]"
 reset="\[\e[m\]"
 
-if [ "$(uname)" == 'Darwin' ]; then
-  emojis=('🍺' '🍥' '🍜' '🍕' '🍀' '🍣' '🎪' '🍷' '⚡️' '🍻' '🌵' '🍋' '🍟' '🐷')
-  rand="$[ ${RANDOM} % ${#emojis[@]} ]"
-  emoji="${emojis[${rand}]}"
-  separator="${emoji} "
-else
-  separator="\$"
-fi
-separator="${light_green}λ${reset}"
-
 prompt_command() {
-  export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${separator} "
+  local status="$?"
+  local status_color=""
+  if [ $status != 0 ]; then
+    status_color=$light_red
+  else
+    status_color=$light_green
+  fi
+  export PS1="[${light_yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${status_color}λ${reset} "
 }
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PROMPT_COMMAND=prompt_command
