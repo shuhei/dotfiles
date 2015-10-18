@@ -50,5 +50,8 @@ alias todo='grep -rn --color TODO ./*'
 # Find process
 alias proc='ps ax | grep'
 
+# iOS Simulator
+alias iossim='open -n /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH
