@@ -1,0 +1,2 @@
+:map ,rn :action RenameElement<CR>
+:map ,rf :action ReformatCode<CR>
