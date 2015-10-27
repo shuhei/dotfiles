@@ -4,11 +4,13 @@ My personal dotfiles.
 
 ## Installation
 
-Clone this repository to your home directory and create symlinks.
+Clone this repository to your home directory and run the init script.
 
 ```shell
 cd ~
 git clone git@github.com:shuhei/dotfiles.git
+
+./dotfiles/init.sh
 ```
 
 ## iTerm 2
@@ -34,60 +36,23 @@ At the top of `~/.gitconfig`:
   path = ~/dotfiles/.gitconfig
 ```
 
-To see diffs of MS Office files in text, install tika and add `.gitattributes` to your project.
+### Diff of MS Office files
+
+To see diffs of MS Office files in text, install tika:
 
 ```shell
 brew install tika
 ```
 
-```.gitattributes
+And add `.gitattributes` to your project.
+
+```
 *.pptx diff=office
 *.docx diff=office
 *.xlsx diff=office
 ```
 
-## Karabiner
-
-To add private configuration items, symlink the `private.xml` to the Application Support directory.
-
-```shell
-cd ~
-ln -s ~/dotfiles/.karabiner/private.xml ~/Library/Application\ Support/Karabiner/
-```
-
 ## Vim
-
-```shell
-cd ~
-ln -s dotfiles/.vim .vim
-ln -s dotfiles/.vimrc .vimrc
-ln -s dotfiles/.gvimrc .gvimrc
-```
-
-### Version
-
-Use the latest version of MacVim with lua enabled that is required by neocomplete plugin.
-
-On Mac:
-
-```shell
-brew install macvim --with-lua --override-system-vim
-```
-
-To maximize MacVim's window horizontally as well as vertically:
-
-```shell
-defaults write org.vim.MacVim MMZoomBoth 1
-```
-
-### Plugins
-
-Vim plugins are managed with [neobundle.vim](https://github.com/Shougo/neobundle.vim). Install it first:
-
-```shell
-cd ~/dotfiles
-git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
-```
 
 ### Syntax Check
 
@@ -100,10 +65,3 @@ Syntactic plugin is employed to perform syntax check. Make sure to prepare prope
 ### Font
 
 Install [patched Monaco font](https://gist.github.com/baopham/1838072) for vim-airline. Set it as Non-ASCII Font of iTerm2.
-
-## tmux
-
-```shell
-cd ~
-ln dotfiles/.tmux.conf .tmux.conf
-```
