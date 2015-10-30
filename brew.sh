@@ -8,3 +8,4 @@ brew install ghc
 brew install haskell-stack
 brew install flow
 brew install tmux
+brew install hub
