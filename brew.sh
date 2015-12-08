@@ -9,3 +9,4 @@ brew install haskell-stack
 brew install flow
 brew install tmux
 brew install hub
+brew install the_silver_searcher
