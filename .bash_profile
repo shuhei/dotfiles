@@ -52,5 +52,8 @@ alias proc='ps ax | grep'
 # iOS Simulator
 alias iossim='open -n /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
+# npm local bin
+alias nbin='PATH=$(npm bin):$PATH'
+
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH
