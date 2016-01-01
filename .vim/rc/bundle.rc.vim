@@ -4,6 +4,7 @@ if !has('gui_running')
   NeoBundle 'godlygeek/csapprox'
 endif
 
+NeoBundle 'dharanasoft/rtf-highlight'
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundleLazy 'Shougo/neocomplete.vim', {
   \ 'depends': 'Shougo/context_filetype.vim',
