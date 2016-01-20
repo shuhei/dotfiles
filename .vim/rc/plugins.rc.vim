@@ -116,15 +116,18 @@ let g:airline_powerline_fonts = 1
 let g:quickrun_config =
   \ {
   \   '_': {
-  \      'runner': 'vimproc',
-  \      'runner/vimproc/updatetime': 60,
-  \      'outputter/buffer/into': 1
+  \     'runner': 'vimproc',
+  \     'runner/vimproc/updatetime': 60,
+  \     'outputter/buffer/into': 1
   \   },
   \   'ruby.rspec': {
-  \      'command': './bin/rspec'
+  \     'command': './bin/rspec'
   \   },
   \   'cucumber': {
-  \      'command': './bin/rspec'
+  \     'command': './bin/rspec'
+  \   },
+  \   'scheme': {
+  \     'command': 'eval-scheme'
   \   }
   \ }
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
