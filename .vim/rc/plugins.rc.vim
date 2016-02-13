@@ -127,7 +127,8 @@ let g:quickrun_config =
   \     'command': './bin/rspec'
   \   },
   \   'scheme': {
-  \     'command': 'eval-scheme'
+  \     'command': 'scheme',
+  \     'exec': '%c < %s'
   \   }
   \ }
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
