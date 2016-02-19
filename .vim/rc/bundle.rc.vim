@@ -45,6 +45,7 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundleLazy 'kchmck/vim-coffee-script', { 'filetypes': 'coffee' }
 NeoBundle 'kien/ctrlp.vim'
 NeoBundleLazy 'leafgarland/typescript-vim', { 'filetypes': 'typescript' }
+NeoBundleLazy 'lambdatoast/elm.vim', { 'filetypes': 'elm' }
 NeoBundleLazy 'luochen1990/rainbow', { 'filetypes': 'scheme' }
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'mhinz/vim-signify'
