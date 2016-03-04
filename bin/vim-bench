@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+vim --startuptime /tmp/time.log +q
+cat /tmp/time.log
