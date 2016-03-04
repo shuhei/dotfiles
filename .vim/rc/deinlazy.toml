@@ -10,6 +10,10 @@ on_map = '<Plug>'
 on_path = '.*'
 
 [[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
 repo = 'derekwyatt/vim-scala'
 on_ft = 'scala'
 
