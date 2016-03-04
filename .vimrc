@@ -43,8 +43,8 @@ syntax on
 set number
 
 " Use `colorscheme random` to look for new theme.
-" colorscheme asu2dark
-colorscheme phd
+colorscheme flatlandia
+highlight LineNr ctermfg=241
 
 " Encoding
 set termencoding=utf-8
@@ -60,6 +60,8 @@ set expandtab
 " Cursor
 autocmd InsertLeave * set cul
 autocmd InsertEnter * set nocul
+
+set cursorline
 
 " Do not stop cursor on line head or end
 set whichwrap=b,s,h,l,<,>,[,]

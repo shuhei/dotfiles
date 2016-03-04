@@ -30,10 +30,6 @@ repo = 'dharanasoft/rtf-highlight'
 repo = 'flazz/vim-colorschemes'
 
 [[plugins]]
-repo = 'godlygeek/csapprox'
-if = "has('gui_running')"
-
-[[plugins]]
 repo = 'gorodinskiy/vim-coloresque'
 
 [[plugins]]
@@ -44,6 +40,10 @@ repo = 'haya14busa/incsearch.vim'
 
 [[plugins]]
 repo = 'idanarye/vim-merginal'
+
+[[plugins]]
+repo = 'jordwalke/flatlandia'
+depends = 'vim-airline'
 
 [[plugins]]
 repo = 'junegunn/goyo.vim'
@@ -68,9 +68,6 @@ repo = 'Lokaltog/vim-easymotion'
 
 [[plugins]]
 repo = 'mhinz/vim-signify'
-
-[[plugins]]
-repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
