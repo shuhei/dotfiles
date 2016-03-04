@@ -1,0 +1,121 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
+
+[[plugins]]
+repo = 'amix/vim-zenroom2'
+
+[[plugins]]
+repo = 'bling/vim-airline'
+
+[[plugins]]
+repo = 'dharanasoft/rtf-highlight'
+
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+
+[[plugins]]
+repo = 'godlygeek/csapprox'
+if = "has('gui_running')"
+
+[[plugins]]
+repo = 'gorodinskiy/vim-coloresque'
+
+[[plugins]]
+repo = 'gregsexton/gitv'
+
+[[plugins]]
+repo = 'haya14busa/incsearch.vim'
+
+[[plugins]]
+repo = 'idanarye/vim-merginal'
+
+[[plugins]]
+repo = 'junegunn/goyo.vim'
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+
+[[plugins]]
+repo = 'kana/vim-textobj-line'
+
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+
+[[plugins]]
+repo = 'kien/ctrlp.vim'
+
+[[plugins]]
+repo = 'Lokaltog/vim-easymotion'
+
+[[plugins]]
+repo = 'mhinz/vim-signify'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+
+[[plugins]]
+repo = 'othree/html5.vim'
+
+[[plugins]]
+repo = 'reedes/vim-pencil'
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'shuhei/asu2dark.vim'
+
+[[plugins]]
+repo = 'shuhei/vim-jours'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-projectionist'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
+repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-unimpaired'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'

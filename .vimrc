@@ -5,18 +5,35 @@ function! s:source_rc(path)
   execute 'source' fnameescape(expand('~/.vim/rc/' . a:path))
 endfunction
 
+let mapleader = ","
+
 "===============================
-" NeoBundle
+" Dein
 "===============================
-if has('vim_starting')
-  set nocompatible
-  set rtp+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible               " Be iMproved
 endif
-call neobundle#begin(expand('~/.vim/bundle'))
-call s:source_rc('bundle.rc.vim')
-call neobundle#end()
+
+set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
+call dein#begin(expand('~/.vim/dein'))
+
+let s:toml_path = '~/.vim/rc/dein.toml'
+let s:toml_lazy_path = '~/.vim/rc/deinlazy.toml'
+if dein#load_cache([expand('<sfile>'), s:toml_path, s:toml_lazy_path])
+  call dein#load_toml(s:toml_path, { 'lazy': 0 })
+  call dein#load_toml(s:toml_lazy_path, { 'lazy': 1 })
+  call dein#save_cache()
+endif
+
+call s:source_rc('plugins.rc.vim')
+
+call dein#end()
+
 filetype plugin indent on
-NeoBundleCheck
+
+if dein#check_install()
+  call dein#install()
+endif
 
 "===============================
 " General Config
@@ -24,8 +41,6 @@ NeoBundleCheck
 syntax on
 
 set number
-
-let mapleader = ","
 
 " Use `colorscheme random` to look for new theme.
 " colorscheme asu2dark
@@ -91,8 +106,3 @@ nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 
 " New tab
 nnoremap <Leader>t :tabnew<CR>
-
-"===============================
-" Load rc files.
-"===============================
-call s:source_rc('plugins.rc.vim')

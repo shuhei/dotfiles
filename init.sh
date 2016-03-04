@@ -14,9 +14,10 @@ ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.gvimrc .gvimrc
 ln -s dotfiles/.ideavimrc .ideavimrc
 
-# neobundle.vim
+# dein.vim
 pushd dotfiles
-git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
+mkdir -p .vim/dein/repos
+git clone https://github.com/Shougo/dein.vim .vim/dein/repos/github.com/Shougo/dein.vim
 popd
 
 # To maximize MacVim's window horizontally as well as vertically

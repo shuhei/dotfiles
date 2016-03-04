@@ -1,0 +1,78 @@
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+depends = 'context_filetype.vim'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+depends = 'unite.vim'
+on_map = '<Plug>'
+on_path = '.*'
+
+[[plugins]]
+repo = 'derekwyatt/vim-scala'
+on_ft = 'scala'
+
+[[plugins]]
+repo = 'digitaltoad/vim-jade'
+on_ft = 'jade'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'groenewege/vim-less'
+on_ft = 'less'
+
+[[plugins]]
+repo = 'heavenshell/vim-jsdoc'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'hspec/hspec.vim'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = 'typescript'
+
+[[plugins]]
+repo = 'lambdatoast/elm.vim'
+on_ft = 'elm'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+on_ft = 'scheme'
+
+[[plugins]]
+repo = 'moll/vim-node'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = 'markdown'
+
+[[plugins]]
+repo = 'tpope/vim-haml'
+on_ft = 'haml'
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'vim-scripts/java.vim'
+on_ft = 'java'
