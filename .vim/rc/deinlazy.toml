@@ -1,6 +1,10 @@
 [[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
 repo = 'Shougo/neocomplete.vim'
 depends = 'context_filetype.vim'
+disabled = '!has("lua")'
 on_i = 1
 
 [[plugins]]
@@ -12,6 +16,9 @@ repo = 'Shougo/vimfiler.vim'
 depends = 'unite.vim'
 on_map = '<Plug>'
 on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
