@@ -4,6 +4,10 @@ depends = 'context_filetype.vim'
 on_i = 1
 
 [[plugins]]
+repo = 'Glench/Vim-Jinja2-Syntax'
+on_ft = 'jinja'
+
+[[plugins]]
 repo = 'Shougo/vimfiler.vim'
 depends = 'unite.vim'
 on_map = '<Plug>'
