@@ -46,7 +46,12 @@ if dein#tap('syntastic')
   let g:syntastic_javascript_jscs_args = '--preset=google'
   let g:syntastic_javascript_checkers = ['jscs', 'eslint']
 
-  let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
+  let g:syntastic_html_tidy_ignore_errors =
+    \ [
+    \   'proprietary attribute "ng-',
+    \   'proprietary attribute "dk-',
+    \   'proprietary attribute "ui-'
+    \ ]
 endif
 
 if dein#tap('switch.vim')
