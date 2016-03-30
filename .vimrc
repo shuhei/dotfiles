@@ -15,25 +15,25 @@ if &compatible
 endif
 
 set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
-call dein#begin(expand('~/.vim/dein'))
 
-let s:toml_path = '~/.vim/rc/dein.toml'
-let s:toml_lazy_path = '~/.vim/rc/deinlazy.toml'
-if dein#load_cache([expand('<sfile>'), s:toml_path, s:toml_lazy_path])
+let s:path = expand('~/.vim/dein')
+if dein#load_state(s:path)
+  let s:toml_path = '~/.vim/rc/dein.toml'
+  let s:toml_lazy_path = '~/.vim/rc/deinlazy.toml'
+  call dein#begin(s:path, [expand('<sfile>'), s:toml_path, s:toml_lazy_path])
   call dein#load_toml(s:toml_path, { 'lazy': 0 })
   call dein#load_toml(s:toml_lazy_path, { 'lazy': 1 })
-  call dein#save_cache()
+  call dein#end()
+  call dein#save_state()
 endif
-
-call s:source_rc('plugins.rc.vim')
-
-call dein#end()
-
-filetype plugin indent on
 
 if dein#check_install()
   call dein#install()
 endif
+
+call s:source_rc('plugins.rc.vim')
+
+filetype plugin indent on
 
 "===============================
 " General Config
