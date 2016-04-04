@@ -221,3 +221,11 @@ if dein#tap('rainbow')
   \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold']
   \}
 endif
+
+" http://www.stephendiehl.com/posts/vim_2016.html
+if dein#tap('ghcmod-vim')
+  map <silent> tw :GhcModTypeInsert<CR>
+  map <silent> ts :GhcModSplitFunCase<CR>
+  map <silent> tq :GhcModType<CR>
+  map <silent> te :GhcModTypeClear<CR>
+endif

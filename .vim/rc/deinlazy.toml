@@ -33,6 +33,14 @@ repo = 'digitaltoad/vim-jade'
 on_ft = 'jade'
 
 [[plugins]]
+repo = 'eagletmt/neco-ghc'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'eagletmt/ghcmod-vim'
+on_ft = 'haskell'
+
+[[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
 
