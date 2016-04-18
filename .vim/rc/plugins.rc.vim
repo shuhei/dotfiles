@@ -60,6 +60,17 @@ if dein#tap('switch.vim')
     \ [
     \   ['to', 'not_to']
     \ ]
+  " https://gist.github.com/othree/5655583
+  let g:switch_custom_definitions =
+      \ [
+      \   {
+      \     '\<\(\l\)\(\l\+\(\u\l\+\)\+\)\>': '\=toupper(submatch(1)) . submatch(2)',
+      \     '\<\(\u\l\+\)\(\u\l\+\)\+\>': "\\=tolower(substitute(submatch(0), '\\(\\l\\)\\(\\u\\)', '\\1_\\2', 'g'))",
+      \     '\<\(\l\+\)\(_\l\+\)\+\>': '\U\0',
+      \     '\<\(\u\+\)\(_\u\+\)\+\>': "\\=tolower(substitute(submatch(0), '_', '-', 'g'))",
+      \     '\<\(\l\+\)\(-\l\+\)\+\>': "\\=substitute(submatch(0), '-\\(\\l\\)', '\\u\\1', 'g')",
+      \   }
+      \ ]
 
   nnoremap - :Switch<cr>
 endif
