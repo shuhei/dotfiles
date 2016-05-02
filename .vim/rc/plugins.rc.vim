@@ -43,8 +43,7 @@ if dein#tap('syntastic')
 
   let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
-  let g:syntastic_javascript_jscs_args = '--preset=google'
-  let g:syntastic_javascript_checkers = ['jscs', 'eslint']
+  let g:syntastic_javascript_checkers = ['eslint']
 
   " To use custom elements and attributes in Angular and WebComponents.
   let g:syntastic_html_tidy_ignore_errors =
