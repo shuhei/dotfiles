@@ -38,9 +38,11 @@ if dein#tap('syntastic')
     \ }
   let g:syntastic_aggregate_errors = 1
   let g:syntastic_check_on_wq = 0
+  " https://github.com/ElmCast/elm-vim
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
 
   let g:syntastic_ignore_files = ['\m/db/schema\.rb']
-
   let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
   let g:syntastic_javascript_checkers = ['eslint']
@@ -238,4 +240,8 @@ if dein#tap('ghcmod-vim')
   map <silent> ts :GhcModSplitFunCase<CR>
   map <silent> tq :GhcModType<CR>
   map <silent> te :GhcModTypeClear<CR>
+endif
+
+if dein#tap('elm-vim')
+  let g:elm_syntastic_show_warnings = 1
 endif
