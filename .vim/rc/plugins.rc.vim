@@ -154,7 +154,7 @@ if dein#tap('unite.vim')
   nmap <Leader>u [unite]
 
   " file
-  nnoremap <silent> [unite]f :<C-u>Unite file -buffer-name=files<CR>
+  nnoremap <silent> [unite]f :<C-u>Unite file_rec/async -buffer-name=files<CR>
   " grep
   nnoremap <silent> [unite]g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
   " grep word under the cursor
