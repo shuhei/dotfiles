@@ -64,6 +64,9 @@ repo = 'Lokaltog/vim-easymotion'
 repo = 'mhinz/vim-signify'
 
 [[plugins]]
+repo = 'neomake/neomake'
+
+[[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
@@ -75,8 +78,8 @@ repo = 'reedes/vim-pencil'
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
 
-[[plugins]]
-repo = 'scrooloose/syntastic'
+# [[plugins]]
+# repo = 'scrooloose/syntastic'
 
 [[plugins]]
 repo = 'shuhei/asu2dark.vim'

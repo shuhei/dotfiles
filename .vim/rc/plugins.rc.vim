@@ -45,7 +45,7 @@ if dein#tap('syntastic')
   let g:syntastic_ignore_files = ['\m/db/schema\.rb']
   let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
-  let g:syntastic_javascript_checkers = ['eslint']
+  let g:syntastic_javascript_checkers = ['eslint', 'flow']
 
   " To use custom elements and attributes in Angular and WebComponents.
   let g:syntastic_html_tidy_ignore_errors =
@@ -54,6 +54,11 @@ if dein#tap('syntastic')
     \   'proprietary attribute "',
     \   'discarding unexpected <'
     \ ]
+endif
+
+if dein#tap('neomake')
+  autocmd! BufWritePost * Neomake
+  let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
 endif
 
 if dein#tap('switch.vim')
