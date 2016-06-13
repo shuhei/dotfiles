@@ -88,6 +88,15 @@ endif
 
 if dein#tap('vim-markdown')
   let g:vim_markdown_folding_disabled = 1
+  let g:vim_markdown_conceal = 0
+  let g:vim_markdown_fenced_languages =
+      \ [
+      \   'viml=vim',
+      \   'bash=sh',
+      \   'js=javascript',
+      \   'rb=ruby',
+      \   'hs=haskell'
+      \ ]
 
   if has('persistent_undo')
     set noundofile
