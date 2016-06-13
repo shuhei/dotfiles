@@ -1,1 +1,1 @@
-/Users/shuhei/.vimrc
+../.vimrc
