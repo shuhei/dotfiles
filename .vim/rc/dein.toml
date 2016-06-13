@@ -5,6 +5,10 @@ repo = 'Shougo/dein.vim'
 repo = 'AndrewRadev/switch.vim'
 
 [[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = 'has("nvim")'
+
+[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
@@ -65,6 +69,7 @@ repo = 'mhinz/vim-signify'
 
 [[plugins]]
 repo = 'neomake/neomake'
+if = 'has("nvim")'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
@@ -78,8 +83,9 @@ repo = 'reedes/vim-pencil'
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
 
-# [[plugins]]
-# repo = 'scrooloose/syntastic'
+[[plugins]]
+repo = 'scrooloose/syntastic'
+if = '!has("nvim")'
 
 [[plugins]]
 repo = 'shuhei/asu2dark.vim'

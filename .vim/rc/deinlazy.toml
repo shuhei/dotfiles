@@ -7,8 +7,8 @@ repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
+if = '!has("nvim") && has("lua")'
 depends = 'context_filetype.vim'
-disabled = '!has("lua")'
 on_i = 1
 
 [[plugins]]

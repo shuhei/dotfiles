@@ -21,6 +21,10 @@ if dein#tap('neocomplete.vim')
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 endif
 
+if dein#tap('deoplete.nvim')
+  call deoplete#enable()
+endif
+
 if dein#tap('neosnippet.vim')
   " <TAB>: completion.
   inoremap <expr><S-TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
