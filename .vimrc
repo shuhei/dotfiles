@@ -121,8 +121,9 @@ map <Leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 nnoremap <Leader>t :tabnew<CR>
 
 " ocaml merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-
-" Also run the following line in vim to index the documentation:
-" :execute "helptags " . g:opamshare . "/merlin/vim/doc"
+if executable('opam')
+  let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+  execute "set rtp+=" . g:opamshare . "/merlin/vim"
+  " Also run the following line in vim to index the documentation:
+  " :execute "helptags " . g:opamshare . "/merlin/vim/doc"
+endif
