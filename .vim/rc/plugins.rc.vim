@@ -64,6 +64,7 @@ if dein#tap('neomake')
   autocmd! BufWritePost * Neomake
   let g:neomake_open_list = 2
   let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
+  let g:neomake_html_enabled_makers = []
 endif
 
 if dein#tap('switch.vim')
