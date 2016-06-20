@@ -2,7 +2,7 @@
   ui = auto
 [core]
   excludesfile = ~/dotfiles/.gitignore_global
-  editor = vim
+  editor = nvim
   quotepath = false
 [push]
 	default = simple
