@@ -39,7 +39,8 @@ export LESS='-R'
 # ------- Aliases -------
 
 # vim
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
 
 # bundler
 alias be='bundle exec'
