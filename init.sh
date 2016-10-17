@@ -17,7 +17,7 @@ ln -s dotfiles/.ideavimrc .ideavimrc
 # -- NeoVim
 mkdir -p ~/.config
 pushd ~/.config
-ln -s nvim ../.vim
+ln -s ~/dotfiles/.vim nvim
 popd
 pip3 install --upgrade pip
 pip3 install neovim
