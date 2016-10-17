@@ -62,9 +62,20 @@ endif
 
 if dein#tap('neomake')
   autocmd! BufWritePost * Neomake
-  " let g:neomake_open_list = 2
+  let g:neomake_open_list = 2
   let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
   let g:neomake_html_enabled_makers = []
+
+  " My original elm_make maker
+  " See https://github.com/ryyppy/flow-vim-quickfix for JSON parsing.
+  " See `:help errorformat` for errorformat.
+  let g:neomake_elm_elm_make_maker =
+    \ {
+    \   'exe': 'neomake-elm',
+    \   'errorformat': '%trror:%f:%l:%c:%m,' .
+    \                  '%tarning:%f:%l:%c:%m'
+    \ }
+  let g:neomake_elm_enabled_makers = ['elm_make']
 endif
 
 if dein#tap('switch.vim')
