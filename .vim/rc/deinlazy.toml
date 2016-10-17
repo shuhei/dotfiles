@@ -89,6 +89,10 @@ repo = 'plasticboy/vim-markdown'
 on_ft = 'markdown'
 
 [[plugins]]
+repo= 'raichoo/purescript-vim'
+on_ft = 'purescript'
+
+[[plugins]]
 repo = 'tpope/vim-haml'
 on_ft = 'haml'
 
