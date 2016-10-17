@@ -1,3 +1,8 @@
+# Git completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # ------- Add spice to life -------
 
 # Colorful ls
