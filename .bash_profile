@@ -62,5 +62,10 @@ alias iossim='open -n /Applications/Xcode.app/Contents/Developer/Applications/Si
 # npm local bin
 alias nbin='PATH=$(npm bin):$PATH'
 
+# Docker
+alias d="docker"
+alias dm="docker-machine"
+alias dc="docker-compose"
+
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH
