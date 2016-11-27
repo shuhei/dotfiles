@@ -3,6 +3,14 @@ repo = 'ElmCast/elm-vim'
 on_ft = 'elm'
 
 [[plugins]]
+repo = 'Glench/Vim-Jinja2-Syntax'
+on_ft = 'jinja'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+of_ft = 'javascript'
+
+[[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
@@ -10,10 +18,6 @@ repo = 'Shougo/neocomplete.vim'
 if = '!has("nvim") && has("lua")'
 depends = 'context_filetype.vim'
 on_i = 1
-
-[[plugins]]
-repo = 'Glench/Vim-Jinja2-Syntax'
-on_ft = 'jinja'
 
 [[plugins]]
 repo = 'Shougo/vimfiler.vim'
@@ -81,8 +85,8 @@ repo = 'othree/javascript-libraries-syntax.vim'
 on_ft = 'javascript'
 
 [[plugins]]
-repo = 'pangloss/vim-javascript'
-on_ft = 'javascript'
+repo = 'othree/yajs'
+of_ft = 'javascript'
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
