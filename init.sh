@@ -34,4 +34,7 @@ defaults write org.vim.MacVim MMZoomBoth 1
 # -- tmux
 ln -s dotfiles/.tmux.conf .tmux.conf
 
+# -- Hyper
+ln -s dotfiles/.hyper.js .hyper.js
+
 popd
