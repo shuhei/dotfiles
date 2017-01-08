@@ -28,7 +28,7 @@ prompt_command() {
   export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${status_color}λ${reset} "
 }
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PROMPT_COMMAND=prompt_command
+PROMPT_COMMAND=prompt_command
 
 # Colorful grep
 export GREP_OPTIONS='--color=auto'
