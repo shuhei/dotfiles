@@ -25,7 +25,7 @@ prompt_command() {
   else
     status_color=$light_green
   fi
-  export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${status_color}λ${reset} "
+  export PS1="[${yellow}\w${reset}]${gray}$(__git_ps1)${reset} ${status_color}€${reset} "
 }
 export GIT_PS1_SHOWDIRTYSTATE=1
 PROMPT_COMMAND=prompt_command
