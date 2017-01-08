@@ -37,4 +37,7 @@ ln -s dotfiles/.tmux.conf .tmux.conf
 # -- Hyper
 ln -s dotfiles/.hyper.js .hyper.js
 
+# -- Alacritty
+ln -s dotfiles/.alacritty.yml .alacritty.yml
+
 popd
