@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Menlo for Powerline", "Monaco for Powerline", "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"Fira Code", "Menlo for Powerline", "Monaco for Powerline", "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color (hex)
     cursorColor: '#F81CE5',
@@ -46,7 +46,13 @@ module.exports = {
       '#cc00ff',
       '#00ffff',
       '#ffffff'
-    ]
+    ],
+
+    termCSS: `
+      x-screen x-row {
+        font-variant-ligatures: initial;
+      }
+    `,
   },
 
   // a list of plugins to fetch and install from npm
