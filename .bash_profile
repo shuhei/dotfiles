@@ -67,5 +67,8 @@ alias d="docker"
 alias dm="docker-machine"
 alias dc="docker-compose"
 
+# tmux
+alias tm="tmux"
+
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH
