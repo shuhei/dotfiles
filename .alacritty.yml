@@ -63,7 +63,9 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x282a35'
+    # black:   '0x282a35'
+    # Too make it readable.
+    black:   '0x787a85'
     red:     '0xff6e67'
     green:   '0x5af78e'
     yellow:  '0xf4f99d'
