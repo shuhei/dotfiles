@@ -278,3 +278,10 @@ endif
 if dein#tap('elm-vim')
   let g:elm_syntastic_show_warnings = 1
 endif
+
+if dein#tap('vim-tmux-navigator')
+  nnoremap <silent> <C-w>h :TmuxNavigateLeft<CR>
+  nnoremap <silent> <C-w>j :TmuxNavigateDown<CR>
+  nnoremap <silent> <C-w>k :TmuxNavigateUp<CR>
+  nnoremap <silent> <C-w>l :TmuxNavigateRight<CR>
+endif

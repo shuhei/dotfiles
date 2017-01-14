@@ -22,6 +22,9 @@ repo = 'amix/vim-zenroom2'
 repo = 'bling/vim-airline'
 
 [[plugins]]
+repo = 'christoomey/vim-tmux-navigator'
+
+[[plugins]]
 repo = 'dharanasoft/rtf-highlight'
 
 [[plugins]]
