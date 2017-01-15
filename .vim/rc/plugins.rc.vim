@@ -66,6 +66,11 @@ if dein#tap('neomake')
   let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
   let g:neomake_html_enabled_makers = []
 
+  " Run only cargo, which is a directory maker, because rustc doens't
+  " understand dependencies in Cargo.toml.
+  let g:neomake_rust_enabled_makers = []
+  autocmd! BufWritePost *.rs Neomake! cargo
+
   " My original elm_make maker
   " See https://github.com/ryyppy/flow-vim-quickfix for JSON parsing.
   " See `:help errorformat` for errorformat.
