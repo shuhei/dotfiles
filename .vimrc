@@ -42,6 +42,10 @@ syntax on
 
 set number
 
+" Show messages in English.
+set langmenu=en_US
+let $LANG = 'en_US'
+
 " Use `colorscheme random` to look for new theme.
 colorscheme flatlandia
 highlight LineNr ctermfg=241
