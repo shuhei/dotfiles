@@ -48,11 +48,11 @@ use_thin_strokes: true
 # Should display the render timer
 render_timer: false
 
-# Colors (Dracula)
+# Colors (Dracula) from iTerms 2
 colors:
   # Default colors
   primary:
-    background: '0x282a36'
+    background: '0x1e1f28'
     foreground: '0xf8f8f2'
 
   # Normal colors
@@ -61,23 +61,21 @@ colors:
     red:     '0xff5555'
     green:   '0x50fa7b'
     yellow:  '0xf1fa8c'
-    blue:    '0xcaa9fa'
+    blue:    '0xbd93f9'
     magenta: '0xff79c6'
     cyan:    '0x8be9fd'
-    white:   '0xbfbfbf'
+    white:   '0xbbbbbb'
 
   # Bright colors
   bright:
-    # black:   '0x282a35'
-    # Too make it readable.
-    black:   '0x787a85'
-    red:     '0xff6e67'
-    green:   '0x5af78e'
-    yellow:  '0xf4f99d'
-    blue:    '0xcaa9fa'
-    magenta: '0xff92d0'
-    cyan:    '0x9aedfe'
-    white:   '0xe6e6e6'
+    black:   '0x555555'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xffffff'
 
 # Colors (Tomorrow Night Bright)
 # colors:
