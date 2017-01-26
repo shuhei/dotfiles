@@ -49,6 +49,10 @@ repo = 'eagletmt/ghcmod-vim'
 on_ft = 'haskell'
 
 [[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+on_ft = [ 'Dockerfile', 'docker-compose' ]
+
+[[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
 
