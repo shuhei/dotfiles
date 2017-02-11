@@ -1,4 +1,9 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator
+# Window dimensions in character columns and lines
+# (changes require restart)
+dimensions:
+  columns: 180
+  lines: 47
 
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
@@ -134,6 +139,32 @@ colors:
     # magenta: '0x6c71c4'
     # cyan:    '0x93a1a1'
     # white:   '0xfdf6e3'
+
+# Visual Bell
+#
+# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
+# rung, the terminal background will be set to white and transition back to the
+# default background color. You can control the rate of this transition by
+# setting the `duration` property (represented in milliseconds). You can also
+# configure the transition function by setting the `animation` property.
+#
+# Possible values for `animation`
+# `Ease`
+# `EaseOut`
+# `EaseOutSine`
+# `EaseOutQuad`
+# `EaseOutCubic`
+# `EaseOutQuart`
+# `EaseOutQuint`
+# `EaseOutExpo`
+# `EaseOutCirc`
+# `Linear`
+#
+# To completely disable the visual bell, set its duration to 0.
+#
+visual_bell:
+  animation: EaseOutExpo
+  duration: 0
 
 # Key bindings
 #
