@@ -290,3 +290,11 @@ if dein#tap('vim-tmux-navigator')
   nnoremap <silent> <C-w>k :TmuxNavigateUp<CR>
   nnoremap <silent> <C-w>l :TmuxNavigateRight<CR>
 endif
+
+if dein#tap('vim-flow')
+  let g:flow#enable = 0
+  let g:flow#omnifunc = 0
+  nnoremap <Leader>tt :FlowType<CR>
+  nnoremap <Leader>tj :FlowJumpToDef<CR>
+  nnoremap <Leader>tm :FlowMake<CR>
+endif
