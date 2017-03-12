@@ -95,6 +95,7 @@ set re=1
 " File types
 "===============================
 autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+autocmd BufRead,BufNewFile *.js.flow set filetype=javascript
 
 "===============================
 " Spell check
