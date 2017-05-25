@@ -22,12 +22,26 @@ if dein#tap('neocomplete.vim')
 endif
 
 if dein#tap('deoplete.nvim')
-  call deoplete#enable()
-endif
-
-if dein#tap('neosnippet.vim')
-  " <TAB>: completion.
-  inoremap <expr><S-TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_smart_case = 1
+  inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+  function! s:my_cr_function()
+    return pumvisible() ? deoplete#close_popup() : "\<CR>"
+  endfunction
+  " http://blog.muuny-blue.info/c95d62c68196b2d0c1c1de8c7eeb6d50.html#deopletenvim
+  " <TAB>: completion
+  inoremap <silent><expr> <TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ deoplete#manual_complete()
+  function! s:check_back_space() abort "{{{
+    let col = col(".") - 1
+    return !col || getline('.')[col - 1] =~ '\s'
+  endfunction"}}}
+  " <S-TAB>: completion back
+  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+  " <BS>: close popup
+  inoremap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
 endif
 
 if dein#tap('nerdcommenter')
