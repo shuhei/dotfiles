@@ -28,6 +28,9 @@ repo = 'christoomey/vim-tmux-navigator'
 repo = 'dharanasoft/rtf-highlight'
 
 [[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
 repo = 'flazz/vim-colorschemes'
 
 [[plugins]]
