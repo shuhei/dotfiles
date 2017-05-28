@@ -97,12 +97,16 @@ repo = 'othree/yajs'
 of_ft = 'javascript'
 
 [[plugins]]
-repo = 'plasticboy/vim-markdown'
-on_ft = 'markdown'
+repo = 'tpope/vim-markdown'
+of_ft = 'markdown'
 
 [[plugins]]
 repo = 'raichoo/purescript-vim'
 on_ft = 'purescript'
+
+[[plugins]]
+repo = 'rhysd/vim-gfm-syntax'
+of_ft = 'markdown'
 
 [[plugins]]
 repo = 'rust-lang/rust.vim'
