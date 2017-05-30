@@ -98,6 +98,11 @@ autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 autocmd BufRead,BufNewFile *.js.flow set filetype=javascript
 
 "===============================
+" File specific indentation
+"===============================
+autocmd FileType elm setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+
+"===============================
 " Spell check
 "===============================
 " http://robots.thoughtbot.com/vim-spell-checking
