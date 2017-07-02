@@ -287,10 +287,12 @@ endif
 
 " http://www.stephendiehl.com/posts/vim_2016.html
 if dein#tap('ghcmod-vim')
-  map <silent> tw :GhcModTypeInsert<CR>
+  map <silent> tt :GhcModType<CR>
+  map <silent> tc :GhcModTypeClear<CR>
+  map <silent> ti :GhcModTypeInsert<CR>
   map <silent> ts :GhcModSplitFunCase<CR>
-  map <silent> tq :GhcModType<CR>
-  map <silent> te :GhcModTypeClear<CR>
+  map <silent> tf :GhcModInfo<CR>
+  map <silent> tp :GhcModInfoPreview<CR>
 endif
 
 if dein#tap('elm-vim')
