@@ -33,6 +33,8 @@ defaults write org.vim.MacVim MMZoomBoth 1
 
 # -- tmux
 ln -s dotfiles/.tmux.conf .tmux.conf
+mdkir -p ~/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # -- Hyper
 ln -s dotfiles/.hyper.js .hyper.js
