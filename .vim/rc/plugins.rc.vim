@@ -74,30 +74,6 @@ if dein#tap('syntastic')
     \ ]
 endif
 
-if dein#tap('neomake')
-  autocmd! BufWritePost * Neomake
-  let g:neomake_open_list = 2
-  let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
-  let g:neomake_css_enabled_makers = ['stylelint']
-  let g:neomake_html_enabled_makers = []
-
-  " Run only cargo, which is a directory maker, because rustc doens't
-  " understand dependencies in Cargo.toml.
-  let g:neomake_rust_enabled_makers = []
-  autocmd! BufWritePost *.rs Neomake! cargo
-
-  " My original elm_make maker
-  " See https://github.com/ryyppy/flow-vim-quickfix for JSON parsing.
-  " See `:help errorformat` for errorformat.
-  let g:neomake_elm_elm_make_maker =
-    \ {
-    \   'exe': 'neomake-elm',
-    \   'errorformat': '%trror:%f:%l:%c:%m,' .
-    \                  '%tarning:%f:%l:%c:%m'
-    \ }
-  let g:neomake_elm_enabled_makers = ['elm_make']
-endif
-
 if dein#tap('switch.vim')
   autocmd FileType ruby let b:switch_custom_definitions =
     \ [
@@ -314,4 +290,13 @@ if dein#tap('vim-flow')
   nnoremap <Leader>tt :FlowType<CR>
   nnoremap <Leader>tj :FlowJumpToDef<CR>
   nnoremap <Leader>tm :FlowMake<CR>
+endif
+
+if dein#tap('ale')
+  let g:airline#extensions#ale#enabled = 1
+  let g:ale_set_loclist = 0
+  let g:ale_set_quickfix = 1
+  let g:ale_open_list = 1
+  nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
+  nmap <silent> <Leader>n <Plug>(ale_next_wrap)
 endif

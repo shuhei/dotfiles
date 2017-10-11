@@ -74,8 +74,7 @@ repo = 'Lokaltog/vim-easymotion'
 repo = 'mhinz/vim-signify'
 
 [[plugins]]
-repo = 'neomake/neomake'
-if = 'has("nvim")'
+repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
