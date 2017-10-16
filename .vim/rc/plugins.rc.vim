@@ -297,6 +297,8 @@ if dein#tap('ale')
   let g:ale_set_loclist = 0
   let g:ale_set_quickfix = 1
   let g:ale_open_list = 1
+  let g:ale_lint_on_text_changed = 'never'
+  let g:ale_lint_on_enter = 0
   nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <Leader>n <Plug>(ale_next_wrap)
 endif
