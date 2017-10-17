@@ -20,7 +20,7 @@ cabal install alex
 cabal install happy
 ```
 
-Otherwise `ghc-mod` will faile because its dependency `haskell-src-exts` depends on them. https://github.com/DanielG/ghc-mod/issues/813
+Otherwise `ghc-mod` will fail because its dependency `haskell-src-exts` depends on them. https://github.com/DanielG/ghc-mod/issues/813
 
 Then install nice dev tools:
 
