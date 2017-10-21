@@ -6,7 +6,7 @@ pushd ~
 ./dotfiles/brew.sh
 
 # -- Karabiner
-ln -s dotfiles/.karabiner/private.xml ~/Library/Application\ Support/Karabiner/
+ln -s dotfiles/karabiner ~/.config
 
 # -- Vim
 ln -s dotfiles/.vim .vim
