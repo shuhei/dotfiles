@@ -313,5 +313,5 @@ if dein#tap('LanguageClient-neovim')
   let g:LanguageClient_autoStart = 1
 
   nnoremap <Leader>tt :call LanguageClient_textDocument_hover()<CR>
-  nnoremap <Leader>tr :call LanguageClient_textDocument_references()<CR>
+  nnoremap <Leader>ts :call LanguageClient_textDocument_documentSymbol()<CR>
 endif
