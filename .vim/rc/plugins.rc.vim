@@ -287,7 +287,7 @@ endif
 if dein#tap('vim-flow')
   let g:flow#enable = 0
   let g:flow#omnifunc = 0
-  " nnoremap <Leader>tt :FlowType<CR>
+  nnoremap <Leader>tt :FlowType<CR>
   nnoremap <Leader>tj :FlowJumpToDef<CR>
   nnoremap <Leader>tm :FlowMake<CR>
 endif
@@ -301,17 +301,4 @@ if dein#tap('ale')
   let g:ale_lint_on_enter = 0
   nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <Leader>n <Plug>(ale_next_wrap)
-endif
-
-if dein#tap('LanguageClient-neovim')
-  set hidden
-
-  let g:LanguageClient_serverCommands = {
-  \ 'javascript': ['flow-language-server', '--stdio']
-  \ }
-
-  let g:LanguageClient_autoStart = 1
-
-  nnoremap <Leader>tt :call LanguageClient_textDocument_hover()<CR>
-  nnoremap <Leader>tr :call LanguageClient_textDocument_references()<CR>
 endif

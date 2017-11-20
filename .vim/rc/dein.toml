@@ -19,10 +19,6 @@ repo = 'Shougo/vimshell.vim'
 repo = 'amix/vim-zenroom2'
 
 [[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-if = 'has("nvim")'
-
-[[plugins]]
 repo = 'bling/vim-airline'
 
 [[plugins]]
