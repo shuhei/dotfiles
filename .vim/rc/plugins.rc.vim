@@ -307,8 +307,7 @@ if dein#tap('LanguageClient-neovim')
   set hidden
 
   let g:LanguageClient_serverCommands = {
-  \ 'javascript': ['flow-language-server', '--stdio'],
-  \ 'javascript.jsx': ['flow-language-server', '--stdio']
+  \ 'javascript': ['flow-language-server', '--stdio']
   \ }
 
   let g:LanguageClient_autoStart = 1
