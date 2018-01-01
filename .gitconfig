@@ -1,9 +1,17 @@
-[color]
-  ui = auto
 [core]
   excludesfile = ~/dotfiles/.gitignore_global
   editor = nvim
   quotepath = false
+  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+[color]
+  ui = auto
+[color "diff"]
+  commit = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
 [push]
 	default = simple
 [alias]
