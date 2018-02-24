@@ -1,8 +1,11 @@
 [[plugins]]
-repo = 'Shougo/dein.vim'
+repo = 'AndrewRadev/switch.vim'
 
 [[plugins]]
-repo = 'AndrewRadev/switch.vim'
+repo = 'Quramy/tsuquyomi'
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
