@@ -302,3 +302,15 @@ if dein#tap('ale')
   nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <Leader>n <Plug>(ale_next_wrap)
 endif
+
+if dein#tap('tsuquyomi')
+  let g:tsuquyomi_completion_detail = 1
+
+  nmap td :TsuDefinition<CR>
+  nmap tsd :TsuSplitDefinition<CR>
+  nmap tt :TsuTypeDefinition<CR>
+  nmap tst :TsuSplitTypeDefinition<CR>
+  nmap tb :TsuGoBack<CR>
+
+  nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+endif
