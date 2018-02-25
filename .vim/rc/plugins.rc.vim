@@ -1,6 +1,6 @@
 if dein#tap('vimfiler.vim')
   let g:vimfiler_as_default_explorer = 1
-  nnoremap <Leader>f :VimFilerExplorer<CR>
+  nnoremap <leader>f :VimFilerExplorer<CR>
 endif
 
 if dein#tap('neocomplete.vim')
@@ -91,7 +91,7 @@ if dein#tap('switch.vim')
       \   }
       \ ]
 
-  nnoremap - :Switch<cr>
+  nnoremap - :Switch<CR>
 endif
 
 if dein#tap('vim-markdown')
@@ -110,29 +110,29 @@ if dein#tap('vim-markdown')
 endif
 
 if dein#tap('goyo.vim')
-  nnoremap <Leader><Space> :Goyo<CR>
+  nnoremap <leader><Space> :Goyo<CR>
 endif
 
 if dein#tap('vim-fugitive')
-  nnoremap <Leader>gs :Gstatus<CR>
-  nnoremap <Leader>gc :Gcommit<CR>
-  nnoremap <Leader>gb :Gblame<CR>
-  nnoremap <Leader>ge :Gedit<CR>
-  nnoremap <Leader>ges :Gsplit<CR>
-  nnoremap <Leader>gev :Gvsplit<CR>
-  nnoremap <Leader>get :Gtabedit<CR>
-  nnoremap <Leader>gm :Gmove<CR>
-  nnoremap <Leader>gr :Gremove<CR>
-  nnoremap <Leader>gbr :Gbrowse<CR>
-  nnoremap <Leader>gd :Gdiff<CR>
+  nnoremap <leader>gs :Gstatus<CR>
+  nnoremap <leader>gc :Gcommit<CR>
+  nnoremap <leader>gb :Gblame<CR>
+  nnoremap <leader>ge :Gedit<CR>
+  nnoremap <leader>ges :Gsplit<CR>
+  nnoremap <leader>gev :Gvsplit<CR>
+  nnoremap <leader>get :Gtabedit<CR>
+  nnoremap <leader>gm :Gmove<CR>
+  nnoremap <leader>gr :Gremove<CR>
+  nnoremap <leader>gbr :Gbrowse<CR>
+  nnoremap <leader>gd :Gdiff<CR>
 
   " http://stackoverflow.com/questions/21931116/getting-git-grep-to-work-effectively-in-vim
   command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
-  nnoremap <Leader>gg :Ggr <cword><CR>
+  nnoremap <leader>gg :Ggr <cword><CR>
 endif
 
 if dein#tap('gitv')
-  nnoremap <Leader>gv :Gitv<CR>
+  nnoremap <leader>gv :Gitv<CR>
 endif
 
 if dein#tap('vim-airline')
@@ -176,7 +176,7 @@ if dein#tap('unite.vim')
   let g:unite_enable_smart_case = 1
 
   nnoremap [unite] <Nop>
-  nmap <Leader>u [unite]
+  nmap <leader>u [unite]
 
   " files
   nnoremap <silent> [unite]f :<C-u>Unite file_rec/async -buffer-name=files<CR>
@@ -223,7 +223,7 @@ if dein#tap('vim-easy-align')
 endif
 
 if dein#tap('vim-jsdoc')
-  nnoremap <Leader>d :JsDoc<CR>
+  nnoremap <leader>d :JsDoc<CR>
 endif
 
 if dein#tap('incsearch.vim')
@@ -237,7 +237,7 @@ if dein#tap('vim-better-whitespace')
 endif
 
 if dein#tap('vim-merginal')
-  nnoremap <Leader>m :Merginal<CR>
+  nnoremap <leader>m :Merginal<CR>
 endif
 
 if dein#tap('vim-pencil')
@@ -263,12 +263,12 @@ endif
 
 " http://www.stephendiehl.com/posts/vim_2016.html
 if dein#tap('ghcmod-vim')
-  map <silent> tt :GhcModType<CR>
-  map <silent> tc :GhcModTypeClear<CR>
-  map <silent> ti :GhcModTypeInsert<CR>
-  map <silent> ts :GhcModSplitFunCase<CR>
-  map <silent> tf :GhcModInfo<CR>
-  map <silent> tp :GhcModInfoPreview<CR>
+  autocmd FileType haskell nnoremap <buffer> tt :GhcModType<CR>
+  autocmd FileType haskell nnoremap <buffer> tc :GhcModTypeClear<CR>
+  autocmd FileType haskell nnoremap <buffer> ti :GhcModTypeInsert<CR>
+  autocmd FileType haskell nnoremap <buffer> ts :GhcModSplitFunCase<CR>
+  autocmd FileType haskell nnoremap <buffer> tf :GhcModInfo<CR>
+  autocmd FileType haskell nnoremap <buffer> tp :GhcModInfoPreview<CR>
 endif
 
 if dein#tap('elm-vim')
@@ -287,9 +287,10 @@ endif
 if dein#tap('vim-flow')
   let g:flow#enable = 0
   let g:flow#omnifunc = 0
-  nnoremap <Leader>tt :FlowType<CR>
-  nnoremap <Leader>tj :FlowJumpToDef<CR>
-  nnoremap <Leader>tm :FlowMake<CR>
+
+  autocmd FileType javascript nnoremap <buffer> <leader>tt :FlowType<CR>
+  autocmd FileType javascript nnoremap <buffer> <leader>tj :FlowJumpToDef<CR>
+  autocmd FileType javascript nnoremap <buffer> <leader>tm :FlowMake<CR>
 endif
 
 if dein#tap('ale')
@@ -299,18 +300,24 @@ if dein#tap('ale')
   let g:ale_open_list = 1
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_lint_on_enter = 0
-  nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
-  nmap <silent> <Leader>n <Plug>(ale_next_wrap)
+  nmap <silent> <leader>N <Plug>(ale_previous_wrap)
+  nmap <silent> <leader>n <Plug>(ale_next_wrap)
 endif
 
 if dein#tap('tsuquyomi')
   let g:tsuquyomi_completion_detail = 1
 
-  nmap td :TsuDefinition<CR>
-  nmap tsd :TsuSplitDefinition<CR>
-  nmap tt :TsuTypeDefinition<CR>
-  nmap tst :TsuSplitTypeDefinition<CR>
-  nmap tb :TsuGoBack<CR>
-
-  nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+  autocmd FileType typescript nnoremap <buffer> td :TsuDefinition<CR>
+  autocmd FileType typescript nnoremap <buffer> tsd :TsuSplitDefinition<CR>
+  autocmd FileType typescript nnoremap <buffer> tt :TsuTypeDefinition<CR>
+  autocmd FileType typescript nnoremap <buffer> tst :TsuSplitTypeDefinition<CR>
+  autocmd FileType typescript nnoremap <buffer> tb :TsuGoBack<CR>
+  autocmd FileType typescript nnoremap <buffer> tr :TsuReferences<CR>
+  autocmd FileType typescript nnoremap <buffer> <leader>tr :TsuRenameSymbol<CR>
+  autocmd FileType typescript nnoremap <buffer> <leader>trc :TsuRenameSymbolC<CR>
+  " Show a type hint
+  autocmd FileType typescript nnoremap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
+	" Remap omni completion
+	" TODO: Should I move this to global config?
+  autocmd FileType typescript inoremap <buffer> <C-Space> <C-x><C-o>
 endif
