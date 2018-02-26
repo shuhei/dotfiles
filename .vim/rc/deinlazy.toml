@@ -69,6 +69,10 @@ repo = 'hspec/hspec.vim'
 on_ft = 'haskell'
 
 [[plugins]]
+repo = 'jparise/vim-graphql'
+on_ft = 'graphql'
+
+[[plugins]]
 repo = 'kchmck/vim-coffee-script'
 on_ft = 'coffee'
 
