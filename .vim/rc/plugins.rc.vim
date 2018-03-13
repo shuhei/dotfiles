@@ -288,9 +288,9 @@ if dein#tap('vim-flow')
   let g:flow#enable = 0
   let g:flow#omnifunc = 0
 
-  autocmd FileType javascript nnoremap <buffer> <leader>tt :FlowType<CR>
-  autocmd FileType javascript nnoremap <buffer> <leader>tj :FlowJumpToDef<CR>
-  autocmd FileType javascript nnoremap <buffer> <leader>tm :FlowMake<CR>
+  autocmd FileType javascript nnoremap <buffer> <leader>t :FlowType<CR>
+  autocmd FileType javascript nnoremap <buffer> td :FlowJumpToDef<CR>
+  autocmd FileType javascript nnoremap <buffer> tm :FlowMake<CR>
 endif
 
 if dein#tap('ale')
