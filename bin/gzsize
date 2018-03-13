@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+option=$1
+
+# http://www.kossboss.com/?p=1844
+human () {
+  echo $1 | awk '{xin=$1;if(xin==0){print "0B";}else{x=(xin<0?-xin:xin);s=(xin<0?-1:1);split("B KiB MiB GiB TiB PiB",type);for(i=5;y < 1;i--){y=x/(2^(10*i));}print y*s "" type[i+2];};}'
+}
+
+passthrough () {
+  echo $1
+}
+
+if [ "$option" = "-r" ]; then
+  out=passthrough
+else
+  out=human
+fi
+
+(
+  echo -e "FILE RAW GZIP"
+  for file in ./*
+  do
+    if [ -f $file ]; then
+      raw=$(stat -f '%z' $file)
+      gzipped=$(gzip -c $file | wc -c)
+      echo -e "$(basename $file) $($out $raw) $($out $gzipped)"
+    fi
+  done
+) | column -t -s ' '
