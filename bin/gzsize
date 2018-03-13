@@ -1,6 +1,25 @@
 #!/usr/bin/env bash
 
-option=$1
+POSITIONAL=()
+while [[ $# -gt 0 ]]; do
+  key="$1"
+  case $key in
+    -r|--raw)
+      RAW=YES
+      shift
+      ;;
+    -m|--markdown)
+      MARKDOWN=YES
+      shift
+      ;;
+    *)
+      POSITIONAL+=("$1")
+      shift
+      ;;
+  esac
+done
+# Restore positional parameters
+set -- "${POSITIONAL[@]}"
 
 # http://www.kossboss.com/?p=1844
 human () {
@@ -11,20 +30,53 @@ passthrough () {
   echo $1
 }
 
-if [ "$option" = "-r" ]; then
-  out=passthrough
-else
-  out=human
-fi
+list () {
+  # https://unix.stackexchange.com/questions/197792/joining-bash-arguments-into-single-string-with-spaces
+  IFS=" "
+  echo "$*"
+}
 
-(
-  echo -e "FILE RAW GZIP"
+table () {
+  printf "|"
+  for a in $@; do
+    printf "$a|"
+  done
+  echo
+}
+
+mdheader () {
+  table "$*"
+
+  printf "|"
+  for a in $@; do
+    printf -- "-|"
+  done
+  echo
+}
+
+output () {
+  header=$1
+  row=$2
+
+  $header FILE RAW GZIP
   for file in ./*
   do
     if [ -f $file ]; then
       raw=$(stat -f '%z' $file)
       gzipped=$(gzip -c $file | wc -c)
-      echo -e "$(basename $file) $($out $raw) $($out $gzipped)"
+      $row $(basename $file) $($bytes $raw) $($bytes $gzipped)
     fi
   done
-) | column -t -s ' '
+}
+
+if [ $RAW ]; then
+  bytes=passthrough
+else
+  bytes=human
+fi
+
+if [ $MARKDOWN ]; then
+  output mdheader table
+else
+  output list list | column -t -s ' '
+fi
