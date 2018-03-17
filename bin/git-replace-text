@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Arguments should be valid regular expressions in perl.
+from=$1
+to=$2
+
+# Use perl to replace multiline patterns.
+git grep --name-only "${from}" | xargs perl -0777 -i -pe "s/${from}/${to}/gm"
