@@ -4,5 +4,10 @@
 from=$1
 to=$2
 
+if [ -z "${from}" ]; then
+  echo "Usage: git replace-text <from pattern> [<to>]"
+  exit 1
+fi
+
 # Use perl to replace multiline patterns.
 git grep --name-only "${from}" | xargs perl -0777 -i -pe "s/${from}/${to}/gm"
