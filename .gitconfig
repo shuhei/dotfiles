@@ -18,6 +18,7 @@
   s  = status
   ci = commit
   co = checkout
+  cp = cherry-pick
   b  = branch
   l  = log
   lp = log -p
