@@ -2,7 +2,7 @@
   excludesfile = ~/dotfiles/.gitignore_global
   editor = nvim
   quotepath = false
-  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  pager = [ $(uname -s) = 'Darwin' ] && /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less || less
 [color]
   ui = auto
 [color "diff"]
