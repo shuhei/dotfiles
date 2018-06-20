@@ -33,7 +33,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 PROMPT_COMMAND=prompt_command
 
 # Colorful grep
-export GREP_OPTIONS='--color=auto'
+# GREP_OPTIONS is deprecated...
+alias grep='grep --color=auto'
 
 # Colorful less
 export LESS='-R'
