@@ -2,11 +2,19 @@
 
 pushd ~
 
-# -- Homebrew
-./dotfiles/brew.sh
-
-# -- Karabiner
-ln -s dotfiles/karabiner ~/.config
+case $(uname -s) in
+Darwin)
+  # -- Homebrew
+  ~/dotfiles/brew.sh
+  # -- Karabiner
+  ln -s dotfiles/karabiner ~/.config
+  # To maximize MacVim's window horizontally as well as vertically
+  defaults write org.vim.MacVim MMZoomBoth 1
+  ;;
+Linux)
+  ~/dotfiles/ubuntu.sh
+  ;;
+esac
 
 # -- Vim
 ln -s dotfiles/.vim .vim
@@ -27,9 +35,6 @@ pushd dotfiles
 mkdir -p .vim/dein/repos
 git clone https://github.com/Shougo/dein.vim .vim/dein/repos/github.com/Shougo/dein.vim
 popd
-
-# To maximize MacVim's window horizontally as well as vertically
-defaults write org.vim.MacVim MMZoomBoth 1
 
 # -- tmux
 ln -s dotfiles/.tmux.conf .tmux.conf
