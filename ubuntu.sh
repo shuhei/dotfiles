@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install git tmux
+sudo apt install git tmux docker.io
 
 # neovim needs both of python2 and python3.
 # How can I make it work on both? Maybe install directory?
