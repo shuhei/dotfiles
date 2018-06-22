@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install git tmux docker.io
+sudo apt install git tmux docker.io net-tools htop apache2-utils
 
 # neovim needs both of python2 and python3.
 # How can I make it work on both? Maybe install directory?
