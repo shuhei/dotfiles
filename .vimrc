@@ -77,7 +77,7 @@ set cursorline
 set whichwrap=b,s,h,l,<,>,[,]
 
 " Use clipboard
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " Search
 set ignorecase
