@@ -300,6 +300,11 @@ if dein#tap('ale')
   let g:ale_open_list = 1
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_lint_on_enter = 0
+  " Don't apply tsserver to JavaScript. It complains about Flow type
+  " annotations. Use `:ALEInfo` to see available linters in JavaScript.
+  let g:ale_linters = {
+  \ 'javascript': ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'xo'],
+  \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
 endif
