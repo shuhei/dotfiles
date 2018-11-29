@@ -101,6 +101,11 @@ repo = 'othree/yajs'
 of_ft = 'javascript'
 
 [[plugins]]
+repo = 'prettier/vim-prettier'
+build = 'yarn install'
+of_ft = [ 'javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'yaml', 'html' ]
+
+[[plugins]]
 repo = 'tpope/vim-markdown'
 of_ft = 'markdown'
 
