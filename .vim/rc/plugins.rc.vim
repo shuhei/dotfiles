@@ -308,6 +308,9 @@ if dein#tap('ale')
   \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
+  " Toggle fixer
+  " https://github.com/w0rp/ale/issues/1353#issuecomment-424677810
+  command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
 endif
 
 if dein#tap('tsuquyomi')
