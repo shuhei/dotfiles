@@ -330,3 +330,9 @@ if dein#tap('tsuquyomi')
 	" TODO: Should I move this to global config?
   autocmd FileType typescript inoremap <buffer> <C-Space> <C-x><C-o>
 endif
+
+if dein#tap('FlyGrep.vim')
+  " Map FlyGrep to <C-/>
+  " https://stackoverflow.com/questions/9051837/how-to-map-c-to-toggle-comments-in-vim
+  nnoremap <C-_> :FlyGrep<cr>
+endif
