@@ -311,7 +311,7 @@ if dein#tap('ale')
   let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'javascript': ['eslint', 'prettier'],
-  \   'typescript': ['prettier'],
+  \   'typescript': ['tslint', 'prettier'],
   \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
