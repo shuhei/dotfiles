@@ -74,7 +74,7 @@ alias dc="docker-compose"
 alias tm="tmux"
 
 # curl
-alias curl="curl -w '@$HOME/dotfiles/curl-format.txt'"
+alias curlt="curl -w '@$HOME/dotfiles/curl-format.txt'"
 
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH

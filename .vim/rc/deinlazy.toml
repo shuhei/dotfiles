@@ -90,7 +90,7 @@ on_ft = 'javascript'
 
 [[plugins]]
 repo = 'mxw/vim-jsx'
-of_ft = 'javascript'
+on_ft = 'javascript'
 
 [[plugins]]
 repo = 'othree/javascript-libraries-syntax.vim'
@@ -98,11 +98,11 @@ on_ft = 'javascript'
 
 [[plugins]]
 repo = 'othree/yajs'
-of_ft = 'javascript'
+on_ft = 'javascript'
 
 [[plugins]]
 repo = 'tpope/vim-markdown'
-of_ft = 'markdown'
+on_ft = 'markdown'
 
 [[plugins]]
 repo = 'raichoo/purescript-vim'
@@ -110,7 +110,7 @@ on_ft = 'purescript'
 
 [[plugins]]
 repo = 'rhysd/vim-gfm-syntax'
-of_ft = 'markdown'
+on_ft = 'markdown'
 
 [[plugins]]
 repo = 'rust-lang/rust.vim'

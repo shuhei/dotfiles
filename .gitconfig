@@ -31,6 +31,7 @@
   dc = diff --cached
   dw = diff --word-diff=color
   dcw = diff --cached --word-diff=color
+  rd = range-diff
   g  = grep -n
 [github]
 	user = shuhei

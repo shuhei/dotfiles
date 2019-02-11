@@ -304,9 +304,20 @@ if dein#tap('ale')
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'xo'],
+  \ 'typescript': ['tsserver']
+  \}
+  let g:ale_linters_explicit = 1
+  let g:ale_fix_on_save = 1
+  let g:ale_fixers = {
+  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+  \   'javascript': ['eslint', 'prettier'],
+  \   'typescript': ['prettier'],
   \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
+  " Toggle fixer
+  " https://github.com/w0rp/ale/issues/1353#issuecomment-424677810
+  command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
 endif
 
 if dein#tap('tsuquyomi')
@@ -325,4 +336,10 @@ if dein#tap('tsuquyomi')
 	" Remap omni completion
 	" TODO: Should I move this to global config?
   autocmd FileType typescript inoremap <buffer> <C-Space> <C-x><C-o>
+endif
+
+if dein#tap('FlyGrep.vim')
+  " Map FlyGrep to <C-/>
+  " https://stackoverflow.com/questions/9051837/how-to-map-c-to-toggle-comments-in-vim
+  nnoremap <C-_> :FlyGrep<cr>
 endif
