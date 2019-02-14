@@ -304,14 +304,14 @@ if dein#tap('ale')
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'xo'],
-  \ 'typescript': ['tsserver']
+  \ 'typescript': ['tsserver', 'tslint']
   \}
   let g:ale_linters_explicit = 1
   let g:ale_fix_on_save = 1
   let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'javascript': ['eslint', 'prettier'],
-  \   'typescript': ['tslint', 'prettier'],
+  \   'typescript': ['prettier'],
   \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
