@@ -36,7 +36,7 @@ At the top of `~/.gitconfig`:
   path = ~/dotfiles/.gitconfig
 ```
 
-### Diff of MS Office files
+### Diff of MS Office files (if necessary...)
 
 To see diffs of MS Office files in text, install tika:
 
@@ -54,14 +54,6 @@ And add `.gitattributes` to your project.
 
 ## Vim
 
-### Syntax Check
+### To have a nice vim-airline status bar (if you want)
 
-Syntactic plugin is employed to perform syntax check. Make sure to prepare proper executables.
-
-- rubocop for ruby
-- eslint and jscs for javascript
-- coffeelint for coffee
-
-### Font
-
-Install [patched Monaco font](https://gist.github.com/baopham/1838072) for vim-airline. Set it as Non-ASCII Font of iTerm2.
+Install a font patched for vim-airline like [Monaco font](https://gist.github.com/baopham/1838072). Set it as Non-ASCII Font of iTerm2.
