@@ -44,10 +44,4 @@ ln -s dotfiles/.tmux.conf .tmux.conf
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# -- Hyper
-ln -s dotfiles/.hyper.js .hyper.js
-
-# -- Alacritty
-ln -s dotfiles/.alacritty.yml .alacritty.yml
-
 popd
