@@ -303,7 +303,7 @@ if dein#tap('ale')
   " Don't apply tsserver to JavaScript. It complains about Flow type
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
   let g:ale_linters = {
-  \ 'javascript': ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'xo'],
+  \ 'javascript': ['eslint', 'flow', 'standard', 'xo'],
   \ 'typescript': ['tsserver', 'tslint']
   \}
   let g:ale_linters_explicit = 1
@@ -342,4 +342,18 @@ if dein#tap('FlyGrep.vim')
   " Map FlyGrep to <C-/>
   " https://stackoverflow.com/questions/9051837/how-to-map-c-to-toggle-comments-in-vim
   nnoremap <C-_> :FlyGrep<cr>
+endif
+
+if dein#tap('LanguageClient-neovim')
+  " Rust:
+  "   rustup install nightly-2018-12-06
+  "   rustup default nightly-2018-12-06
+  "   rustup component add rls rust-analysis rust-src
+  " JS/TS:
+  "   npm i -g javascript-typescript-langserver
+  let g:LanguageClient_serverCommands = {
+  \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
+  \}
+
+  nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
 endif
