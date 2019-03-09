@@ -222,10 +222,6 @@ if dein#tap('vim-easy-align')
   nmap ga <Plug>(EasyAlign)
 endif
 
-if dein#tap('vim-jsdoc')
-  nnoremap <leader>d :JsDoc<CR>
-endif
-
 if dein#tap('incsearch.vim')
   map /  <Plug>(incsearch-forward)
   map ?  <Plug>(incsearch-backward)
@@ -348,7 +344,7 @@ if dein#tap('LanguageClient-neovim')
   " Rust:
   "   rustup install nightly-2018-12-06
   "   rustup default nightly-2018-12-06
-  "   rustup component add rls rust-analysis rust-src
+  "   rustup component add rls rust-analysis rust-src rustfmt
   " JS/TS:
   "   npm i -g javascript-typescript-langserver
   let g:LanguageClient_serverCommands = {
@@ -356,4 +352,5 @@ if dein#tap('LanguageClient-neovim')
   \}
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
+  nnoremap <leader>d :call LanguageClient_textDocument_formatting()<CR>
 endif
