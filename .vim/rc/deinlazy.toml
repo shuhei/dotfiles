@@ -61,10 +61,6 @@ repo = 'groenewege/vim-less'
 on_ft = 'less'
 
 [[plugins]]
-repo = 'heavenshell/vim-jsdoc'
-on_ft = 'javascript'
-
-[[plugins]]
 repo = 'hspec/hspec.vim'
 on_ft = 'haskell'
 

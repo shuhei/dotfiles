@@ -284,9 +284,9 @@ if dein#tap('vim-flow')
   let g:flow#enable = 0
   let g:flow#omnifunc = 0
 
-  autocmd FileType javascript nnoremap <buffer> <leader>t :FlowType<CR>
-  autocmd FileType javascript nnoremap <buffer> td :FlowJumpToDef<CR>
-  autocmd FileType javascript nnoremap <buffer> tm :FlowMake<CR>
+  " autocmd FileType javascript nnoremap <buffer> <leader>t :FlowType<CR>
+  " autocmd FileType javascript nnoremap <buffer> td :FlowJumpToDef<CR>
+  " autocmd FileType javascript nnoremap <buffer> tm :FlowMake<CR>
 endif
 
 if dein#tap('ale')
@@ -349,6 +349,8 @@ if dein#tap('LanguageClient-neovim')
   "   npm i -g javascript-typescript-langserver
   let g:LanguageClient_serverCommands = {
   \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
+  \ 'javascript': ['javascript-typescript-stdio'],
+  \ 'javascript.jsx': ['javascript-typescript-stdio']
   \}
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
