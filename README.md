@@ -54,6 +54,12 @@ And add `.gitattributes` to your project.
 
 ## Vim
 
+### To update plugins
+
+```
+:call dein#update()
+```
+
 ### To have a nice vim-airline status bar (if you want)
 
 Install a font patched for vim-airline like [Monaco font](https://gist.github.com/baopham/1838072). Set it as Non-ASCII Font of iTerm2.
