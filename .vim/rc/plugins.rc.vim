@@ -316,24 +316,6 @@ if dein#tap('ale')
   command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
 endif
 
-if dein#tap('tsuquyomi')
-  let g:tsuquyomi_completion_detail = 1
-
-  autocmd FileType typescript nnoremap <buffer> td :TsuDefinition<CR>
-  autocmd FileType typescript nnoremap <buffer> tsd :TsuSplitDefinition<CR>
-  autocmd FileType typescript nnoremap <buffer> tt :TsuTypeDefinition<CR>
-  autocmd FileType typescript nnoremap <buffer> tst :TsuSplitTypeDefinition<CR>
-  autocmd FileType typescript nnoremap <buffer> tb :TsuGoBack<CR>
-  autocmd FileType typescript nnoremap <buffer> tr :TsuReferences<CR>
-  autocmd FileType typescript nnoremap <buffer> <leader>tr :TsuRenameSymbol<CR>
-  autocmd FileType typescript nnoremap <buffer> <leader>trc :TsuRenameSymbolC<CR>
-  " Show a type hint
-  autocmd FileType typescript nnoremap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
-	" Remap omni completion
-	" TODO: Should I move this to global config?
-  autocmd FileType typescript inoremap <buffer> <C-Space> <C-x><C-o>
-endif
-
 if dein#tap('FlyGrep.vim')
   " Map FlyGrep to <C-/>
   " https://stackoverflow.com/questions/9051837/how-to-map-c-to-toggle-comments-in-vim
@@ -349,6 +331,7 @@ if dein#tap('LanguageClient-neovim')
   "   npm i -g javascript-typescript-langserver
   let g:LanguageClient_serverCommands = {
   \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
+  \ 'typescript': ['javascript-typescript-stdio'],
   \ 'javascript': ['javascript-typescript-stdio'],
   \ 'javascript.jsx': ['javascript-typescript-stdio']
   \}

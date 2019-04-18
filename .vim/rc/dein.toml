@@ -2,9 +2,6 @@
 repo = 'AndrewRadev/switch.vim'
 
 [[plugins]]
-repo = 'Quramy/tsuquyomi'
-
-[[plugins]]
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
