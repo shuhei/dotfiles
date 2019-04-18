@@ -78,3 +78,6 @@ alias curlt="curl -w '@$HOME/dotfiles/curl-format.txt'"
 
 # ------- Path -------
 export PATH=$HOME/dotfiles/bin:$PATH
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
