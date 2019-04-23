@@ -332,8 +332,6 @@ if dein#tap('LanguageClient-neovim')
   let g:LanguageClient_serverCommands = {
   \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
   \ 'typescript': ['javascript-typescript-stdio'],
-  \ 'javascript': ['javascript-typescript-stdio'],
-  \ 'javascript.jsx': ['javascript-typescript-stdio']
   \}
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
