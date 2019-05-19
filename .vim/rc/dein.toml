@@ -66,9 +66,6 @@ repo = 'junegunn/goyo.vim'
 repo = 'junegunn/vim-easy-align'
 
 [[plugins]]
-repo = 'kana/vim-textobj-user'
-
-[[plugins]]
 repo = 'kana/vim-textobj-line'
 
 [[plugins]]
