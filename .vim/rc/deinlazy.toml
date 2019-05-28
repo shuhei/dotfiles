@@ -117,6 +117,10 @@ repo = 'tpope/vim-haml'
 on_ft = 'haml'
 
 [[plugins]]
+repo = 'udalov/kotlin-vim'
+on_ft = 'kotlin'
+
+[[plugins]]
 repo = 'vim-ruby/vim-ruby'
 on_ft = 'ruby'
 
