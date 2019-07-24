@@ -327,11 +327,16 @@ if dein#tap('LanguageClient-neovim')
   "   rustup install nightly-2018-12-06
   "   rustup default nightly-2018-12-06
   "   rustup component add rls rust-analysis rust-src rustfmt
-  " JS/TS:
+  "
+  " JavaScript/TypeScript:
   "   npm i -g javascript-typescript-langserver
+  "
+  " Scala:
+  "   https://scalameta.org/metals/docs/editors/vim.html#generating-metals-binary
   let g:LanguageClient_serverCommands = {
   \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
   \ 'typescript': ['javascript-typescript-stdio'],
+  \ 'scala': ['~/bin/metals-vim'],
   \}
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
