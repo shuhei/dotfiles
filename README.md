@@ -15,9 +15,8 @@ git clone git@github.com:shuhei/dotfiles.git
 
 ## iTerm 2
 
-Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
-
-'Pastel (Dark Background)' preset is my favorite.
+- Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
+- 'Cobalt2' preset is my current favorite color preset.
 
 ## Bash
 
