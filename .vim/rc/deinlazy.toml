@@ -123,7 +123,3 @@ on_ft = 'kotlin'
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
 on_ft = 'ruby'
-
-[[plugins]]
-repo = 'vim-scripts/java.vim'
-on_ft = 'java'
