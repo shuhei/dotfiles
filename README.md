@@ -26,6 +26,14 @@ At the bottom of `~/.bash_profile`:
 source ~/dotfiles/.bash_profile
 ```
 
+## Zsh
+
+At the bottom of ~/.zshrc`:
+
+```shell
+source ~/dotfiles/.zshrc
+```
+
 ## Git
 
 At the top of `~/.gitconfig`:
