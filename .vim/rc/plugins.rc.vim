@@ -205,10 +205,6 @@ if dein#tap('vim-jours')
   let g:jours_dir = '~/notes'
 endif
 
-if dein#tap('javascript-libraries-syntax')
-  let g:used_javascript_libs = 'underscore,angularjs,jasmine'
-endif
-
 if dein#tap('ctrlp.vim')
   " https://github.com/kien/ctrlp.vim/issues/58
   let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
@@ -344,4 +340,8 @@ if dein#tap('LanguageClient-neovim')
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
   nnoremap <leader>d :call LanguageClient_textDocument_formatting()<CR>
+endif
+
+if dein#tap('vim-javascript')
+  let g:javascript_plugin_flow = 1
 endif
