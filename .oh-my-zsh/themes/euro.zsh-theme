@@ -14,4 +14,4 @@ PROMPT='[$FG[228]%~%{$reset_color%}]'
 PROMPT+=' $(git_prompt_info)'
 
 # https://stackoverflow.com/questions/4466245/customize-zshs-prompt-when-displaying-previous-command-exit-code
-PROMPT+=' %(?.$FG[154].$FG[005])€%{$reset_color%} '
+PROMPT+=' %(?.$FG[154].$FG[009])€%{$reset_color%} '
