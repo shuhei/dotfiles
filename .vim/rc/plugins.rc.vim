@@ -323,8 +323,6 @@ endif
 
 if dein#tap('LanguageClient-neovim')
   " Rust:
-  "   rustup install nightly-2018-12-06
-  "   rustup default nightly-2018-12-06
   "   rustup component add rls rust-analysis rust-src rustfmt
   "
   " JavaScript/TypeScript:
@@ -333,7 +331,7 @@ if dein#tap('LanguageClient-neovim')
   " Scala:
   "   https://scalameta.org/metals/docs/editors/vim.html#generating-metals-binary
   let g:LanguageClient_serverCommands = {
-  \ 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly-2018-12-06-x86_64-apple-darwin', 'rls'],
+  \ 'rust': ['~/.cargo/bin/rls'],
   \ 'typescript': ['javascript-typescript-stdio'],
   \ 'scala': ['~/bin/metals-vim'],
   \}
