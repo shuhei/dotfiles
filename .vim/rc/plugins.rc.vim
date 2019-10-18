@@ -296,7 +296,8 @@ if dein#tap('ale')
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow', 'standard', 'xo'],
-  \ 'typescript': ['tsserver', 'tslint']
+  \ 'typescript': ['tsserver', 'tslint'],
+  \ 'rust': ['rls'],
   \}
   let g:ale_linters_explicit = 1
   let g:ale_fix_on_save = 1
@@ -307,6 +308,7 @@ if dein#tap('ale')
   \ 'yaml': ['prettier'],
   \ 'markdown': ['prettier'],
   \ 'typescript': ['prettier'],
+  \ 'rust': ['rustfmt'],
   \}
   nmap <silent> <leader>N <Plug>(ale_previous_wrap)
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
