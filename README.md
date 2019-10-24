@@ -31,6 +31,7 @@ source ~/dotfiles/.bash_profile
 At the bottom of ~/.zshrc`:
 
 ```shell
+ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
 source ~/dotfiles/.zshrc
 ```
 

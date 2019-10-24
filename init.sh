@@ -44,7 +44,4 @@ ln -s dotfiles/.tmux.conf .tmux.conf
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# -- zsh
-ln -s dotfiles/.oh-my-zsh .oh-my-zsh/custom
-
 popd
