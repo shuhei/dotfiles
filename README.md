@@ -16,7 +16,11 @@ git clone git@github.com:shuhei/dotfiles.git
 ## iTerm 2
 
 - Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
-- 'Cobalt2' preset is my current favorite color preset.
+- Get color presets from [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes). "Smyck" is my current favorite color preset.
+- Set a font. Here is a list of some cool terminal fonts:
+  - APL385 Unicode (my current favorite)
+  - Fira Code
+  - Inconsolata
 
 ## Bash
 
