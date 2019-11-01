@@ -97,6 +97,10 @@ repo = 'pangloss/vim-javascript'
 of_ft = 'javascript'
 
 [[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+of_ft = 'typescriptreact'
+
+[[plugins]]
 repo = 'tpope/vim-markdown'
 on_ft = 'markdown'
 
