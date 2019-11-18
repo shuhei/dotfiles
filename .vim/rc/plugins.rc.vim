@@ -344,7 +344,3 @@ if dein#tap('LanguageClient-neovim')
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
   nnoremap <leader>d :call LanguageClient_textDocument_formatting()<CR>
 endif
-
-if dein#tap('vim-javascript')
-  let g:javascript_plugin_flow = 1
-endif

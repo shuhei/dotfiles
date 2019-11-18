@@ -88,13 +88,13 @@ on_ft = 'javascript'
 repo = 'mxw/vim-jsx'
 on_ft = 'javascript'
 
-# [[plugins]]
-# repo = 'othree/yajs'
-# on_ft = 'javascript'
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+on_ft = 'javascript'
 
 [[plugins]]
-repo = 'pangloss/vim-javascript'
-of_ft = 'javascript'
+repo = 'othree/yajs'
+on_ft = 'javascript'
 
 [[plugins]]
 repo = 'peitalin/vim-jsx-typescript'
