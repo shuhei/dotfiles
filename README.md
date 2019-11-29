@@ -32,10 +32,23 @@ source ~/dotfiles/.bash_profile
 
 ## Zsh
 
-At the bottom of ~/.zshrc`:
+Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
+
+`~/.zshrc`:
 
 ```shell
-ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
+export ZSH="/Users/shuhei/.oh-my-zsh"
+ZSH_THEME="euro"
+
+export ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
+
+plugins=(
+  git
+  fzf
+  zsh_reload
+)
+
+source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.zshrc
 ```
 
