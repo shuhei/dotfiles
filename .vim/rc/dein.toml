@@ -58,6 +58,7 @@ depends = 'vim-airline'
 
 [[plugins]]
 repo = 'junegunn/fzf'
+build = 'bash install.sh'
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
