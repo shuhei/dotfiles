@@ -58,6 +58,10 @@ depends = 'vim-airline'
 
 [[plugins]]
 repo = 'junegunn/fzf'
+build = 'bash install.sh'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
 
 [[plugins]]
 repo = 'junegunn/goyo.vim'
@@ -70,9 +74,6 @@ repo = 'kana/vim-textobj-line'
 
 [[plugins]]
 repo = 'kana/vim-textobj-user'
-
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
 repo = 'Lokaltog/vim-easymotion'

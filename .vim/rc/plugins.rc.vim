@@ -205,10 +205,11 @@ if dein#tap('vim-jours')
   let g:jours_dir = '~/notes'
 endif
 
-if dein#tap('ctrlp.vim')
-  " https://github.com/kien/ctrlp.vim/issues/58
-  let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-  nnoremap <C-o> :CtrlPClearAllCaches<CR>
+if dein#tap('fzf.vim')
+  " Only files in Git
+  nnoremap <C-p> :GFiles<CR>
+  " All files
+  nnoremap <C-o> :Files<CR>
 endif
 
 if dein#tap('vim-easy-align')
