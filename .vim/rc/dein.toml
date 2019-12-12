@@ -6,7 +6,6 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
-if = 'has("nvim")'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
@@ -93,12 +92,18 @@ repo = 'othree/html5.vim'
 [[plugins]]
 repo = 'reedes/vim-pencil'
 
+# For deoplete.nvim
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
+repo = 'roxma/nvim-yarp'
+if = '!has("nvim")'
+
+# For deoplete.nvim
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if = '!has("nvim")'
 
 [[plugins]]
-repo = 'scrooloose/syntastic'
-if = '!has("nvim")'
+repo = 'scrooloose/nerdcommenter'
 
 [[plugins]]
 repo = 'shuhei/asu2dark.vim'

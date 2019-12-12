@@ -22,21 +22,10 @@ ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.gvimrc .gvimrc
 ln -s dotfiles/.ideavimrc .ideavimrc
 
-# -- NeoVim
-mkdir -p ~/.config
-pushd ~/.config
-ln -s ~/dotfiles/.vim nvim
-popd
-# For python3 support. Otherwise you'll get:
-# [deoplete] deoplete.nvim does not work with this version.
-# [deoplete] It requires Neovim with Python3 support("+python3").
-pip3 install --upgrade pip
-pip3 install neovim
-
 # dein.vim
 pushd dotfiles
-mkdir -p .vim/dein/repos
-git clone https://github.com/Shougo/dein.vim .vim/dein/repos/github.com/Shougo/dein.vim
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh installer.sh ~/.cache/dein
 popd
 
 # -- tmux

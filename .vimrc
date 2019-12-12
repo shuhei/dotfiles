@@ -1,10 +1,3 @@
-"===============================
-" Utils
-"===============================
-function! s:source_rc(path)
-  execute 'source' fnameescape(expand('~/.vim/rc/' . a:path))
-endfunction
-
 let mapleader = ","
 
 "===============================
@@ -14,13 +7,12 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-let s:path = expand('~/.vim/dein')
-if dein#load_state(s:path)
+if dein#load_state('~/.cache/dein')
   let s:toml_path = '~/.vim/rc/dein.toml'
   let s:toml_lazy_path = '~/.vim/rc/deinlazy.toml'
-  call dein#begin(s:path, [expand('<sfile>'), s:toml_path, s:toml_lazy_path])
+  call dein#begin('~/.cache/dein', [$MYVIMRC, s:toml_path, s:toml_lazy_path])
   call dein#load_toml(s:toml_path, { 'lazy': 0 })
   call dein#load_toml(s:toml_lazy_path, { 'lazy': 1 })
   call dein#end()
@@ -31,7 +23,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-call s:source_rc('plugins.rc.vim')
+source ~/.vim/rc/plugins.rc.vim
 
 filetype plugin indent on
 

@@ -42,10 +42,7 @@ export LESS='-R'
 # ------- Aliases -------
 
 # vim
-alias vi='nvim'
-alias vim='nvim'
-alias view='nvim -R'
-export EDITOR=$(which nvim)
+export EDITOR=$(which vim)
 
 # bundler
 alias be='bundle exec'
