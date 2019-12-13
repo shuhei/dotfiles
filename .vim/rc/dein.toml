@@ -137,6 +137,3 @@ repo = 'tpope/vim-unimpaired'
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
-
-[[plugins]]
-repo = 'wsdjeg/FlyGrep.vim'

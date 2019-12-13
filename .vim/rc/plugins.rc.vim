@@ -283,12 +283,6 @@ if dein#tap('ale')
   command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
 endif
 
-if dein#tap('FlyGrep.vim')
-  " Map FlyGrep to <C-/>
-  " https://stackoverflow.com/questions/9051837/how-to-map-c-to-toggle-comments-in-vim
-  nnoremap <C-_> :FlyGrep<cr>
-endif
-
 if dein#tap('LanguageClient-neovim')
   " Rust:
   "   rustup component add rls rust-analysis rust-src rustfmt
