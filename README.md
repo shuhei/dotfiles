@@ -88,3 +88,7 @@ And add `.gitattributes` to your project.
 ### To have a nice vim-airline status bar (if you want)
 
 Install a font patched for vim-airline like [Monaco font](https://gist.github.com/baopham/1838072). Set it as Non-ASCII Font of iTerm2.
+
+### Vim 8 vs Neovim
+
+I'm currently using Vim 8, but the configuration should be compatible with Neovim. To switch back to Neovim, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
