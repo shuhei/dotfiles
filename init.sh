@@ -22,7 +22,10 @@ ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.gvimrc .gvimrc
 ln -s dotfiles/.ideavimrc .ideavimrc
 
-# dein.vim
+# -- deoplete.nvim, etc.
+pip3 install --user pynvim
+
+# -- dein.vim
 pushd dotfiles
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh installer.sh ~/.cache/dein
