@@ -83,6 +83,7 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 - Resize panes: `,<`, `,>`
 - Open URL under the cursor: `gx`
 - Add a word to the spell check dictionary: `zg` (`:help spell` for more information)
+- Reload `.vimrc`: `:so $MYVIMRC`
 
 ## tmux
 
