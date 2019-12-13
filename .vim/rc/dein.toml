@@ -55,12 +55,15 @@ repo = 'idanarye/vim-merginal'
 repo = 'jordwalke/flatlandia'
 depends = 'vim-airline'
 
+# https://github.com/Shougo/dein.vim/issues/74#issuecomment-237198717
 [[plugins]]
 repo = 'junegunn/fzf'
-build = 'bash install.sh'
+build = './install --all'
+merged = 0
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
+depends = 'fzf'
 
 [[plugins]]
 repo = 'junegunn/goyo.vim'
