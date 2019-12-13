@@ -17,7 +17,7 @@ git clone git@github.com:shuhei/dotfiles.git
 
 - Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
 - Get color presets from [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes). "Smyck" is my current favorite color preset.
-- Set a font. Here is a list of some cool terminal fonts:
+- Set a font (a patched one from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) to support vim-airline symbols). Here is a list of some cool terminal fonts:
   - Fira Code (My current favorite)
   - Inconsolata
 
@@ -63,10 +63,6 @@ At the top of `~/.gitconfig`:
 ```
 
 ## Vim
-
-### To have a nice vim-airline status bar (if you want)
-
-Install a font patched for vim-airline like [Monaco font](https://gist.github.com/baopham/1838072). Set it as Non-ASCII Font of iTerm2.
 
 ### Vim 8 vs Neovim
 
