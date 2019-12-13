@@ -68,8 +68,9 @@ set cursorline
 " Do not stop cursor on line head or end
 set whichwrap=b,s,h,l,<,>,[,]
 
-" Use clipboard
-set clipboard+=unnamedplus
+" Use clipboard (cross-platform)
+" https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
+set clipboard^=unnamed,unnamedplus
 
 " Search
 set ignorecase
