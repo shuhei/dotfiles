@@ -51,6 +51,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.zshrc
 ```
 
+Use `src` (provided by `zsh_reload`) to reload `.zshrc`.
+
 ## Git
 
 At the top of `~/.gitconfig`:
