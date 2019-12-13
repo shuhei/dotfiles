@@ -80,12 +80,6 @@ And add `.gitattributes` to your project.
 
 ## Vim
 
-### To update plugins
-
-```
-:call dein#update()
-```
-
 ### To have a nice vim-airline status bar (if you want)
 
 Install a font patched for vim-airline like [Monaco font](https://gist.github.com/baopham/1838072). Set it as Non-ASCII Font of iTerm2.
@@ -94,10 +88,13 @@ Install a font patched for vim-airline like [Monaco font](https://gist.github.co
 
 I'm currently using Vim 8, but the configuration should be compatible with Neovim. To switch back to Neovim, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
 
-### Cookbooks
+### Cookbook
 
 - Update plugins: `:call dein#update()`
-- Open the file navigator: `,f`
+- Open the file navigator (vimfiler): `,f`
+  - Toggle safe mode: `gs`
+  - Delete a file: `dd`
+  - Rename a file: `r`
 - Search for a file by name: `<C-p>`
 - Grep files: `<C-g>`
 - Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)
@@ -105,3 +102,15 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 - Focus mode: `,<Space>`
 - Resize panes: `,<`, `,>`
 - Open URL under the cursor: `gx`
+- Add a word to the spell check dictionary: `zg` (`:help spell` for more information)
+
+## tmux
+
+### Cookbook
+
+- Open session list: `<C-s>s`
+- Save sessions: `<C-s><S-s>`
+- Restore sessions: `<C-s><S-r>`
+- Enter copy mode: `<C-s>p`
+  - Start selection: `v`
+  - Start rectangle selection: `<C-v>`
