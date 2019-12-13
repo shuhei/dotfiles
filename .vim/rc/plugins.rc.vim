@@ -166,6 +166,13 @@ if dein#tap('fzf.vim')
   nnoremap <C-p> :GFiles<CR>
   " All files
   nnoremap <C-o> :Files<CR>
+
+  " https://github.com/junegunn/fzf.vim#example-git-grep-wrapper
+  command! -bang -nargs=* GGrep
+    \ call fzf#vim#grep(
+    \   'git grep --line-number '.shellescape(<q-args>), 0,
+    \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+  nnoremap <C-g> :GGrep<CR>
 endif
 
 if dein#tap('vim-easy-align')
