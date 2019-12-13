@@ -38,5 +38,3 @@
 	user = shuhei
 [diff]
   compactionHeuristic = true
-[diff "office"]
-  textconv = ~/dotfiles/bin/tika

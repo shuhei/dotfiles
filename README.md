@@ -62,22 +62,6 @@ At the top of `~/.gitconfig`:
   path = ~/dotfiles/.gitconfig
 ```
 
-### Diff of MS Office files (if necessary...)
-
-To see diffs of MS Office files in text, install tika:
-
-```shell
-brew install tika
-```
-
-And add `.gitattributes` to your project.
-
-```
-*.pptx diff=office
-*.docx diff=office
-*.xlsx diff=office
-```
-
 ## Vim
 
 ### To have a nice vim-airline status bar (if you want)
