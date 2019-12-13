@@ -3,24 +3,6 @@ if dein#tap('vimfiler.vim')
   nnoremap <leader>f :VimFilerExplorer<CR>
 endif
 
-if dein#tap('neocomplete.vim')
-  " Disable AutoComplPop.
-  let g:acp_enableAtStartup = 0
-  " Use neocomplete.
-  let g:neocomplete#enable_at_startup = 1
-  " Use smartcase.
-  let g:neocomplete#enable_smart_case = 1
-  " Set minimum syntax keyword length.
-  let g:neocomplete#sources#syntax#min_keyword_length = 3
-  let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-  " Enable omni completion.
-  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-endif
-
 if dein#tap('deoplete.nvim')
   let g:deoplete#enable_at_startup = 1
   let g:deoplete#enable_smart_case = 1
@@ -46,32 +28,6 @@ endif
 
 if dein#tap('nerdcommenter')
   let NERDSpaceDelims = 1
-endif
-
-if dein#tap('syntastic')
-  " http://qiita.com/yuku_t/items/0ac33cea18e10f14e185
-  let g:syntastic_mode_map =
-    \ {
-    \   'mode': 'active',
-    \ }
-  let g:syntastic_aggregate_errors = 1
-  let g:syntastic_check_on_wq = 0
-  " https://github.com/ElmCast/elm-vim
-  let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list = 1
-
-  let g:syntastic_ignore_files = ['\m/db/schema\.rb']
-  let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-
-  let g:syntastic_javascript_checkers = ['eslint', 'flow']
-
-  " To use custom elements and attributes in Angular and WebComponents.
-  let g:syntastic_html_tidy_ignore_errors =
-    \ [
-    \   '> is not recognized!',
-    \   'proprietary attribute "',
-    \   'discarding unexpected <'
-    \ ]
 endif
 
 if dein#tap('switch.vim')

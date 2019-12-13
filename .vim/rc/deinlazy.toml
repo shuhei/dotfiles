@@ -10,12 +10,6 @@ on_ft = 'jinja'
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
-if = '!has("nvim") && has("lua")'
-depends = 'context_filetype.vim'
-on_i = 1
-
-[[plugins]]
 repo = 'Shougo/vimfiler.vim'
 depends = 'unite.vim'
 on_map = '<Plug>'
