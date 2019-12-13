@@ -115,16 +115,10 @@ repo = 'shuhei/asu2dark.vim'
 repo = 'shuhei/vim-jours'
 
 [[plugins]]
-repo = 'thinca/vim-quickrun'
-
-[[plugins]]
 repo = 'tpope/vim-endwise'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
-
-[[plugins]]
-repo = 'tpope/vim-projectionist'
 
 [[plugins]]
 repo = 'tpope/vim-repeat'

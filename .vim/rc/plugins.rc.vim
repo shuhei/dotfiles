@@ -96,35 +96,6 @@ if dein#tap('vim-airline')
   let g:airline_powerline_fonts = 1
 endif
 
-if dein#tap('vim-quickrun')
-  " http://d.hatena.ne.jp/osyo-manga/20130311/1363012363
-  " http://shirusu-ni-tarazu.hatenablog.jp/entry/2012/04/17/090805
-  let g:quickrun_config =
-    \ {
-    \   '_': {
-    \     'runner': 'vimproc',
-    \     'runner/vimproc/updatetime': 60,
-    \     'outputter/buffer/into': 1
-    \   },
-    \   'ruby.rspec': {
-    \     'command': './bin/rspec'
-    \   },
-    \   'cucumber': {
-    \     'command': './bin/rspec'
-    \   },
-    \   'scheme': {
-    \     'command': 'scheme',
-    \     'exec': '%c < %s'
-    \   }
-    \ }
-  nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
-
-  augroup RSpec
-    autocmd!
-    autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
-  augroup END
-endif
-
 if dein#tap('unite.vim')
   " http://blog.monochromegane.com/blog/2013/09/18/ag-and-unite/
   " let g:unite_enable_start_insert = 1
@@ -153,10 +124,6 @@ if dein#tap('unite.vim')
   endif
 endif
 
-if dein#tap('vim-indent-guides')
-  let g:indent_guides_enable_on_vim_startup = 1
-endif
-
 if dein#tap('vim-jours')
   let g:jours_dir = '~/notes'
 endif
@@ -166,6 +133,8 @@ if dein#tap('fzf.vim')
   nnoremap <C-p> :GFiles<CR>
   " All files
   nnoremap <C-o> :Files<CR>
+  " Git commit history
+  nnoremap <C-c> :Commits<CR>
 
   " https://github.com/junegunn/fzf.vim#example-git-grep-wrapper
   command! -bang -nargs=* GGrep
@@ -300,4 +269,10 @@ if dein#tap('LanguageClient-neovim')
 
   nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
   nnoremap <leader>d :call LanguageClient_textDocument_formatting()<CR>
+endif
+
+if dein#tap('open-browser.vim')
+  let g:netrw_nogx = 1 " disable netrw's gx mapping.
+	nmap gx <Plug>(openbrowser-smart-search)
+	vmap gx <Plug>(openbrowser-smart-search)
 endif
