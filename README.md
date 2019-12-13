@@ -93,3 +93,15 @@ Install a font patched for vim-airline like [Monaco font](https://gist.github.co
 ### Vim 8 vs Neovim
 
 I'm currently using Vim 8, but the configuration should be compatible with Neovim. To switch back to Neovim, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
+
+### Cookbooks
+
+- Update plugins: `:call dein#update()`
+- Open the file navigator: `,f`
+- Search for a file by name: `<C-p>`
+- Grep files: `<C-g>`
+- Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)
+- Open a list of tabs: `,ut`
+- Focus mode: `,<Space>`
+- Resize panes: `,<`, `,>`
+- Open URL under the cursor: `gx`
