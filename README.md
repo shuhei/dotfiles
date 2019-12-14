@@ -51,7 +51,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.zshrc
 ```
 
-Use `src` (provided by `zsh_reload`) to reload `.zshrc`.
+### Cookbook
+
+- Reload `.zshrc`: `src` (provided by `zsh_reload`)
+- Fuzzy-find command arguments: `<C-t>` or `**<TAB>` (read [junegunn/fzf](https://github.com/junegunn/fzf) for more)
 
 ## Git
 
