@@ -73,6 +73,10 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 
 ### Cookbook
 
+#### Text Editing
+
+- Change `''` to `""`: `cs'"` ([vim-surround](https://github.com/tpope/vim-surround))
+
 #### Navigation
 
 - Open the file navigator (vimfiler): `,f`
