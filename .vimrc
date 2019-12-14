@@ -116,6 +116,6 @@ nnoremap <Leader>+ :exe "resize " . (winheight(0) * 5 / 4)<CR>
 nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 
 " http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-map <Leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+map <Leader>hl :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
   \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
   \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>

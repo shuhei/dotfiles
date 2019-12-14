@@ -84,11 +84,16 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
   - Delete a file: `dd`
   - Rename a file: `r`
 - Search for a file by name (only files in git): `<C-p>`
-- Search for a file by name (all files): `<C-o>`
+  - Open a file: `<CR>`
+  - Open a file in a vertical split: `<C-v>`
+  - Close `fzf`: `<C-c>` or `<ESC>`
+- Search for a file by name (all files): `<C-a>`
 - `git grep` files: `<C-g>`
 - Open a list of tabs: `,ut`
 - Open URL under the cursor: `gx`
 - Move to the file under the cursor: `gf`
+- Go back to the previous position in a file: ````````
+- Go back to the previous buffer: `:bp`
 
 #### Git
 

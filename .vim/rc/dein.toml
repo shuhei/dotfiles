@@ -31,6 +31,9 @@ repo = 'bling/vim-airline'
 repo = 'christoomey/vim-tmux-navigator'
 
 [[plugins]]
+repo = 'dense-analysis/ale'
+
+[[plugins]]
 repo = 'dharanasoft/rtf-highlight'
 
 [[plugins]]
@@ -82,9 +85,6 @@ repo = 'Lokaltog/vim-easymotion'
 
 [[plugins]]
 repo = 'mhinz/vim-signify'
-
-[[plugins]]
-repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'

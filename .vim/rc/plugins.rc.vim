@@ -6,10 +6,12 @@ endif
 if dein#tap('deoplete.nvim')
   let g:deoplete#enable_at_startup = 1
   let g:deoplete#enable_smart_case = 1
+
   inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
   function! s:my_cr_function()
     return pumvisible() ? deoplete#close_popup() : "\<CR>"
   endfunction
+
   " http://blog.muuny-blue.info/c95d62c68196b2d0c1c1de8c7eeb6d50.html#deopletenvim
   " <TAB>: completion
   inoremap <silent><expr> <TAB>
@@ -20,6 +22,13 @@ if dein#tap('deoplete.nvim')
     let col = col(".") - 1
     return !col || getline('.')[col - 1] =~ '\s'
   endfunction"}}}
+
+  " Use ale as the completion source for TypeScript
+  " https://github.com/dense-analysis/ale#2iii-completion
+  call deoplete#custom#option('sources', {
+    \ 'typescript': ['ale']
+    \})
+
   " <S-TAB>: completion back
   inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
   " <BS>: close popup
@@ -132,7 +141,7 @@ if dein#tap('fzf.vim')
   " Only files in Git
   nnoremap <C-p> :GFiles<CR>
   " All files
-  nnoremap <C-o> :Files<CR>
+  nnoremap <C-a> :Files<CR>
   " Git commit history
   nnoremap <C-c> :Commits<CR>
 
@@ -223,30 +232,47 @@ if dein#tap('ale')
   let g:ale_set_loclist = 0
   let g:ale_set_quickfix = 1
   let g:ale_open_list = 1
+
+  " Linters
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_lint_on_enter = 0
+  " Only run linters named in ale_linters settings.
+  let g:ale_linters_explicit = 1
   " Don't apply tsserver to JavaScript. It complains about Flow type
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
   let g:ale_linters = {
-  \ 'javascript': ['eslint', 'flow', 'standard', 'xo'],
-  \ 'typescript': ['tsserver', 'tslint'],
+  \ 'javascript': ['eslint', 'flow'],
+  \ 'typescript': ['tsserver', 'eslint'],
   \ 'rust': ['cargo'],
   \}
   " rustup component add clippy
   let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
-  let g:ale_linters_explicit = 1
+
+  " Fixers
   let g:ale_fix_on_save = 1
   let g:ale_fixers = {
   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
   \ 'javascript': ['eslint', 'prettier'],
+  \ 'typescript': ['eslint', 'prettier'],
   \ 'json': ['prettier'],
   \ 'yaml': ['prettier'],
   \ 'markdown': ['prettier'],
-  \ 'typescript': ['prettier'],
   \ 'rust': ['rustfmt'],
   \}
-  nmap <silent> <leader>N <Plug>(ale_previous_wrap)
+
+  " Go to the next/previous error/warning
   nmap <silent> <leader>n <Plug>(ale_next_wrap)
+  nmap <silent> <leader>N <Plug>(ale_previous_wrap)
+
+  " LSP features
+  nmap <silent> <leader>h <Plug>(ale_hover)
+  nmap <silent> <leader>r <Plug>(ale_find_references)
+  nmap <silent> <leader>d <Plug>(ale_go_to_definition)
+  nmap <silent> <leader>dv <Plug>(ale_go_to_definition_in_vsplit)
+  " ale_go_to_definition* don't work with TypeScript...
+  nmap <silent> <leader>t <Plug>(ale_go_to_type_definition)
+  nmap <silent> <leader>tv <Plug>(ale_go_to_type_definition_in_split)
+
   " Toggle fixer
   " https://github.com/w0rp/ale/issues/1353#issuecomment-424677810
   command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
@@ -256,19 +282,11 @@ if dein#tap('LanguageClient-neovim')
   " Rust:
   "   rustup component add rls rust-analysis rust-src rustfmt
   "
-  " JavaScript/TypeScript:
-  "   npm i -g javascript-typescript-langserver
-  "
-  " Scala:
-  "   https://scalameta.org/metals/docs/editors/vim.html#generating-metals-binary
+  " TypeScript:
+  "   Use ale instead of this plugin.
   let g:LanguageClient_serverCommands = {
   \ 'rust': ['~/.cargo/bin/rls'],
-  \ 'typescript': ['javascript-typescript-stdio'],
-  \ 'scala': ['~/bin/metals-vim'],
   \}
-
-  nnoremap <leader>t :call LanguageClient_contextMenu()<CR>
-  nnoremap <leader>d :call LanguageClient_textDocument_formatting()<CR>
 endif
 
 if dein#tap('open-browser.vim')
