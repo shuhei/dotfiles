@@ -7,6 +7,10 @@ repo = 'Glench/Vim-Jinja2-Syntax'
 on_ft = 'jinja'
 
 [[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+on_ft = 'javascript'
+
+[[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
@@ -47,10 +51,6 @@ repo = 'fatih/vim-go'
 on_ft = 'go'
 
 [[plugins]]
-repo = 'flowtype/vim-flow'
-on_ft = 'javascript'
-
-[[plugins]]
 repo = 'groenewege/vim-less'
 on_ft = 'less'
 
@@ -76,10 +76,6 @@ on_ft = 'scheme'
 
 [[plugins]]
 repo = 'moll/vim-node'
-on_ft = 'javascript'
-
-[[plugins]]
-repo = 'mxw/vim-jsx'
 on_ft = 'javascript'
 
 [[plugins]]
