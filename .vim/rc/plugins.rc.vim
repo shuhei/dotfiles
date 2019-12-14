@@ -218,15 +218,6 @@ if dein#tap('vim-tmux-navigator')
   nnoremap <silent> <C-w>l :TmuxNavigateRight<CR>
 endif
 
-if dein#tap('vim-flow')
-  let g:flow#enable = 0
-  let g:flow#omnifunc = 0
-
-  " autocmd FileType javascript nnoremap <buffer> <leader>t :FlowType<CR>
-  " autocmd FileType javascript nnoremap <buffer> td :FlowJumpToDef<CR>
-  " autocmd FileType javascript nnoremap <buffer> tm :FlowMake<CR>
-endif
-
 if dein#tap('ale')
   let g:airline#extensions#ale#enabled = 1
   let g:ale_set_loclist = 0
@@ -240,6 +231,8 @@ if dein#tap('ale')
   let g:ale_linters_explicit = 1
   " Don't apply tsserver to JavaScript. It complains about Flow type
   " annotations. Use `:ALEInfo` to see available linters in JavaScript.
+  " `flow-language-server` has more features than `flow` linter,
+  " but it's not supported in old versions of flow.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow'],
   \ 'typescript': ['tsserver', 'eslint'],
