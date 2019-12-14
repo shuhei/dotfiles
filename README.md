@@ -92,7 +92,7 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 - Open a list of tabs: `,ut`
 - Open URL under the cursor: `gx`
 - Move to the file under the cursor: `gf`
-- Go back to the previous position in a file: ````````
+- Go back to the previous position in a file: ``` `` ```
 - Go back to the previous buffer: `:bp`
 
 #### Git
