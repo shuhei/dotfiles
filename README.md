@@ -118,3 +118,4 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 - Enter copy mode: `<C-s>p`
   - Start selection: `v`
   - Start rectangle selection: `<C-v>`
+- Reload tmux config: `<C-s>I`
