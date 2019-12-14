@@ -70,20 +70,30 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 
 ### Cookbook
 
-- Update plugins: `:call dein#update()`
+#### Navigation
+
 - Open the file navigator (vimfiler): `,f`
   - Toggle safe mode: `gs`
   - Delete a file: `dd`
   - Rename a file: `r`
-- Search for a file by name: `<C-p>`
-- Grep files: `<C-g>`
-- Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)
+- Search for a file by name (only files in git): `<C-p>`
+- Search for a file by name (all files): `<C-o>`
+- `git grep` files: `<C-g>`
 - Open a list of tabs: `,ut`
-- Focus mode: `,<Space>`
-- Resize panes: `,<`, `,>`
 - Open URL under the cursor: `gx`
-- Add a word to the spell check dictionary: `zg` (`:help spell` for more information)
+- Move to the file under the cursor: `gf`
+
+#### Git
+
+- Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)
+
+#### Misc
+
+- Update plugins: `:call dein#update()`
+- Resize panes: `,<`, `,>`
 - Reload `.vimrc`: `:so $MYVIMRC`
+- Focus mode: `,<Space>`
+- Add a word to the spell check dictionary: `zg` (`:help spell` for more information)
 
 ## tmux
 
