@@ -243,9 +243,11 @@ if dein#tap('ale')
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow'],
   \ 'typescript': ['tsserver', 'eslint'],
-  \ 'rust': ['cargo'],
+  \ 'rust': ['rls', 'cargo'],
   \}
-  " rustup component add clippy
+  " Rust:
+  "   rustup component add rls rust-analysis rust-src rustfmt clippy
+  " Use clippy as a cargo linter.
   let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
 
   " Fixers
@@ -276,17 +278,6 @@ if dein#tap('ale')
   " Toggle fixer
   " https://github.com/w0rp/ale/issues/1353#issuecomment-424677810
   command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
-endif
-
-if dein#tap('LanguageClient-neovim')
-  " Rust:
-  "   rustup component add rls rust-analysis rust-src rustfmt
-  "
-  " TypeScript:
-  "   Use ale instead of this plugin.
-  let g:LanguageClient_serverCommands = {
-  \ 'rust': ['~/.cargo/bin/rls'],
-  \}
 endif
 
 if dein#tap('open-browser.vim')
