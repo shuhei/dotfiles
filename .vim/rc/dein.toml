@@ -15,9 +15,6 @@ build = 'make'
 repo = 'Shougo/vimshell.vim'
 
 [[plugins]]
-repo = 'amix/vim-zenroom2'
-
-[[plugins]]
 repo = 'bling/vim-airline'
 
 [[plugins]]
@@ -25,9 +22,6 @@ repo = 'christoomey/vim-tmux-navigator'
 
 [[plugins]]
 repo = 'dense-analysis/ale'
-
-[[plugins]]
-repo = 'dharanasoft/rtf-highlight'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
@@ -81,9 +75,6 @@ repo = 'mhinz/vim-signify'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
-
-[[plugins]]
-repo = 'othree/html5.vim'
 
 [[plugins]]
 repo = 'reedes/vim-pencil'
