@@ -263,17 +263,17 @@ if dein#tap('ale')
   \}
 
   " Go to the next/previous error/warning
-  nmap <silent> <leader>n <Plug>(ale_next_wrap)
-  nmap <silent> <leader>N <Plug>(ale_previous_wrap)
+  nmap <silent> <leader>e <Plug>(ale_next_wrap)
+  nmap <silent> <leader>E <Plug>(ale_previous_wrap)
 
   " LSP features
   nmap <silent> <leader>h <Plug>(ale_hover)
   nmap <silent> <leader>r <Plug>(ale_find_references)
   nmap <silent> <leader>d <Plug>(ale_go_to_definition)
-  nmap <silent> <leader>dv <Plug>(ale_go_to_definition_in_vsplit)
+  nmap <silent> <leader>v <Plug>(ale_go_to_definition_in_vsplit)
+  nmap <silent> <leader>c <Plug>(ale_rename)
   " ale_go_to_definition* don't work with TypeScript...
   nmap <silent> <leader>t <Plug>(ale_go_to_type_definition)
-  nmap <silent> <leader>tv <Plug>(ale_go_to_type_definition_in_split)
 
   " Toggle fixer
   " https://github.com/w0rp/ale/issues/1353#issuecomment-424677810
