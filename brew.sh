@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-brew install git bash-completion
+brew install git
 brew install tmux
 brew install the_silver_searcher
 
-# Some neovim plugins require python3.
+# Some vim plugins require python3.
 brew install python3
-brew install neovim
+brew install vim
 
 # For https://github.com/autozimu/LanguageClient-neovim
 # and https://github.com/junegunn/fzf.vim
