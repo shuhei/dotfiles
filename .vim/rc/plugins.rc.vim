@@ -235,7 +235,9 @@ if dein#tap('ale')
   " but it's not supported in old versions of flow.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow'],
+  \ 'javascriptract': ['eslint', 'flow'],
   \ 'typescript': ['tsserver', 'eslint'],
+  \ 'typescriptreact': ['tsserver', 'eslint'],
   \ 'rust': ['rls', 'cargo'],
   \}
   " Rust:
@@ -248,12 +250,18 @@ if dein#tap('ale')
   let g:ale_fixers = {
   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
   \ 'javascript': ['eslint', 'prettier'],
+  \ 'javascriptreact': ['eslint', 'prettier'],
   \ 'typescript': ['eslint', 'prettier'],
+  \ 'typescriptreact': ['eslint', 'prettier'],
   \ 'json': ['prettier'],
   \ 'yaml': ['prettier'],
   \ 'markdown': ['prettier'],
   \ 'rust': ['rustfmt'],
   \}
+
+  " Completion
+  " TODO: When is this necessary?
+  " let g:ale_completion_tsserver_autoimport = 1
 
   " Go to the next/previous error/warning
   nmap <silent> <leader>e <Plug>(ale_next_wrap)
