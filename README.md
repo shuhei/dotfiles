@@ -96,6 +96,11 @@ I'm currently using Vim 8, but the configuration should be compatible with Neovi
 - Go forward again after `<C-o>`: `<C-i>`
 - Go back to the previous buffer: `:bp`
 
+#### Window
+
+- Move to the left/right window: `<C-s>h`/`<C-s>l` (`:help window-move-cursor`)
+- Move the current window to the left/right: `<C-w>H`/`<C-w>L` (`:help window-moving`)
+
 #### Git
 
 - Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)

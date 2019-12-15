@@ -92,7 +92,7 @@ autocmd BufRead,BufNewFile *.js.flow set filetype=javascript
 
 " Show help in a vertical split
 " https://stackoverflow.com/questions/630884/opening-vim-help-in-a-vertical-split-window
-autocmd FileType help wincmd R
+autocmd FileType help wincmd H
 
 "===============================
 " File specific indentation
