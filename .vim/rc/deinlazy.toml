@@ -79,6 +79,11 @@ repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript', 'typescriptreact']
 
 [[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+on_ft = ['typescriptreact']
+depends = 'typescript-vim'
+
+[[plugins]]
 repo = 'luochen1990/rainbow'
 on_ft = 'scheme'
 
