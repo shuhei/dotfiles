@@ -8,7 +8,7 @@ on_ft = 'jinja'
 
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = 'javascript'
+on_ft = 'javascriptreact'
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
@@ -76,7 +76,7 @@ on_ft = 'coffee'
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-on_ft = 'typescript'
+on_ft = ['typescript', 'typescriptreact']
 
 [[plugins]]
 repo = 'luochen1990/rainbow'

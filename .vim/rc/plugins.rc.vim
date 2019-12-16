@@ -26,7 +26,8 @@ if dein#tap('deoplete.nvim')
   " Use ale as the completion source for TypeScript
   " https://github.com/dense-analysis/ale#2iii-completion
   call deoplete#custom#option('sources', {
-    \ 'typescript': ['ale']
+    \ 'typescript': ['ale'],
+    \ 'typescriptreact': ['ale'],
     \})
 
   " <S-TAB>: completion back
