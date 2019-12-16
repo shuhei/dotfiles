@@ -30,9 +30,6 @@ repo = 'editorconfig/editorconfig-vim'
 repo = 'flazz/vim-colorschemes'
 
 [[plugins]]
-repo = 'gorodinskiy/vim-coloresque'
-
-[[plugins]]
 repo = 'gregsexton/gitv'
 
 [[plugins]]

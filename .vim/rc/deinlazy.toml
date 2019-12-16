@@ -55,6 +55,10 @@ repo = 'groenewege/vim-less'
 on_ft = 'less'
 
 [[plugins]]
+repo = 'gorodinskiy/vim-coloresque'
+on_ft = ['less', 'css', 'sass', 'scss']
+
+[[plugins]]
 repo = 'gutenye/json5.vim'
 on_ft = 'json5'
 
