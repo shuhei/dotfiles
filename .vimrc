@@ -48,9 +48,6 @@ highlight htmlH4 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH5 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH6 term=underline ctermfg=228 guifg=#f6f080
 
-" https://vim.fandom.com/wiki/Fix_syntax_highlighting
-set redrawtime=10000
-
 " Encoding
 set termencoding=utf-8
 set encoding=utf-8
