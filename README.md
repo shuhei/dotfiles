@@ -69,7 +69,9 @@ At the top of `~/.gitconfig`:
 
 ### Vim 8 vs Neovim
 
-I'm currently using Vim 8, but the configuration should be compatible with Neovim. To switch back to Neovim, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
+I am using Neovim because of nicer experience at the moment. For example, Vim 8 shows flickering when opening a new file and hangs when syntax highlighting hangs.
+
+However, the configuration should be compatible with both of Neovim and Vim 8. To switch between them, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
 
 ### Cookbook
 

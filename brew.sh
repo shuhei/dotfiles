@@ -6,9 +6,8 @@ brew install the_silver_searcher
 
 # Some vim plugins require python3.
 brew install python3
-brew install vim
+brew install neovim
 
-# For https://github.com/autozimu/LanguageClient-neovim
-# and https://github.com/junegunn/fzf.vim
+# For https://github.com/junegunn/fzf.vim
 brew install fzf
 $(brew --prefix)/opt/fzf/install
