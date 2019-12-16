@@ -39,7 +39,7 @@ set langmenu=en_US
 let $LANG = 'en_US'
 
 " Use `colorscheme random` to look for new theme.
-colorscheme flatlandia
+colorscheme dracula
 highlight LineNr ctermfg=241
 highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080
@@ -47,6 +47,9 @@ highlight htmlH3 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH4 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH5 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH6 term=underline ctermfg=228 guifg=#f6f080
+
+" https://vim.fandom.com/wiki/Fix_syntax_highlighting
+set redrawtime=10000
 
 " Encoding
 set termencoding=utf-8

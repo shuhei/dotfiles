@@ -14,7 +14,9 @@ export LESS='-R'
 # ------- Aliases -------
 
 # vim
-export EDITOR=$(which vim)
+alias vi="nvim"
+alias vim="nvim"
+export EDITOR=$(which nvim)
 
 # Safety
 alias rm='rm -i'
