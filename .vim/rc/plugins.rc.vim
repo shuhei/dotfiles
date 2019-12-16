@@ -27,7 +27,6 @@ if dein#tap('deoplete.nvim')
   " https://github.com/dense-analysis/ale#2iii-completion
   call deoplete#custom#option('sources', {
     \ 'typescript': ['ale'],
-    \ 'typescriptreact': ['ale'],
     \})
 
   " <S-TAB>: completion back
@@ -236,9 +235,7 @@ if dein#tap('ale')
   " but it's not supported in old versions of flow.
   let g:ale_linters = {
   \ 'javascript': ['eslint', 'flow'],
-  \ 'javascriptract': ['eslint', 'flow'],
   \ 'typescript': ['tsserver', 'eslint'],
-  \ 'typescriptreact': ['tsserver', 'eslint'],
   \ 'rust': ['rls', 'cargo'],
   \}
   " Rust:
@@ -251,9 +248,7 @@ if dein#tap('ale')
   let g:ale_fixers = {
   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
   \ 'javascript': ['eslint', 'prettier'],
-  \ 'javascriptreact': ['eslint', 'prettier'],
   \ 'typescript': ['eslint', 'prettier'],
-  \ 'typescriptreact': ['eslint', 'prettier'],
   \ 'json': ['prettier'],
   \ 'json5': ['prettier'],
   \ 'jsonc': ['prettier'],
