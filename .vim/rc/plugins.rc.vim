@@ -254,6 +254,8 @@ if dein#tap('ale')
   \ 'typescript': ['eslint', 'prettier'],
   \ 'typescriptreact': ['eslint', 'prettier'],
   \ 'json': ['prettier'],
+  \ 'json5': ['prettier'],
+  \ 'jsonc': ['prettier'],
   \ 'yaml': ['prettier'],
   \ 'markdown': ['prettier'],
   \ 'rust': ['rustfmt'],
@@ -285,4 +287,12 @@ if dein#tap('open-browser.vim')
   let g:netrw_nogx = 1 " disable netrw's gx mapping.
 	nmap gx <Plug>(openbrowser-smart-search)
 	vmap gx <Plug>(openbrowser-smart-search)
+endif
+
+if dein#tap('json5.vim')
+  autocmd BufRead,BufNewFile .babelrc set filetype=json5
+endif
+
+if dein#tap('jsonc.vim')
+  autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 endif
