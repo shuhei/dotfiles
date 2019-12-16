@@ -23,6 +23,13 @@ if dein#check_install()
   call dein#install()
 endif
 
+" Clean up unused plugins
+command! DeinClean call s:dein_clean()
+function s:dein_clean()
+	call map(dein#check_clean(), "delete(v:val, 'rf')")
+	call dein#recache_runtimepath()
+endfunction
+
 source ~/.vim/rc/plugins.rc.vim
 
 filetype plugin indent on
