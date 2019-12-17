@@ -110,6 +110,7 @@ autocmd FileType help wincmd H
 " File specific indentation
 "===============================
 autocmd FileType elm setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType make setlocal noexpandtab
 
 "===============================
 " Spell check
