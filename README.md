@@ -107,9 +107,13 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 
 - Show git commit history: `<C-c>` (fzf) or `,gv` (gitv)
 
-#### Misc
+#### Plugins
 
 - Update plugins: `:call dein#update()`
+- Check plugins that are unnecessarily loaded as lazy plugins: `:echo dein#check_lazy_plugins()`
+
+#### Misc
+
 - Resize panes: `,<`, `,>`
 - Reload `.vimrc`: `:so $MYVIMRC`
 - Focus mode: `,<Space>`

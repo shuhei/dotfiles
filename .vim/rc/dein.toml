@@ -2,6 +2,13 @@
 repo = 'AndrewRadev/switch.vim'
 
 [[plugins]]
+repo = 'Lokaltog/vim-easymotion'
+
+# For deoplete.nvim
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
@@ -61,9 +68,6 @@ repo = 'kana/vim-textobj-line'
 repo = 'kana/vim-textobj-user'
 
 [[plugins]]
-repo = 'Lokaltog/vim-easymotion'
-
-[[plugins]]
 repo = 'mhinz/vim-signify'
 
 [[plugins]]
@@ -111,3 +115,67 @@ repo = 'tpope/vim-unimpaired'
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
+
+# -- Language plugins, which don't have `plugin` directory and
+#    not worth lazy plugins.
+#    Use `:echo dein#check_lazy_plugins()` to find them.
+
+[[plugins]]
+repo = 'neoclide/jsonc.vim'
+
+[[plugins]]
+repo = 'tpope/vim-haml'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'hspec/hspec.vim'
+
+[[plugins]]
+repo = 'gorodinskiy/vim-coloresque'
+
+[[plugins]]
+repo = 'othree/html5.vim'
+
+[[plugins]]
+repo = 'raichoo/purescript-vim'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'groenewege/vim-less'
+
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+
+[[plugins]]
+repo = 'othree/yajs'
+
+[[plugins]]
+repo = 'jparise/vim-graphql'
+
+[[plugins]]
+repo = 'digitaltoad/vim-jade'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+
+[[plugins]]
+repo = 'gutenye/json5.vim'
+
+[[plugins]]
+repo = 'Glench/Vim-Jinja2-Syntax'
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
