@@ -38,10 +38,6 @@ repo = 'haya14busa/incsearch.vim'
 [[plugins]]
 repo = 'idanarye/vim-merginal'
 
-[[plugins]]
-repo = 'jordwalke/flatlandia'
-depends = 'vim-airline'
-
 # https://github.com/Shougo/dein.vim/issues/74#issuecomment-237198717
 [[plugins]]
 repo = 'junegunn/fzf'
