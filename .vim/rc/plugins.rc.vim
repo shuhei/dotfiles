@@ -60,10 +60,13 @@ if dein#tap('switch.vim')
 endif
 
 if dein#tap('vim-markdown')
+  " Turn this off if markdown editing is unbearably slow.
+  " https://thoughtbot.com/blog/profiling-vim
   let g:markdown_fenced_languages =
       \ [
       \   'viml=vim',
       \   'bash=sh',
+      \   'sh',
       \   'js=javascript',
       \   'rb=ruby',
       \   'hs=haskell'
