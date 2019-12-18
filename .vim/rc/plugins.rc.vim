@@ -295,3 +295,7 @@ endif
 if dein#tap('jsonc.vim')
   autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 endif
+
+if dein#tap('vim-javascript')
+  let g:javascript_plugin_flow = 1
+endif
