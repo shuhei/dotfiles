@@ -43,6 +43,7 @@ export ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
 
 plugins=(
   git
+  yarn
   fzf
   zsh_reload
 )
