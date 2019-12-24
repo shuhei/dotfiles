@@ -156,12 +156,12 @@ repo = 'MaxMEllon/vim-jsx-pretty'
 [[plugins]]
 repo = 'othree/javascript-libraries-syntax.vim'
 
-# vim-javascript has better flowtype syntax support than yajs
-# even though yajs.vim has better highlighting in general.
-# Switch back to yajs.vim when I migrate all flowtype projects
-# to TypeScript!
+# yajs.vim doesn't work well with flowtype.
+# This plugin is more accurate than vim-javascript.
+# Consider using yajs.vim when I migrate all flowtype projects
+# to TypeScript.
 [[plugins]]
-repo = 'pangloss/vim-javascript'
+repo = 'yuezk/vim-js'
 
 [[plugins]]
 repo = 'jparise/vim-graphql'
