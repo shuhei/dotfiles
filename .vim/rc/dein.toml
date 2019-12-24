@@ -160,7 +160,7 @@ repo = 'othree/javascript-libraries-syntax.vim'
 # even though yajs.vim has better highlighting in general.
 # Switch back to yajs.vim when I migrate all flowtype projects
 # to TypeScript!
-[[plugin]]
+[[plugins]]
 repo = 'pangloss/vim-javascript'
 
 [[plugins]]
