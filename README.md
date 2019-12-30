@@ -39,17 +39,10 @@ Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
 export ZSH="/Users/shuhei/.oh-my-zsh"
 ZSH_THEME="euro"
 
-export ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
-
-plugins=(
-  git
-  yarn
-  fzf
-  zsh_reload
-)
+# Load before oh-my-zsh.sh because `plugins` are listed in this file.
+source ~/dotfiles/.zshrc
 
 source $ZSH/oh-my-zsh.sh
-source ~/dotfiles/.zshrc
 ```
 
 ### Cookbook
