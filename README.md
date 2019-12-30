@@ -45,6 +45,8 @@ source ~/dotfiles/.zshrc
 source $ZSH/oh-my-zsh.sh
 ```
 
+[Delete completion cache files](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-enabled-a-completion-plugin-but-the-completion-doesnt-work) when a new completion plugin is added.
+
 ### Cookbook
 
 - Reload `.zshrc`: `src` (provided by `zsh_reload`)
