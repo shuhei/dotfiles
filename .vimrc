@@ -99,7 +99,7 @@ autocmd BufRead,BufNewFile *.js.flow set filetype=javascript
 " Make plugins for javascript/typescript work for .jsx/.tsx.
 " Some plugins work only with javascript/typescript filetypes instead of
 " javascriptreact/typescriptreact, which Vim sets by default.
-autocmd BufRead,BufNewFile *.jsx set filetype=javascript.tsx
+autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
 autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 
 " Show help in a vertical split
