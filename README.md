@@ -90,7 +90,7 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 - Open a list of tabs: `,ut`
 - Open URL under the cursor: `gx`
 - Move to the file under the cursor: `gf`
-- Go back to the previous position in a file: `<C-o>` or ``` `` ```
+- Go back to the previous position in a file: `<C-o>` or ` `` `
 - Go forward again after `<C-o>`: `<C-i>`
 - Go back to the previous buffer: `:bp`
 
