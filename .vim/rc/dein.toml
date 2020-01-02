@@ -4,15 +4,8 @@ repo = 'AndrewRadev/switch.vim'
 [[plugins]]
 repo = 'Lokaltog/vim-easymotion'
 
-# For deoplete.nvim
-[[plugins]]
-repo = 'Shougo/context_filetype.vim'
-
 [[plugins]]
 repo = 'Shougo/dein.vim'
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
@@ -26,9 +19,6 @@ repo = 'bling/vim-airline'
 
 [[plugins]]
 repo = 'christoomey/vim-tmux-navigator'
-
-[[plugins]]
-repo = 'dense-analysis/ale'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
@@ -71,20 +61,14 @@ repo = 'kana/vim-textobj-user'
 repo = 'mhinz/vim-signify'
 
 [[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+
+[[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
 repo = 'reedes/vim-pencil'
-
-# For deoplete.nvim
-[[plugins]]
-repo = 'roxma/nvim-yarp'
-if = '!has("nvim")'
-
-# For deoplete.nvim
-[[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
-if = '!has("nvim")'
 
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
