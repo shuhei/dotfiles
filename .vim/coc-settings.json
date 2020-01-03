@@ -1,7 +1,9 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
+    "javascriptreact",
     "typescript",
+    "typescriptreact",
     "json",
     "jsonc",
     "json5",

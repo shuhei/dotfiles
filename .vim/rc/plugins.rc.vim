@@ -142,6 +142,7 @@ if dein#tap('coc.nvim')
     \   'coc-rls',
     \   'coc-yaml',
     \   'coc-flow',
+    \   'coc-stylelint',
     \ ]
 endif
 
