@@ -7,5 +7,6 @@
     "json5",
     "css",
     "markdown"
-  ]
+  ],
+  "tsserver.enableJavascript": false
 }
