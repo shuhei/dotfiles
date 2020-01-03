@@ -132,6 +132,16 @@ if dein#tap('coc.nvim')
   nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
   " Resume latest coc list
   nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+  let g:coc_global_extensions =
+    \ [
+    \   'coc-prettier',
+    \   'coc-tsserver',
+    \   'coc-json',
+    \   'coc-css',
+    \   'coc-rls',
+    \   'coc-yaml',
+    \ ]
 endif
 
 if dein#tap('vim-endwise')
@@ -338,4 +348,5 @@ endif
 
 if dein#tap('jsonc.vim')
   autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+  autocmd BufRead,BufNewFile coc-setttings.json set filetype=jsonc
 endif
