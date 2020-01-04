@@ -8,7 +8,8 @@
     "jsonc",
     "json5",
     "css",
-    "markdown"
+    "markdown",
+    "rust"
   ],
   "tsserver.enableJavascript": false
 }
