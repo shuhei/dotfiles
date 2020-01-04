@@ -108,6 +108,11 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 - Update plugins: `:call dein#update()`
 - Check plugins that are unnecessarily loaded as lazy plugins: `:echo dein#check_lazy_plugins()`
 
+#### Switching modes
+
+- Back to normal mode: `<Esc>` or `<C-[>`
+- One-off command in insert mode: `<C-o>`
+
 #### Misc
 
 - Resize panes: `,<`, `,>`
