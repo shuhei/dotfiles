@@ -49,7 +49,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Cookbook
 
-- Reload `.zshrc`: `src` (provided by `zsh_reload`)
+- Reload `.zshrc` including completion: `reload_zsh`
 - Fuzzy-find command arguments: `<C-t>` or `**<TAB>` (read [junegunn/fzf](https://github.com/junegunn/fzf) for more)
 
 ## Git
