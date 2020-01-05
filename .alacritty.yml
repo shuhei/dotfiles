@@ -70,7 +70,7 @@ debug:
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
+custom_cursor_colors: true
 
 # Colors (Dracula) from iTerms 2
 colors:
@@ -79,10 +79,10 @@ colors:
     background: '0x1e1f28'
     foreground: '0xf8f8f2'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
+  # Cursor colors
   cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
+    text:   '0xffffff'
+    cursor: '0xbbbbbb'
 
   # Normal colors
   normal:
