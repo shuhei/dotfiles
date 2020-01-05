@@ -1,0 +1,24 @@
+#/usr/bin/env bash
+
+# Rename file extension easily
+#
+# Instead of typing:
+#   git mv foo/bar/baz.js foo/bar/baz.ts
+# you can type:
+#   git mv-ext foo/bar/baz.js ts
+
+original=$1
+extension=$2
+
+# Using bash's parameter expansion:
+#
+# https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02
+#
+# ${parameter%[word]}
+#    Remove Smallest Suffix Pattern. The word shall be expanded to produce a
+#    pattern. The parameter expansion shall then result in parameter, with the
+#    smallest portion of the suffix matched by the pattern deleted. If present,
+#    word shall not begin with an unquoted '%'.
+target="${original%.*}.${extension}"
+
+git mv $original $target
