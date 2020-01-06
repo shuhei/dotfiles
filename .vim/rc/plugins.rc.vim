@@ -177,6 +177,8 @@ if dein#tap('switch.vim')
 endif
 
 if dein#tap('vim-markdown')
+  let g:markdown_syntax_conceal = 0
+
   " Turn this off if markdown editing is unbearably slow.
   " https://thoughtbot.com/blog/profiling-vim
   let g:markdown_fenced_languages =
