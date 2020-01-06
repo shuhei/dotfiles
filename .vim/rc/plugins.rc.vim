@@ -260,8 +260,8 @@ if dein#tap('vim-jours')
 endif
 
 if dein#tap('fzf.vim')
-  " Only files in Git
-  nnoremap <C-p> :GFiles<CR>
+  " Only files from git in a git repository. Otherwise, all files.
+  nnoremap <expr> <C-p> isdirectory('.git') ? ':GFiles<CR>' : ':Files<CR>'
   " All files
   nnoremap <C-a> :Files!<CR>
   " Git commit history
@@ -272,7 +272,8 @@ if dein#tap('fzf.vim')
     \ call fzf#vim#grep(
     \   'git grep --line-number '.shellescape(<q-args>), 0,
     \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
-  nnoremap <C-g> :GGrep!<CR>
+  " Use git-grep in a git repository and ag otherwise.
+  nnoremap <expr> <C-g> isdirectory('.git') ? ':GGrep!<CR>' : ':Ag!<CR>'
 endif
 
 if dein#tap('vim-easy-align')
