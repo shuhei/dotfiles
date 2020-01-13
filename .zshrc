@@ -8,11 +8,6 @@ export plugins=(
   zsh_reload
 )
 
-# Disable the `y` alias from oh-my-zsh yarn plugin.
-# It's annoying when I run `y` by mistake and yarn creates `yarn.lock`
-# in non-JavaScript projects.
-unalias y
-
 # Clean up and reload zsh config including completion
 # https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#completion-issues
 alias reload_zsh="rm -f ~/.zcompdump* && src"
