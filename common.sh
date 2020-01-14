@@ -11,6 +11,11 @@ alias grep='grep --color=auto'
 # Colorful less
 export LESS='-R'
 
+# Tell applications that the terminal accepts UTF-8.
+# Using only LC_CTYPE as iTerm2 does.
+# This enables tmux to output unicode characters.
+export LC_CTYPE='UTF-8'
+
 # ------- Aliases -------
 
 # vim
