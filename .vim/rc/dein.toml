@@ -23,8 +23,12 @@ repo = 'christoomey/vim-tmux-navigator'
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
+# [[plugins]]
+# repo = 'flazz/vim-colorschemes'
+
 [[plugins]]
-repo = 'flazz/vim-colorschemes'
+repo = 'dracula/vim'
+as = 'dracula'
 
 [[plugins]]
 repo = 'gregsexton/gitv'
