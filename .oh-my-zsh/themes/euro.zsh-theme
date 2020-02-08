@@ -9,9 +9,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 # https://github.com/robbyrussell/oh-my-zsh/issues/4826
 
 # %~ is the current working directory relative to the home directory
-PROMPT='[$FG[228]%~%{$reset_color%}]'
+PROMPT='[$fg[yellow]%~%{$reset_color%}]'
 
 PROMPT+='$(git_prompt_info)'
 
 # https://stackoverflow.com/questions/4466245/customize-zshs-prompt-when-displaying-previous-command-exit-code
-PROMPT+=' %(?.$FG[154].$FG[009])€%{$reset_color%} '
+PROMPT+=' %(?.$fg[green].$fg[red])€%{$reset_color%} '
