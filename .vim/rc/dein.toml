@@ -104,9 +104,6 @@ repo = 'dracula/vim'
 as = 'dracula'
 
 [[plugins]]
-repo = 'drewtempelmeyer/palenight.vim'
-
-[[plugins]]
 repo = 'ayu-theme/ayu-vim'
 
 [[plugins]]
