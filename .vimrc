@@ -51,6 +51,7 @@ if (has("termguicolors"))
 endif
 
 " colorscheme dracula
+" let g:gruvbox_contrast_dark="hard"
 " colorscheme gruvbox
 colorscheme nord
 " let ayucolor="light"
