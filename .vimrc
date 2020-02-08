@@ -54,8 +54,13 @@ colorscheme dracula
 " colorscheme gruvbox
 " colorscheme palenight
 " colorscheme nord
+" let ayucolor="light"
+" let ayucolor="mirage"
 " let ayucolor="dark"
 " colorscheme ayu
+" set background=light
+" set background=dark
+" colorscheme PaperColor
 
 highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080

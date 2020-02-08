@@ -97,7 +97,7 @@ repo = 'tpope/vim-unimpaired'
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
-# -- Color schemes
+# -- Colorschemes
 
 [[plugins]]
 repo = 'dracula/vim'
@@ -114,6 +114,9 @@ repo = 'arcticicestudio/nord-vim'
 
 [[plugins]]
 repo = 'morhetz/gruvbox'
+
+[[plugins]]
+repo = 'NLKNguyen/papercolor-theme'
 
 # -- Language plugins, which don't have `plugin` directory and
 #    not worth lazy plugins.
