@@ -23,13 +23,6 @@ repo = 'christoomey/vim-tmux-navigator'
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
-# [[plugins]]
-# repo = 'flazz/vim-colorschemes'
-
-[[plugins]]
-repo = 'dracula/vim'
-as = 'dracula'
-
 [[plugins]]
 repo = 'gregsexton/gitv'
 
@@ -103,6 +96,24 @@ repo = 'tpope/vim-unimpaired'
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
+
+# -- Color schemes
+
+[[plugins]]
+repo = 'dracula/vim'
+as = 'dracula'
+
+[[plugins]]
+repo = 'drewtempelmeyer/palenight.vim'
+
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'
+
+[[plugins]]
+repo = 'arcticicestudio/nord-vim'
+
+[[plugins]]
+repo = 'morhetz/gruvbox'
 
 # -- Language plugins, which don't have `plugin` directory and
 #    not worth lazy plugins.

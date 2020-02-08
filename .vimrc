@@ -45,8 +45,18 @@ set number
 set langmenu=en_US
 let $LANG = 'en_US'
 
-" Use `colorscheme random` to look for new theme.
+" Enable true colors
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 colorscheme dracula
+" colorscheme gruvbox
+" colorscheme palenight
+" colorscheme nord
+" let ayucolor="dark"
+" colorscheme ayu
+
 highlight LineNr ctermfg=241
 highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080
