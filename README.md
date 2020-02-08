@@ -120,6 +120,7 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 - Focus mode: `,<Space>`
 - Add a word to the spell check dictionary: `zg` (`:help spell` for more information)
 - Show highlighting at the cursor: `,hl`
+- Organize imports `:OR`
 
 ## tmux
 
