@@ -57,7 +57,6 @@ colorscheme dracula
 " let ayucolor="dark"
 " colorscheme ayu
 
-highlight LineNr ctermfg=241
 highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH3 term=underline ctermfg=228 guifg=#f6f080
