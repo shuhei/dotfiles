@@ -1,7 +1,7 @@
 # The color codes are from `spectrum_ls` command.
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[white]%}("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[white]%})%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[default]%}("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[default]%})%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 

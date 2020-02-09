@@ -54,10 +54,10 @@ endif
 " let g:gruvbox_contrast_dark="hard"
 " colorscheme gruvbox
 " colorscheme nord
-" let ayucolor="light"
+let ayucolor="light"
 " let ayucolor="mirage"
 " let ayucolor="dark"
-" colorscheme ayu
+colorscheme ayu
 " set background=light
 " colorscheme PaperColor
 " colorscheme pink-moon
