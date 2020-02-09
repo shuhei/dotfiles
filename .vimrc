@@ -60,14 +60,7 @@ endif
 " colorscheme ayu
 " set background=light
 " colorscheme PaperColor
-colorscheme pink-moon
-
-highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
-highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080
-highlight htmlH3 term=underline ctermfg=228 guifg=#f6f080
-highlight htmlH4 term=underline ctermfg=228 guifg=#f6f080
-highlight htmlH5 term=underline ctermfg=228 guifg=#f6f080
-highlight htmlH6 term=underline ctermfg=228 guifg=#f6f080
+" colorscheme pink-moon
 
 " Encoding
 set termencoding=utf-8
