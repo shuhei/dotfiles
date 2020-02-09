@@ -53,13 +53,14 @@ endif
 " colorscheme dracula
 " let g:gruvbox_contrast_dark="hard"
 " colorscheme gruvbox
-colorscheme nord
+" colorscheme nord
 " let ayucolor="light"
 " let ayucolor="mirage"
 " let ayucolor="dark"
 " colorscheme ayu
 " set background=light
 " colorscheme PaperColor
+colorscheme pink-moon
 
 highlight htmlH1 term=underline ctermfg=228 guifg=#f6f080
 highlight htmlH2 term=underline ctermfg=228 guifg=#f6f080

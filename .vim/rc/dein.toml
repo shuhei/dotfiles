@@ -115,6 +115,9 @@ repo = 'morhetz/gruvbox'
 [[plugins]]
 repo = 'NLKNguyen/papercolor-theme'
 
+[[plugins]]
+repo = 'sts10/vim-pink-moon'
+
 # -- Language plugins, which don't have `plugin` directory and
 #    not worth lazy plugins.
 #    Use `:echo dein#check_lazy_plugins()` to find them.
