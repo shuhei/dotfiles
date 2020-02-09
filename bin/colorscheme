@@ -1,0 +1,40 @@
+#!/bin/sh
+
+color=$1
+dotfiles=~/dotfiles
+alacritty=${dotfiles}/alacritty
+
+configure_alacritty() {
+  cat ${alacritty}/base.yml ${alacritty}/${color}.yml > ${dotfiles}/.alacritty.yml
+}
+
+configure_vim() {
+  echo $1 > ${dotfiles}/.vim/color.vim
+}
+
+case $color in
+  dracula)
+    configure_alacritty
+    configure_vim 'colorscheme dracula'
+    ;;
+  nord)
+    configure_alacritty
+    configure_vim 'colorscheme nord'
+    ;;
+  gruvbox)
+    configure_alacritty
+    configure_vim 'let g:gruvbox_contrast_dark="hard"\ncolorscheme gruvbox'
+    ;;
+  pink-moon)
+    configure_alacritty
+    configure_vim 'colorscheme pink-moon'
+    ;;
+  ayu-light)
+    # TODO: Add dark and mirage.
+    configure_alacritty
+    configure_vim 'let ayucolor="light"\ncolorscheme ayu'
+    ;;
+  *)
+    echo "Unsupported colorscheme: ${color}"
+    ;;
+esac

@@ -13,6 +13,20 @@ git clone git@github.com:shuhei/dotfiles.git
 ./dotfiles/init.sh
 ```
 
+## Color scheme
+
+Use `colorscheme` command to update color schemes of Alacritty and Vim together.
+
+```shell
+# Good for morning
+colorscheme ayu-light
+# Good for night
+colorscheme nord
+colorscheme pink-moon
+```
+
+The command generates `.alacritty.yml`.
+
 ## iTerm 2
 
 - Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.

@@ -50,17 +50,13 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" colorscheme dracula
-" let g:gruvbox_contrast_dark="hard"
-" colorscheme gruvbox
-" colorscheme nord
-let ayucolor="light"
-" let ayucolor="mirage"
-" let ayucolor="dark"
-colorscheme ayu
-" set background=light
-" colorscheme PaperColor
-" colorscheme pink-moon
+let color_path = expand('~/.vim/color.vim')
+echo color_path
+if filereadable(color_path)
+  exec 'source' color_path
+else
+  colorscheme pink-moon
+endif
 
 " Encoding
 set termencoding=utf-8
