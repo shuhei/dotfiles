@@ -16,14 +16,14 @@
                 },
                 "rules": [
                     {
-                        "description": "Change right_command+hjkl to arrow keys",
+                        "description": "Change left_control+hjkl to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -42,7 +42,7 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -61,7 +61,7 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -80,7 +80,7 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
