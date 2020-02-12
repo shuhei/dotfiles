@@ -35,6 +35,7 @@ case $color in
     configure_vim 'let ayucolor="light"\ncolorscheme ayu'
     ;;
   *)
-    echo "Unsupported colorscheme: ${color}"
+    echo "Supported colorschemes: dracula, nord, gruvbox, pink-moon, ayu-light"
+    exit 1
     ;;
 esac
