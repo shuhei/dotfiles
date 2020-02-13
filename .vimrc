@@ -51,7 +51,6 @@ if (has("termguicolors"))
 endif
 
 let color_path = expand('~/.vim/color.vim')
-echo color_path
 if filereadable(color_path)
   exec 'source' color_path
 else
