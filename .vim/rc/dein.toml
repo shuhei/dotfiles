@@ -110,12 +110,6 @@ repo = 'ayu-theme/ayu-vim'
 repo = 'arcticicestudio/nord-vim'
 
 [[plugins]]
-repo = 'morhetz/gruvbox'
-
-[[plugins]]
-repo = 'NLKNguyen/papercolor-theme'
-
-[[plugins]]
 repo = 'sts10/vim-pink-moon'
 
 # -- Language plugins, which don't have `plugin` directory and

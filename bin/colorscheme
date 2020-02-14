@@ -21,10 +21,6 @@ case $color in
     configure_alacritty
     configure_vim 'colorscheme nord'
     ;;
-  gruvbox)
-    configure_alacritty
-    configure_vim 'let g:gruvbox_contrast_dark="hard"\ncolorscheme gruvbox'
-    ;;
   pink-moon)
     configure_alacritty
     configure_vim 'colorscheme pink-moon'
@@ -35,7 +31,7 @@ case $color in
     configure_vim 'let ayucolor="light"\ncolorscheme ayu'
     ;;
   *)
-    echo "Supported colorschemes: dracula, nord, gruvbox, pink-moon, ayu-light"
+    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light"
     exit 1
     ;;
 esac
