@@ -147,3 +147,6 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
   - Start selection: `v`
   - Start rectangle selection: `<C-v>`
 - Reload tmux config: `<C-s>I`
+- Switch layout (vertical <-> horizontal): `<C-s><Space>`
+- Resize panes horizontally: `<C-s><Left>`, `<C-s><Right>`
+- Resize panes vertically: `<C-s><Up>`, `<C-s><Down>`
