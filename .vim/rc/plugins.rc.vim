@@ -273,7 +273,10 @@ if dein#tap('fzf.vim')
   command! -bang -nargs=* GGrep
     \ call fzf#vim#grep(
     \   'git grep --line-number '.shellescape(<q-args>), 0,
-    \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+    \   fzf#vim#with_preview({
+    \     'dir': systemlist('git rev-parse --show-toplevel')[0],
+    \     'options': '--delimiter : --nth 3..',
+    \   }), <bang>0)
   " Use git-grep in a git repository and ag otherwise.
   nnoremap <expr> <C-g> isdirectory('.git') ? ':GGrep!<CR>' : ':Ag!<CR>'
 endif
