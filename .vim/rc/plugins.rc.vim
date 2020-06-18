@@ -270,16 +270,19 @@ if dein#tap('fzf.vim')
   " Git commit history
   nnoremap <C-c> :Commits!<CR>
 
-  " https://github.com/junegunn/fzf.vim#example-git-grep-wrapper
-  command! -bang -nargs=* GGrep
+  " The :Rg command from fzf.vim includes file names in the search.
+  " Define a version that ignore file names.
+  " https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861
+  " https://github.com/junegunn/fzf.vim/issues/609
+  command! -bang -nargs=* RipGrep
     \ call fzf#vim#grep(
-    \   'git grep --line-number '.shellescape(<q-args>), 0,
-    \   fzf#vim#with_preview({
-    \     'dir': systemlist('git rev-parse --show-toplevel')[0],
-    \     'options': '--delimiter : --nth 3..',
-    \   }), <bang>0)
+    \   'rg --column --line-number --hidden --smart-case --no-heading --color=always '.shellescape(<q-args>),
+    \   1,
+    \   <bang>0 ? fzf#vim#with_preview({ 'options': '--delimiter : --nth 4..' }, 'up:60%')
+    \           : fzf#vim#with_preview({ 'options': '--delimiter : --nth 4..' }, 'right:50%:hidden', '?'),
+    \   <bang>0)
   " Use git-grep in a git repository and ag otherwise.
-  nnoremap <expr> <C-g> isdirectory('.git') ? ':GGrep!<CR>' : ':Ag!<CR>'
+  nnoremap <expr> <C-g> ':RipGrep!<CR>'
 endif
 
 if dein#tap('vim-easy-align')
