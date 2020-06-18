@@ -10,4 +10,5 @@ brew install neovim
 
 # For https://github.com/junegunn/fzf.vim
 brew install fzf
+brew install ripgrep
 $(brew --prefix)/opt/fzf/install

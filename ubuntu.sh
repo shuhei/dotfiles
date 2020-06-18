@@ -7,6 +7,8 @@ sudo apt install python-pip python3-pip neovim
 sudo pip install neovim
 sudo pip3 install neovim
 
+sudo apt install fzf ripgrep
+
 # perf command
 sudo apt install linux-tools-common
 
