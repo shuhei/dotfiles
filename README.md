@@ -100,7 +100,7 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
   - Open a file in a vertical split: `<C-v>`
   - Close `fzf`: `<C-c>` or `<ESC>`
 - Search for a file by name (all files): `<C-a>`
-- `git grep` files: `<C-g>`
+- Grep files: `<C-g>`
 - Open a list of tabs: `,ut`
 - Open URL under the cursor: `gx`
 - Move to the file under the cursor: `gf`
