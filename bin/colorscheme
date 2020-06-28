@@ -40,11 +40,11 @@ case $color in
     ;;
   firewatch)
     configure_alacritty
-    configure_vim 'set background=dark\nlet g:two_firewatch_italics=1\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    configure_vim 'set background=dark\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
     ;;
   firewatch-light)
     configure_alacritty
-    configure_vim 'set background=light\nlet g:two_firewatch_italics=1\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    configure_vim 'set background=light\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
     ;;
   *)
     echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light"
