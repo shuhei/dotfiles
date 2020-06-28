@@ -112,6 +112,12 @@ repo = 'arcticicestudio/nord-vim'
 [[plugins]]
 repo = 'sts10/vim-pink-moon'
 
+[[plugins]]
+repo = 'rakr/vim-two-firewatch'
+
+[[plugins]]
+repo = 'junegunn/seoul256.vim'
+
 # -- Language plugins, which don't have `plugin` directory and
 #    not worth lazy plugins.
 #    Use `:echo dein#check_lazy_plugins()` to find them.

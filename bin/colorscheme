@@ -30,8 +30,24 @@ case $color in
     configure_alacritty
     configure_vim 'let ayucolor="light"\ncolorscheme ayu'
     ;;
+  seoul256)
+    configure_alacritty
+    configure_vim 'colorscheme seoul256'
+    ;;
+  seoul256-light)
+    configure_alacritty
+    configure_vim 'colorscheme seoul256-light'
+    ;;
+  firewatch)
+    configure_alacritty
+    configure_vim 'set background=dark\nlet g:two_firewatch_italics=1\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    ;;
+  firewatch-light)
+    configure_alacritty
+    configure_vim 'set background=light\nlet g:two_firewatch_italics=1\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    ;;
   *)
-    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light"
+    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light"
     exit 1
     ;;
 esac
