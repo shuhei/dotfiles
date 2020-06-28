@@ -15,7 +15,10 @@ build = 'make'
 repo = 'Shougo/vimshell.vim'
 
 [[plugins]]
-repo = 'bling/vim-airline'
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 repo = 'christoomey/vim-tmux-navigator'
