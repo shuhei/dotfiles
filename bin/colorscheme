@@ -36,7 +36,7 @@ case $color in
     ;;
   seoul256-light)
     configure_alacritty
-    configure_vim 'colorscheme seoul256-light\nlet g:airline_theme="seoul256"'
+    configure_vim 'let g:seoul256_background=255\ncolorscheme seoul256-light\nlet g:airline_theme="seoul256"'
     ;;
   firewatch)
     configure_alacritty

@@ -1,7 +1,9 @@
 colors:
   # Default colors
   primary:
-    background: '0xdadada'
+    # background: '0xdadada'
+    # Make it lighther
+    background: '0xf0f0f0'
     foreground: '0x4e4e4e'
 
   # Cursor colors
