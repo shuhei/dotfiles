@@ -46,8 +46,12 @@ case $color in
     configure_alacritty
     configure_vim 'set background=light\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
     ;;
+  night-owl)
+    configure_alacritty
+    configure_vim 'colorscheme night-owl'
+    ;;
   *)
-    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light"
+    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl"
     exit 1
     ;;
 esac
