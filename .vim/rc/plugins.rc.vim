@@ -137,7 +137,6 @@ if dein#tap('coc.nvim')
     \ [
     \   'coc-prettier',
     \   'coc-tsserver',
-    \   'coc-tslint-plugin',
     \   'coc-eslint',
     \   'coc-java',
     \   'coc-json',

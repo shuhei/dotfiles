@@ -21,6 +21,5 @@
       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
     }
   },
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "tslint.autoFixOnSave": true
+  "java.errors.incompleteClasspath.severity": "ignore"
 }
