@@ -4,51 +4,41 @@ color=$1
 dotfiles=~/dotfiles
 alacritty=${dotfiles}/alacritty
 
-configure_alacritty() {
+configure() {
+  vim_config=$1
+  # Configure alacritty
   cat ${alacritty}/base.yml ${alacritty}/${color}.yml > ${dotfiles}/.alacritty.yml
-}
-
-configure_vim() {
-  echo $1 > ${dotfiles}/.vim/color.vim
+  # Configure vim
+  echo ${vim_config} > ${dotfiles}/.vim/color.vim
 }
 
 case $color in
   dracula)
-    configure_alacritty
-    configure_vim 'colorscheme dracula'
+    configure 'colorscheme dracula'
     ;;
   nord)
-    configure_alacritty
-    configure_vim 'colorscheme nord'
+    configure 'colorscheme nord'
     ;;
   pink-moon)
-    configure_alacritty
-    configure_vim 'colorscheme pink-moon'
+    configure 'colorscheme pink-moon'
     ;;
   ayu-light)
-    # TODO: Add dark and mirage.
-    configure_alacritty
-    configure_vim 'let ayucolor="light"\ncolorscheme ayu'
+    configure 'let ayucolor="light"\ncolorscheme ayu'
     ;;
   seoul256)
-    configure_alacritty
-    configure_vim 'colorscheme seoul256\nlet g:airline_theme="seoul256"'
+    configure 'colorscheme seoul256\nlet g:airline_theme="seoul256"'
     ;;
   seoul256-light)
-    configure_alacritty
-    configure_vim 'let g:seoul256_background=255\ncolorscheme seoul256-light\nlet g:airline_theme="seoul256"'
+    configure 'let g:seoul256_background=255\ncolorscheme seoul256-light\nlet g:airline_theme="seoul256"'
     ;;
   firewatch)
-    configure_alacritty
-    configure_vim 'set background=dark\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    configure 'set background=dark\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
     ;;
   firewatch-light)
-    configure_alacritty
-    configure_vim 'set background=light\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
+    configure 'set background=light\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
     ;;
   night-owl)
-    configure_alacritty
-    configure_vim 'colorscheme night-owl'
+    configure 'colorscheme night-owl'
     ;;
   *)
     echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl"
