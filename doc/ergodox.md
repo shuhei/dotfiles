@@ -10,3 +10,9 @@ The configurator works on Chrome.
 - [v9](https://configure.ergodox-ez.com/keyboard_layouts/qwagmy/edit)
 - [v8](https://configure.ergodox-ez.com/keyboard_layouts/qyzgoo/edit)
 - [v7](https://configure.ergodox-ez.com/keyboard_layouts/qvdgaz/edit)
+
+1. Change the layout
+2. Download the layout file (`.hex`)
+3. Open Wally app
+4. Drag and drop the layout file to Wally
+5. Press the reset key (next to `5` key)
