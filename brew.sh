@@ -12,3 +12,6 @@ brew install neovim
 brew install fzf
 brew install ripgrep
 $(brew --prefix)/opt/fzf/install
+
+# Alacritty
+brew cask install alacritty
