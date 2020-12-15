@@ -15,3 +15,6 @@ $(brew --prefix)/opt/fzf/install
 
 # Alacritty
 brew cask install alacritty
+
+# For tmux
+brew install reattach-to-user-namespace

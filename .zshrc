@@ -14,3 +14,6 @@ alias reload_zsh="rm -f ~/.zcompdump* && src"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# tmux
+alias tm=tmux
