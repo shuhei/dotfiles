@@ -78,6 +78,13 @@ At the top of `~/.gitconfig`:
   path = ~/dotfiles/.gitconfig
 ```
 
+Don't forget to set your user name and email address:
+
+```sh
+git config --global user.name "Shuhei Kagawa"
+git config --global user.email "shuhei.kagawa@gmail.com"
+```
+
 ## Vim
 
 ### Vim 8 vs Neovim
