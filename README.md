@@ -51,10 +51,13 @@ Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
 
 ```shell
 export ZSH="/Users/shuhei/.oh-my-zsh"
-ZSH_THEME="euro"
 
 # Load before oh-my-zsh.sh because `plugins` are listed in this file.
 source ~/dotfiles/.zshrc
+
+# Set a custom directory for the custom prompt
+ZSH_CUSTOM=~/dotfiles/.oh-my-zsh
+ZSH_THEME="euro"
 
 source $ZSH/oh-my-zsh.sh
 ```
