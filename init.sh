@@ -47,4 +47,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 colorscheme dracula
 ln -s dotfiles/.alacritty.yml .alacritty.yml
 
+# -- NVM and Node.js
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install lts
+
 popd
