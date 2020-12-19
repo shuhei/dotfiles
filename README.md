@@ -160,3 +160,8 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 - Switch layout (vertical <-> horizontal): `<C-s><Space>`
 - Resize panes horizontally: `<C-s><Left>`, `<C-s><Right>`
 - Resize panes vertically: `<C-s><Up>`, `<C-s><Down>`
+
+### Plugins
+
+- Install plugins: `<C-s>I`
+- Update plugins: `<C-s>U`
