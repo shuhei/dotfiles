@@ -2,6 +2,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "c",
     "cpp",
+    "dart",
     "javascript",
     "javascriptreact",
     "typescript",
@@ -19,15 +20,6 @@
       "command": "clangd",
       "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
-    },
-    "dart": {
-      "command": "dart",
-      "args": [
-        "/usr/local/opt/dart/libexec/bin/snapshots/analysis_server.dart.snapshot",
-        "--lsp"
-      ],
-      "rootPatterns": ["pubspec.yaml"],
-      "filetypes": ["dart"]
     }
   },
   "java.errors.incompleteClasspath.severity": "ignore"

@@ -138,12 +138,12 @@ if dein#tap('coc.nvim')
     \   'coc-prettier',
     \   'coc-tsserver',
     \   'coc-eslint',
+    \   'coc-flutter',
     \   'coc-java',
     \   'coc-json',
     \   'coc-css',
     \   'coc-rls',
     \   'coc-yaml',
-    \   'coc-flow',
     \   'coc-stylelint',
     \ ]
 endif
