@@ -19,6 +19,3 @@ brew cask install alacritty
 
 # For tmux
 brew install reattach-to-user-namespace
-
-# For clangd (LSP for C/C++/Objective-C)
-brew install llvm
