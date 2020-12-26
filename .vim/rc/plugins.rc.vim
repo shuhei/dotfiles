@@ -146,6 +146,7 @@ if dein#tap('coc.nvim')
     \   'coc-yaml',
     \   'coc-stylelint',
     \   'coc-clangd',
+    \   'coc-vimlsp',
     \ ]
 endif
 
