@@ -1,6 +1,6 @@
 # Dotfiles
 
-My personal dotfiles.
+My personal dotfiles that have configurations for Vim, tmux, Alacritty, Git, etc.
 
 ## Installation
 
@@ -26,14 +26,6 @@ colorscheme pink-moon
 ```
 
 The command generates `.alacritty.yml`.
-
-## iTerm 2
-
-- Use iTerm 2 on Mac and set `Preferences > Profiles > Terminal > Terminal Emulation > Report Terminal Type` to `xterm-256color`.
-- Get color presets from [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes). "Smyck" is my current favorite color preset.
-- Set a font (a patched one from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) to support vim-airline symbols). Here is a list of some cool terminal fonts:
-  - Fira Code (My current favorite)
-  - Inconsolata
 
 ## Bash
 
