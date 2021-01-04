@@ -142,4 +142,4 @@ map <Leader>hl :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 " Toggle conceal level.
 " Useful for markdown editing, etc.
 " https://github.com/tpope/vim-unimpaired/issues/105
-nnoremap <Leader>l :setlocal conceallevel=<C-r>=&conceallevel == 0 ? '2' : '0'<CR><CR>
+nnoremap <Leader>co :setlocal conceallevel=<C-r>=&conceallevel == 0 ? '2' : '0'<CR><CR>
