@@ -26,10 +26,10 @@ case $color in
     configure 'let ayucolor="light"\ncolorscheme ayu'
     ;;
   seoul256)
-    configure 'colorscheme seoul256\nlet g:airline_theme="seoul256"'
+    configure 'let g:seoul256_background=235\ncolorscheme seoul256\nlet g:airline_theme="seoul256"'
     ;;
   seoul256-light)
-    configure 'let g:seoul256_background=255\ncolorscheme seoul256-light\nlet g:airline_theme="seoul256"'
+    configure 'let g:seoul256_light_background=255\ncolorscheme seoul256-light\nlet g:airline_theme="seoul256"'
     ;;
   firewatch)
     configure 'set background=dark\ncolorscheme two-firewatch\nlet g:airline_theme="twofirewatch"'
