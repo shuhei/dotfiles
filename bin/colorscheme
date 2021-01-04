@@ -7,7 +7,7 @@ alacritty=${dotfiles}/alacritty
 # Configure tmux
 configure_tmux() {
   local tmux_color_conf=${dotfiles}/.tmux.color.conf
-  local bg_color=$(grep "background: '" alacritty/${color}.yml | head -n 1 | cut -d "'" -f 2)
+  local bg_color=$(grep "background: '" ${dotfiles}/alacritty/${color}.yml | head -n 1 | cut -d "'" -f 2)
   bg_color="#${bg_color:2}"
 
   # Make the border lines unonbtrusive
