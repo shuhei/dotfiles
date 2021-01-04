@@ -36,7 +36,7 @@ repo = 'moll/vim-node'
 on_ft = 'javascript'
 
 [[plugins]]
-repo = 'tpope/vim-markdown'
+repo = 'plasticboy/vim-markdown'
 on_ft = 'markdown'
 
 [[plugins]]

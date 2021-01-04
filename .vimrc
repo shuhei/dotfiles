@@ -138,3 +138,8 @@ nnoremap <Leader>- :exe "resize " . (winheight(0) * 4 / 5)<CR>
 map <Leader>hl :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
   \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
   \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+" Toggle conceal level.
+" Useful for markdown editing, etc.
+" https://github.com/tpope/vim-unimpaired/issues/105
+nnoremap <Leader>l :setlocal conceallevel=<C-r>=&conceallevel == 0 ? '2' : '0'<CR><CR>
