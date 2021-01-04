@@ -3,3 +3,4 @@
 .vim/color.vim
 karabiner/automatic_backups
 .alacritty.yml
+.tmux.color.conf

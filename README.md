@@ -17,7 +17,7 @@ Check `alacritty/base.yml` and install the fonts that are used in the configurat
 
 ## Color scheme
 
-Use `colorscheme` command to update color schemes of Alacritty and Vim together.
+Use `colorscheme` command to update color schemes of Alacritty, Vim and partially tmux together.
 
 ```shell
 # Good for morning
@@ -27,7 +27,7 @@ colorscheme nord
 colorscheme pink-moon
 ```
 
-The command generates `.alacritty.yml`.
+The command generates `.alacritty.yml` and `.tmux.color.conf`.
 
 ## Bash
 
