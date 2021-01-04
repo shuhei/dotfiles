@@ -155,6 +155,13 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 - Resize panes horizontally: `<C-s><Left>`, `<C-s><Right>`
 - Resize panes vertically: `<C-s><Up>`, `<C-s><Down>`
 
+#### Focus mode
+
+- Start: `<C-s><C-g>`
+- End: `<C-s><C-d>`
+- Increase pane width: `<C-s>=`
+- Decrease pane width: `<C-s>-`
+
 ### Plugins
 
 - Install plugins: `<C-s>I`
