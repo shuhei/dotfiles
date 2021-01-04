@@ -124,6 +124,9 @@ repo = 'junegunn/seoul256.vim'
 [[plugins]]
 repo = 'haishanh/night-owl.vim'
 
+[[plugins]]
+repo = 'co1ncidence/mountaineer.vim'
+
 # -- Language plugins, which don't have `plugin` directory and
 #    not worth lazy plugins.
 #    Use `:echo dein#check_lazy_plugins()` to find them.

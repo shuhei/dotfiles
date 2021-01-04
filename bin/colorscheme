@@ -61,8 +61,17 @@ case $color in
   night-owl)
     configure 'colorscheme night-owl'
     ;;
+  mountaineer)
+    configure 'colorscheme mountaineer'
+    ;;
+  mountaineer-grey)
+    configure 'colorscheme mountaineer-grey'
+    ;;
+  mountaineer-light)
+    configure 'colorscheme mountaineer-light'
+    ;;
   *)
-    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl"
+    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl, mountaineer-grey, mountaineer-light"
     exit 1
     ;;
 esac
