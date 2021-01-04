@@ -16,8 +16,8 @@ configure_tmux() {
 
   # Save the colors into a config file for tmux reload.
   cat > "${dotfiles}/.tmux.color.conf" <<-EOF
-    set -g pane-border-style "bg=default fg=bg_color"
-    set -g pane-active-border-style "bg=default fg=bg_color"
+    set -g pane-border-style "bg=default fg=${bg_color}"
+    set -g pane-active-border-style "bg=default fg=${bg_color}"
 EOF
 }
 
