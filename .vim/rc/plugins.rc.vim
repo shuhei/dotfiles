@@ -265,13 +265,13 @@ endif
 
 if dein#tap('fzf.vim')
   " Only files from git in a git repository. Otherwise, all files.
-  nnoremap <expr> <C-p> isdirectory('.git') ? ':GFiles<CR>' : ':Files<CR>'
+  nnoremap <silent><expr> <C-p> isdirectory('.git') ? ':GFiles<CR>' : ':Files<CR>'
   " All files
-  nnoremap <C-a> :Files!<CR>
+  nnoremap <silent> <C-a> :Files!<CR>
   " Git commit history
-  nnoremap <C-c> :Commits!<CR>
+  nnoremap <silent> <C-c> :Commits!<CR>
   " Buffers
-  nnoremap <Leader>b :Buffers<CR>
+  nnoremap <silent> <Leader>b :Buffers<CR>
 
   " The :Rg command from fzf.vim includes file names in the search.
   " Define a version that ignore file names.
@@ -285,7 +285,7 @@ if dein#tap('fzf.vim')
     \           : fzf#vim#with_preview({ 'options': '--delimiter : --nth 4..' }, 'right:50%:hidden', '?'),
     \   <bang>0)
   " Use git-grep in a git repository and ag otherwise.
-  nnoremap <expr> <C-g> ':RipGrep!<CR>'
+  nnoremap <silent> <C-g> :RipGrep!<CR>
 endif
 
 if dein#tap('vim-easy-align')
