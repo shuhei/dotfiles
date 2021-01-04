@@ -13,6 +13,8 @@ git clone git@github.com:shuhei/dotfiles.git
 ./dotfiles/init.sh
 ```
 
+Check `alacritty/base.yml` and install the fonts that are used in the configuration.
+
 ## Color scheme
 
 Use `colorscheme` command to update color schemes of Alacritty and Vim together.
