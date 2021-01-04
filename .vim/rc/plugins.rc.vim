@@ -201,7 +201,7 @@ if dein#tap('vim-markdown')
 endif
 
 if dein#tap('goyo.vim')
-  nnoremap <leader><Space> :Goyo<CR>
+  nnoremap <silent> <leader><Space> :Goyo<CR>
 endif
 
 if dein#tap('vim-fugitive')
@@ -270,6 +270,8 @@ if dein#tap('fzf.vim')
   nnoremap <C-a> :Files!<CR>
   " Git commit history
   nnoremap <C-c> :Commits!<CR>
+  " Buffers
+  nnoremap <Leader>b :Buffers<CR>
 
   " The :Rg command from fzf.vim includes file names in the search.
   " Define a version that ignore file names.
