@@ -3,15 +3,6 @@ repo = 'ElmCast/elm-vim'
 on_ft = 'elm'
 
 [[plugins]]
-repo = 'Shougo/vimfiler.vim'
-depends = 'unite.vim'
-on_map = '<Plug>'
-on_path = '.*'
-
-[[plugins]]
-repo = 'Shougo/unite.vim'
-
-[[plugins]]
 repo = 'derekwyatt/vim-scala'
 on_ft = 'scala'
 

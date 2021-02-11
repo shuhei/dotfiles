@@ -68,6 +68,9 @@ rev = 'release'
 repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
+repo = 'preservim/nerdtree'
+
+[[plugins]]
 repo = 'reedes/vim-pencil'
 
 [[plugins]]
