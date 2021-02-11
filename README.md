@@ -95,10 +95,9 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 
 #### Navigation
 
-- Open the file navigator (vimfiler): `,f`
-  - Toggle safe mode: `gs`
-  - Delete a file: `dd`
-  - Rename a file: `r`
+- Open the file navigator: `,f`
+  - Toggle help: `?`
+  - File operations: `m`
 - Search for a file by name (only files in git): `<C-p>`
   - Open a file: `<CR>`
   - Open a file in a vertical split: `<C-v>`
