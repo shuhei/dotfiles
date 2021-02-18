@@ -62,13 +62,16 @@ case $color in
     configure 'colorscheme night-owl'
     ;;
   mountaineer)
-    configure 'colorscheme mountaineer'
+    configure 'colorscheme mountaineer\nlet g:airline_theme="seoul256"'
     ;;
   mountaineer-grey)
-    configure 'colorscheme mountaineer-grey'
+    configure 'colorscheme mountaineer-grey\nlet g:airline_theme="seoul256"'
     ;;
   mountaineer-light)
-    configure 'colorscheme mountaineer-light'
+    configure 'colorscheme mountaineer-light\nlet g:airline_theme="seoul256"'
+    ;;
+  papercolor-light)
+    configure 'set background=light\ncolorscheme PaperColor\nlet g:airline_theme="papercolor"'
     ;;
   *)
     echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl, mountaineer, mountaineer-grey, mountaineer-light"

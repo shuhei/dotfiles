@@ -104,7 +104,7 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
   - Close `fzf`: `<C-c>` or `<ESC>`
 - Search for a file by name (all files): `<C-a>`
 - Grep files: `<C-g>`
-- Open a list of tabs: `,ut`
+- Open a list of buffers: `,b`
 - Open URL under the cursor: `gx`
 - Move to the file under the cursor: `gf`
 - Go back to the previous position in a file: `<C-o>` or ` `` `
