@@ -4,24 +4,29 @@ color=$1
 dotfiles=~/dotfiles
 alacritty=${dotfiles}/alacritty
 
+function extract_alacritty_color() {
+  local color_name=$1
+  local extracted=$(grep "${color_name}: '" ${dotfiles}/alacritty/${color}.yml | head -n 1 | cut -d "'" -f 2)
+  echo "#${extracted:2}"
+}
+
 # Configure tmux
-configure_tmux() {
+function configure_tmux() {
   local tmux_color_conf=${dotfiles}/.tmux.color.conf
-  local bg_color=$(grep "background: '" ${dotfiles}/alacritty/${color}.yml | head -n 1 | cut -d "'" -f 2)
-  bg_color="#${bg_color:2}"
+  local bg_color=$(extract_alacritty_color "background")
+  local fg_color=$(extract_alacritty_color "foreground")
 
   # Make the border lines unonbtrusive
-  tmux set -g pane-border-style "bg=default fg=${bg_color}"
-  tmux set -g pane-active-border-style "bg=default fg=${bg_color}"
-
-  # Save the colors into a config file for tmux reload.
   cat > "${dotfiles}/.tmux.color.conf" <<-EOF
     set -g pane-border-style "bg=default fg=${bg_color}"
     set -g pane-active-border-style "bg=default fg=${bg_color}"
+    set -g status-bg "${fg_color}"
+    set -g status-fg "${bg_color}"
 EOF
+  tmux source-file ~/.tmux.conf
 }
 
-configure() {
+function configure() {
   vim_config=$1
 
   # Configure alacritty
