@@ -338,3 +338,15 @@ if dein#tap('jsonc.vim')
   autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
   autocmd BufRead,BufNewFile coc-setttings.json set filetype=jsonc
 endif
+
+if dein#tap('vim-textobj-quote')
+  augroup textobj_quote
+    autocmd!
+    autocmd FileType markdown call textobj#quote#init()
+    autocmd FileType textile call textobj#quote#init()
+    autocmd FileType text call textobj#quote#init({'educate': 0})
+  augroup END
+  " Normal and visual modes are support.
+  map <silent> <leader>qc <Plug>ReplaceWithCurly
+  map <silent> <leader>qs <Plug>ReplaceWithStraight
+endif
