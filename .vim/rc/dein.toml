@@ -74,6 +74,12 @@ repo = 'preservim/nerdtree'
 repo = 'reedes/vim-pencil'
 
 [[plugins]]
+repo = 'reedes/vim-textobj-quote'
+
+[[plugins]]
+repo = 'reedes/vim-wordy'
+
+[[plugins]]
 repo = 'scrooloose/nerdcommenter'
 
 [[plugins]]

@@ -1,6 +1,6 @@
 # Dotfiles
 
-My personal dotfiles that have configurations for Vim, tmux, Alacritty, Git, etc.
+My personal configurations for Vim, tmux, Alacritty, Git, etc.
 
 ## Installation
 
@@ -13,7 +13,7 @@ git clone git@github.com:shuhei/dotfiles.git
 ./dotfiles/init.sh
 ```
 
-Check `alacritty/base.yml` and install the fonts that are used in the configuration.
+Check `alacritty/base.yml` and install the fonts used in the configuration.
 
 ## Color scheme
 
@@ -56,7 +56,7 @@ ZSH_THEME="euro"
 source $ZSH/oh-my-zsh.sh
 ```
 
-[Delete completion cache files](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-enabled-a-completion-plugin-but-the-completion-doesnt-work) when a new completion plugin is added.
+[Delete completion cache files](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-enabled-a-completion-plugin-but-the-completion-doesnt-work) when you add a new completion plugin.
 
 ### Cookbook
 
@@ -83,7 +83,7 @@ git config --global user.email "shuhei.kagawa@gmail.com"
 
 ### Vim 8 vs Neovim
 
-I am using Neovim because of nicer experience at the moment. For example, Vim 8 shows flickering when opening a new file and hangs when syntax highlighting hangs.
+I'm using Neovim because of nicer experience at the moment. For example, Vim 8 shows flickering when opening a new file and hangs when syntax highlighting hangs.
 
 However, the configuration should be compatible with both of Neovim and Vim 8. To switch between them, delete `~/.cache/dein` and install `dein.vim` again because the cache directory built for Vim 8 doesn't work for Neovim and vice versa.
 
@@ -123,7 +123,7 @@ However, the configuration should be compatible with both of Neovim and Vim 8. T
 #### Plugins
 
 - Update plugins: `:call dein#update()`
-- Check plugins that are unnecessarily loaded as lazy plugins: `:echo dein#check_lazy_plugins()`
+- Check plugins unnecessarily loaded as lazy plugins: `:echo dein#check_lazy_plugins()`
 
 #### Switching modes
 
