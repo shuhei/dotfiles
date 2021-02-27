@@ -19,9 +19,9 @@ export LC_CTYPE='UTF-8'
 # ------- Aliases -------
 
 # vim
-alias vi="nvim"
-alias vim="nvim"
-export EDITOR=$(which nvim)
+alias vi="vim"
+alias vim="vim"
+export EDITOR=$(which vim)
 
 # Safety
 alias rm='rm -i'
