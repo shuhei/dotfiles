@@ -19,8 +19,6 @@ export LC_CTYPE='UTF-8'
 # ------- Aliases -------
 
 # vim
-alias vi="vim"
-alias vim="vim"
 export EDITOR=$(which vim)
 
 # Safety
