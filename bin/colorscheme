@@ -50,7 +50,7 @@ case $color in
     configure 'colorscheme nord'
     ;;
   pink-moon)
-    configure 'colorscheme pink-moon'
+    configure 'colorscheme pink-moon\nlet g:airline_theme="seoul256"'
     ;;
   ayu-light)
     configure 'let ayucolor="light"\ncolorscheme ayu'
