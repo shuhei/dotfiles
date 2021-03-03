@@ -2,11 +2,13 @@
 
 color=$1
 dotfiles=~/dotfiles
-alacritty=${dotfiles}/alacritty
+alacritty_dir=${dotfiles}/alacritty
+alacritty_config=${dotfiles}/.alacritty.yml
+color_name_comment="# current colorscheme: "
 
 function extract_alacritty_color() {
   local color_name=$1
-  local extracted=$(grep "${color_name}: '" ${dotfiles}/alacritty/${color}.yml | head -n 1 | cut -d "'" -f 2)
+  local extracted=$(grep "${color_name}: '" ${alacritty_dir}/${color}.yml | head -n 1 | cut -d "'" -f 2)
   echo "#${extracted:2}"
 }
 
@@ -30,9 +32,9 @@ function configure() {
   vim_config=$1
 
   # Configure alacritty
-  cat ${alacritty}/base.yml > ${dotfiles}/.alacritty.yml
-  echo "# colorscheme: ${color}" >> ${dotfiles}/.alacritty.yml
-  cat ${alacritty}/${color}.yml >> ${dotfiles}/.alacritty.yml
+  cat ${alacritty_dir}/base.yml > ${alacritty_config}
+  echo "${color_name_comment}${color}" >> ${alacritty_config}
+  cat ${alacritty_dir}/${color}.yml >> ${alacritty_config}
 
   # Configure vim
   echo ${vim_config} > ${dotfiles}/.vim/color.vim
@@ -81,6 +83,7 @@ case $color in
     configure 'set background=light\ncolorscheme PaperColor\nlet g:airline_theme="papercolor"'
     ;;
   *)
+    grep "${color_name_comment}" ${alacritty_config}
     echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256, seoul256-light, firewatch, firewatch-light, night-owl, mountaineer, mountaineer-grey, mountaineer-light"
     exit 1
     ;;
