@@ -19,10 +19,6 @@ if dein#load_state('~/.cache/dein')
   call dein#save_state()
 endif
 
-if dein#check_install()
-  call dein#install()
-endif
-
 " Clean up unused plugins
 command! DeinClean call s:dein_clean()
 function s:dein_clean()
@@ -31,8 +27,13 @@ function s:dein_clean()
 endfunction
 
 source ~/.vim/rc/plugins.rc.vim
+syntax enable
 
 filetype plugin indent on
+
+if dein#check_install()
+  call dein#install()
+endif
 
 "===============================
 " General Config
@@ -47,6 +48,9 @@ let $LANG = 'en_US'
 
 " Enable true colors
 if (has("termguicolors"))
+  " https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
+  let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+  let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
   set termguicolors
 endif
 
