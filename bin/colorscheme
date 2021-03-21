@@ -19,7 +19,7 @@ function configure_tmux() {
   local fg_color=$(extract_alacritty_color "foreground")
 
   # Make the border lines unonbtrusive
-  cat > "${dotfiles}/.tmux.color.conf" <<-EOF
+  cat > ${tmux_color_conf} <<-EOF
     set -g pane-border-style "bg=default fg=${bg_color}"
     set -g pane-active-border-style "bg=default fg=${bg_color}"
     set -g status-bg "${fg_color}"
