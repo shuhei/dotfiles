@@ -146,6 +146,7 @@ if dein#tap('coc.nvim')
     \   'coc-stylelint',
     \   'coc-clangd',
     \   'coc-vimlsp',
+    \   'coc-pyright',
     \ ]
 endif
 
@@ -286,7 +287,6 @@ if dein#tap('vim-pencil')
   augroup pencil
     autocmd!
     autocmd FileType markdown,mkd call pencil#init()
-    autocmd FileType text         call pencil#init({'wrap': 'hard'})
   augroup END
 endif
 

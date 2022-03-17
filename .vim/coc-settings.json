@@ -13,7 +13,12 @@
     "json5",
     "css",
     "markdown",
-    "rust"
+    "rust",
+    "python"
   ],
-  "java.errors.incompleteClasspath.severity": "ignore"
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.formatting.autopep8Path": "/usr/local/bin/autopep8"
 }
