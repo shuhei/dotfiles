@@ -27,6 +27,8 @@ function s:dein_clean()
   echo "Cleaned up unused plugin directories."
 endfunction
 
+command! DeinUpdate call dein#update()
+
 filetype plugin indent on
 syntax enable
 
