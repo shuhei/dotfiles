@@ -26,14 +26,14 @@ function s:dein_clean()
 	call dein#recache_runtimepath()
 endfunction
 
-source ~/.vim/rc/plugins.rc.vim
-syntax enable
-
 filetype plugin indent on
+syntax enable
 
 if dein#check_install()
   call dein#install()
 endif
+
+source ~/.vim/rc/plugins.rc.vim
 
 "===============================
 " General Config

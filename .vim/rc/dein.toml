@@ -71,13 +71,13 @@ repo = 'ntpeters/vim-better-whitespace'
 repo = 'preservim/nerdtree'
 
 [[plugins]]
-repo = 'reedes/vim-pencil'
+repo = 'preservim/vim-pencil'
 
 [[plugins]]
-repo = 'reedes/vim-textobj-quote'
+repo = 'preservim/vim-textobj-quote'
 
 [[plugins]]
-repo = 'reedes/vim-wordy'
+repo = 'preservim/vim-wordy'
 
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
