@@ -22,8 +22,9 @@ endif
 " Clean up unused plugins
 command! DeinClean call s:dein_clean()
 function s:dein_clean()
-	call map(dein#check_clean(), "delete(v:val, 'rf')")
-	call dein#recache_runtimepath()
+  call map(dein#check_clean(), "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+  echo "Cleaned up unused plugin directories."
 endfunction
 
 filetype plugin indent on
