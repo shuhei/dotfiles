@@ -1,3 +1,4 @@
+// This configuration file supports comments (jsonc).
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "c",
@@ -16,6 +17,8 @@
     "rust",
     "python"
   ],
+  // Gives more time to slow formatters like black for Python.
+  "coc.preferences.willSaveHandlerTimeout": 1500,
   "java.errors.incompleteClasspath.severity": "ignore",
   "python.pythonPath": "/usr/local/bin/python3",
   "python.formatting.provider": "black",
