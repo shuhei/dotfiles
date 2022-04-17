@@ -350,3 +350,14 @@ if dein#tap('vim-textobj-quote')
   map <silent> <leader>qc <Plug>ReplaceWithCurly
   map <silent> <leader>qs <Plug>ReplaceWithStraight
 endif
+
+if dein#tap('nord-vim')
+  " A workaround from https://github.com/arcticicestudio/nord-vim/issues/48.
+  " The default comment color has been brightened but the contrast is still
+  " quite low.
+  " https://github.com/arcticicestudio/nord-vim/issues/145.
+  augroup nord-overrides
+    autocmd!
+    autocmd ColorScheme nord highlight Comment ctermfg=8 guifg=#7b88a1
+  augroup END
+endif
