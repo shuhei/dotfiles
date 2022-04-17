@@ -1,0 +1,33 @@
+# ayu-dark
+colors:
+  # Default colors
+  primary:
+    background: '0x0f1419'
+    foreground: '0xe6e1cf'
+
+  # Cursor colors
+  cursor:
+    text:   '0xe6e1cf'
+    cursor: '0xf29718'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xff3333'
+    green:   '0xb8cc52'
+    yellow:  '0xe7c547'
+    blue:    '0x36a3d9'
+    magenta: '0xf07178'
+    cyan:    '0x95e6cb'
+    white:   '0xffffff'
+
+  # Bright colors
+  bright:
+    black:   '0x323232'
+    red:     '0xff6565'
+    green:   '0xeafe84'
+    yellow:  '0xfff779'
+    blue:    '0x68d5ff'
+    magenta: '0xffa3aa'
+    cyan:    '0xc7fffd'
+    white:   '0xffffff'

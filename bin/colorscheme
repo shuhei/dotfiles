@@ -55,6 +55,12 @@ case $color in
   ayu-light)
     configure 'let ayucolor="light"\ncolorscheme ayu'
     ;;
+  ayu-mirage)
+    configure 'let ayucolor="mirage"\ncolorscheme ayu'
+    ;;
+  ayu-dark)
+    configure 'let ayucolor="dark"\ncolorscheme ayu'
+    ;;
   seoul256)
     configure 'let g:seoul256_background=235\ncolorscheme seoul256\nlet g:airline_theme="seoul256"'
     ;;
@@ -84,7 +90,7 @@ case $color in
     ;;
   *)
     grep "${color_name_comment}" ${alacritty_config}
-    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-light, seoul256{,-light}, firewatch{,-light}, night-owl, mountaineer{,-grey,-light}"
+    echo "Supported colorschemes: dracula, nord, pink-moon, ayu-{light,mirage,dark}, seoul256{,-light}, firewatch{,-light}, night-owl, mountaineer{,-grey,-light}"
     exit 1
     ;;
 esac

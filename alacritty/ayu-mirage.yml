@@ -1,0 +1,29 @@
+# ayu-mirage
+colors:
+  primary:
+    background: '0x1F2430'
+    foreground: '0xCBCCC6'
+  cursor:
+    cursor: '0xFFCC66'
+    text: '0x1F2430'
+  selection:
+    background: '0x33415E'
+    text: '0xCBCCC6'
+  normal:
+    black: '0x191E2A'
+    blue: '0x6DCBFA'
+    cyan: '0x90E1C6'
+    green: '0xA6CC70'
+    magenta: '0xCFBAFA'
+    red: '0xED8274'
+    white: '0xC7C7C7'
+    yellow: '0xFAD07B'
+  bright:
+    black: '0x686868'
+    blue: '0x73D0FF'
+    cyan: '0x95E6CB'
+    green: '0xBAE67E'
+    magenta: '0xD4BFFF'
+    red: '0xF28779'
+    white: '0xFFFFFF'
+    yellow: '0xFFD580'
