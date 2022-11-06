@@ -1,0 +1,232 @@
+#!/usr/bin/env python3
+
+from argparse import ArgumentParser, Namespace
+import os.path
+import subprocess
+import sys
+import time
+from typing import Literal, Optional
+
+step = 10
+
+# -- tmux functions
+
+
+def list_windows(format: str) -> list[str]:
+    return (
+        subprocess.check_output(["tmux", "list-windows", "-a", "-F", format])
+        .decode("utf8")
+        .splitlines()
+    )
+
+
+def list_panes(window_id: str, format: str) -> list[str]:
+    return (
+        subprocess.check_output(
+            [
+                "tmux",
+                "list-panes",
+                "-t",
+                window_id,
+                "-F",
+                format,
+            ]
+        )
+        .decode("utf8")
+        .splitlines()
+    )
+
+
+def resize_pane(pane_id: str, width: int):
+    subprocess.check_output(["tmux", "resize-pane", "-t", pane_id, "-x", str(width)])
+
+
+def split_window(
+    pane_id: str, width: int, command: str, direction: Literal["left", "right"]
+):
+    subprocess.check_output(
+        [
+            "tmux",
+            "split-window",
+            # -h: horizontal split
+            # -d: the new window doesn't become the current window (?)
+            # -l: specifies the size of the new pane in lines or columns
+            # -b: left/above the target pane
+            "-hdbl" if direction == "left" else "-hdl",
+            str(width),
+            "-t",
+            pane_id,
+            command,
+        ]
+    )
+
+
+def kill_pane(pane_id: str):
+    subprocess.check_output(["tmux", "kill-pane", "-t", pane_id])
+
+
+def display_message(message: str, target: Optional[str] = None) -> str:
+    # The -p option prints the output to stdout instead of status line.
+    if target:
+        option = ["-t", target]
+    else:
+        option = []
+    command = ["tmux", "display-message", "-p"] + option + [message]
+    return subprocess.check_output(command).decode("utf8")
+
+
+def has_session(target: str) -> bool:
+    return (
+        subprocess.run(
+            ["tmux", "has-session", "-t", target],
+            # Don't print on the console.
+            capture_output=True,
+        ).returncode
+        == 0
+    )
+
+
+# -- State
+
+
+class State:
+    pane_id: str
+    window_id: str
+    # TODO: Rename with _id suffix.
+    pane_left: Optional[str]
+    pane_right: Optional[str]
+
+    width_center: int
+    width_all: int
+    width: int
+
+    command_left: str
+    command_right: str
+
+    def __init__(self, pane_id: Optional[str] = None):
+        if pane_id:
+            self.pane_id = pane_id
+        else:
+            # Gets the current pane.
+            self.pane_id = display_message("#{pane_id}").strip()
+        # Gets the window that has the pane.
+        self.window_id = display_message("#{window_id}", target=self.pane_id).strip()
+        pattern = f"'{os.path.abspath(sys.argv[0])}' sleep '{self.pane_id}'"
+        self.command_left = f"{pattern} left"
+        self.command_right = f"{pattern} right"
+        self.pane_left = self._find_pane_id(self.command_left)
+        self.pane_right = self._find_pane_id(self.command_right)
+        self._find_geometry()
+
+    def create(self):
+        width_left = max(2, int((self.width_all - self.width - 2) / 2))
+        width_right = max(2, self.width_all - self.width - 2 - width_left)
+        for side_pane, command, width, direction in [
+            (self.pane_left, self.command_left, width_left, "left"),
+            (self.pane_right, self.command_right, width_right, "right"),
+        ]:
+            if side_pane:
+                resize_pane(side_pane, width)
+            else:
+                split_window(self.pane_id, width, command, direction)
+
+    def destroy(self):
+        if self.pane_left and self.pane_left != self.pane_id:
+            kill_pane(self.pane_left)
+        if self.pane_right and self.pane_right != self.pane_id:
+            kill_pane(self.pane_right)
+        if self.pane_id in [self.pane_left, self.pane_right]:
+            kill_pane(self.pane_id)
+
+    def _find_geometry(self):
+        width_left = self._get_pane_width(self.pane_left)
+        width_right = self._get_pane_width(self.pane_right)
+        self.width_center = self._get_pane_width(self.pane_id)
+
+        border = 0 + int(width_left > 0) + int(width_right > 0)
+
+        self.width_all = self.width_center + width_left + width_right + border
+
+        # TODO: Make the target width configurable if necessary.
+        self.width = 120
+        if self.width >= self.width_all - 5:
+            self.width = self.width_all
+
+    def _find_pane_id(self, command_pattern: str) -> Optional[str]:
+        panes = list_panes(self.window_id, "#{pane_id} #{pane_start_command}")
+        for pane in panes:
+            if pane and command_pattern in pane:
+                return pane.split(" ", 1)[0]
+        return None
+
+    def _get_pane_width(self, pane_id: Optional[str]) -> int:
+        if pane_id:
+            return int(display_message("#{pane_width}", target=pane_id))
+        else:
+            return 0
+
+
+# -- Commands
+
+
+def sleep(args: Namespace):
+    while True:
+        time.sleep(1)
+        if not has_session(args.pane_id):
+            return
+
+
+def create(_):
+    State().create()
+
+
+def destroy(_):
+    State().destroy()
+
+
+def resurrect(_):
+    # This only works if each window has only three panes.
+    for window_id in list_windows("#{window_id}"):
+        panes = list_panes(window_id, "#{pane_id}")
+        if len(panes) == 3:
+            kill_pane(panes[0])
+            kill_pane(panes[2])
+
+        panes = list_panes(window_id, "#{pane_id}")
+        if len(panes) == 1:
+            State(panes[0]).create()
+
+
+def equalize(_):
+    ...
+
+
+def resize(_):
+    ...
+
+
+# Sub-commands pattern from
+# https://docs.python.org/3/library/argparse.html#sub-commands.
+parser = ArgumentParser(description="Provides Zen-mode-like margins in tmux")
+
+subparsers = parser.add_subparsers(title="subcommands")
+subparsers.add_parser("create").set_defaults(func=create)
+subparsers.add_parser("destroy").set_defaults(func=destroy)
+subparsers.add_parser("equalize").set_defaults(func=equalize)
+subparsers.add_parser("resurrect").set_defaults(func=resurrect)
+subparsers.add_parser("+").set_defaults(func=resize)
+subparsers.add_parser("-").set_defaults(func=resize)
+sleep_parser = subparsers.add_parser("sleep")
+sleep_parser.add_argument(
+    "pane_id",
+    help="The pane ID of the center pane. The sleep command exits when the center pane is gone.",
+)
+sleep_parser.add_argument(
+    "side",
+    choices=["left", "right"],
+    help="A label to identify this command with tmux list-panes",
+)
+sleep_parser.set_defaults(func=sleep)
+
+args = parser.parse_args()
+args.func(args)
