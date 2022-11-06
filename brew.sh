@@ -1,21 +1,7 @@
 #!/usr/bin/env bash
 
-brew install git
-brew install tmux
-brew install the_silver_searcher
-brew install htop
+# Install packages in Brewfile.
+brew bundle
 
-# Some vim plugins require python3.
-brew install python3
-brew install neovim
-
-# For https://github.com/junegunn/fzf.vim
-brew install fzf
-brew install ripgrep
+# Install fzf key bindings and fuzzy completion.
 $(brew --prefix)/opt/fzf/install
-
-# Alacritty
-brew cask install alacritty
-
-# For tmux
-brew install reattach-to-user-namespace
