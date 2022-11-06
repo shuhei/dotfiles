@@ -20,8 +20,8 @@
   // Gives more time to slow formatters like black for Python.
   "coc.preferences.willSaveHandlerTimeout": 1500,
   "java.errors.incompleteClasspath.severity": "ignore",
-  "python.pythonPath": "/usr/local/bin/python3",
+  "python.pythonPath": "/opt/homebrew/bin/python3",
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/usr/local/bin/black",
-  "python.formatting.autopep8Path": "/usr/local/bin/autopep8"
+  "python.formatting.blackPath": "/opt/homebrew/bin/black",
+  "python.formatting.autopep8Path": "/opt/homebrew/bin/autopep8"
 }

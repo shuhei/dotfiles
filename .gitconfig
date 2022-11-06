@@ -1,7 +1,7 @@
 [core]
   excludesfile = ~/dotfiles/.gitignore_global
   quotepath = false
-  pager = [ $(uname -s) = 'Darwin' ] && /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less || perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
+  pager = [ $(uname -s) = 'Darwin' ] && /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less || perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 [color]
   ui = auto
 [color "diff"]
