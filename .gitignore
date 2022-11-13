@@ -4,3 +4,4 @@
 karabiner/automatic_backups
 .alacritty.yml
 .tmux.color.conf
+Brewfile.lock.json
